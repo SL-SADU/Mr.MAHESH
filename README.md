@@ -38,7 +38,7 @@ HAVE A FUN!
 
 ### Simple Method 
 
-[![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://replit.com/@KgAmda/Queen-amdibell-QR-code?v=1)
+[![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://replit.com/@KgAmda/QueenAmdibell-QR?v=1)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kgamdaofficial/Amdibell)
 
