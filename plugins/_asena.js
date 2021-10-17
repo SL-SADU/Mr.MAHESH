@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
             );
         
             await message.client.sendMessage(
-                message.jid,'💠📃 ●QUEEN AMDI PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
@@ -126,7 +126,7 @@ else if (Config.WORKTYPE == 'public') {
             );
         
             await message.client.sendMessage(
-                message.jid,'💠📃 ●QUEEN AMDI PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
