@@ -94,15 +94,11 @@ HAVE A FUN!
 ### Very Simple Method
 `Soon as Possible...`
 
-### පලමු පියවර (run on riplit),
-```
+### පලමු පියවර (run on riplit)
 පලමුව (run on riplit) මත click කරන්න.ඔබගේ whatsapp web වෙටහ් ගොස් scan කර ගන්න.
-
- ```
 [![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://replit.com/@KgAmda/QueenAmdibell-QR?v=1)
 
 ### දෙවන පියවර (heroku deploy)
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kgamdaofficial/Amdibell)
 
 
