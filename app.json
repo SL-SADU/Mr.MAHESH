@@ -17,7 +17,7 @@
             "required": false
         },
         "LANGUAGE": {
-            "description": "Bot භාෂාව.English භාෂාව සඳහ EN ලෙසද, සිංහල භාෂාව සඳහා SI ලෙසද සඳහන් කරන්න. ",
+            "description": "Bot භාෂාව.සිංහල භාෂාව සඳහා En ලෙස සඳහන් කරන්න. ",
             "required": true,
             "value": "EN"
         },
@@ -52,7 +52,7 @@
         "BLOCK_CHAT": {
             "description": "බොට් වැඩ නොකරන චැට් එක තෝරන්න. Ex: 947xxxxxxxx && 947xxxxxxxx හෝ 947xxxxxxxx,947xxxxxxxx",
             "required": false,
-            "value": "false"
+            "value": "96176912958-1458298055,"
         },
         "UNMUTE_MESSAGE": {
             "description": "Group එකක් unmute කිරිමෙදි ලැබෙන පනිවිඩය.",
