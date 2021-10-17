@@ -96,6 +96,7 @@ HAVE A FUN!
 
 ### පලමු පියවර (run on riplit)
 පලමුව (run on riplit) මත click කරන්න.ඔබගේ whatsapp web වෙටහ් ගොස් scan කර ගන්න.
+
 [![Run on Repl.it](https://replit.com/badge/github/kgamdaofficial/Amdibell)](https://replit.com/@KgAmda/QueenAmdibell-QR?v=1)
 
 ### දෙවන පියවර (heroku deploy)
