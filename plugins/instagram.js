@@ -30,24 +30,24 @@ const Lang = Language.getString('instagram')
 
 if (cn.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+  Asena.addCommand({ pattern: 'readig ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+    if (message.jid === '905524317852-1612300121@g.us') {
 
-            return;
-        }
+      return;
+  }
 
 
-        const userName = match[1]
+    const userName = match[1]    
 
-        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
+    if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
 
         await message.sendMessage(infoMessage(Lang.LOADING))
 
         await axios
-          .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
+        .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
           .then(async (response) => {
-            const {
+           const {
               profile_hd,
               username,
               bio,
@@ -81,12 +81,12 @@ if (cn.WORKTYPE == 'private') {
 }
 else if (cn.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+  Asena.addCommand({ pattern: 'readig ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
-        if (message.jid === '905524317852-1612300121@g.us') {
+    if (message.jid === '905524317852-1612300121@g.us') {
 
-            return;
-        }
+      return;
+  }
 
 
         const userName = match[1]
@@ -96,7 +96,7 @@ else if (cn.WORKTYPE == 'public') {
         await message.sendMessage(infoMessage(Lang.LOADING))
 
         await axios
-          .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
+        .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
           .then(async (response) => {
             const {
               profile_hd,
