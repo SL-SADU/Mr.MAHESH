@@ -95,7 +95,7 @@ HAVE A FUN!
 `Soon as Possible...`
 
 ### පලමු පියවර (run on riplit)
-පලමුව (run on riplit) මත click කරන්න.ඔබගේ whatsapp web වෙටහ් ගොස් scan කර ගන්න.
+පලමුව (run on riplit) මත click කරන්න.ඔබගේ whatsapp web වෙත ගොස් scan කර ගන්න.
 
 [![Run on Repl.it](https://replit.com/badge/github/kgamdaofficial/Amdibell)](https://replit.com/@KgAmda/QueenAmdibell-QR?v=1)
 
