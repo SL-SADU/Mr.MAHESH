@@ -2,6 +2,7 @@
 
 <h4 align="center">🕯️👁️HELLO⚖️I'm ᏦᎶ ᎪmᎠᎪ⚖️ᗯE ᗩᖇE GOOᗪ TEᗩᗰ🐝thiŞ คll ᑭᖇOGᖇᗩᗰ😾ᴋɢ ᴀᴍᴅᴀ ᴘʀᴏᴊᴇᴄᴛ🤓ᑭᖇOGᖇᗩᗰᔕ ᗩᖇE ᖴOᖇ ᗰY ᖴᑌTᑌᖇ ᗪEᐯEᖇᒪOᑭEᖇᔕ🔑🔓ᴡᴇ ᴀʀᴇ ᴘʀᴏᴛᴇᴄᴛ🥏⚙️Şiຖ¢ē2021🎭..</h3>
 
+
 <div align="center">
   <img src="https://i.ibb.co/V2yzLwK/LOGO.jpg" width="300" height="300">      
   <h1>👸QUEEN AMDIBELL👸
