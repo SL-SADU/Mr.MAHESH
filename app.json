@@ -3,12 +3,12 @@
     "description": "Amdibell is a chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.",
     "logo": "https://i.ibb.co/QP79fy2/LOGO.jpg",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai", "Amdibell"],
-    "repository": "https://github.com/Kgamdaofficial/Amdibell",
-    "website":   "https://chat.whatsapp.comFsG75qXAN23BI4/AAH6zisn",
-    "success_url": "https://www.youtbe.com/channel/UCQioJ1z2MdVeK/IY7Wh9TUA",
+    "repository": "ht",
+    "website":   "https://www.youtube.com/channel/UCQIo_J1z2MdVeKlY7Wh9TUA",
+    "success_url": "https://chat.whatsapp.com/CzknL0SL5DFJn8DS7Uv9gc",
     "stack": "container",
     "env": {
-        "ASENA_SESSION": {
+        "AMDI_SESSION": {
             "description": "Qr කේතය scan කළ පසුව ලැබෙන කේතයන්",
             "required": true
         },
@@ -37,11 +37,11 @@
             "value": "true"
         },
         "HEROKU_API_KEY": {
-            "description": "යම්කිසි රහස් වචනයක් මෙහි සඳහන් කරන්න. එය කා සමඟවත් බෙදානොගන්න.",
+            "description": "heroku API key copy කර පහත හිස් කොටුව paste කරන්න.",
             "required": true
         },
         "HEROKU_APP_NAME": {
-            "description": "ඉහත යෙදු රහස් වචනයම යොදන්න.",
+            "description": "ඉහත යෙදු app name එකම යොදන්න.",
             "required": true
         },
         "MUTE_MESSAGE": {
