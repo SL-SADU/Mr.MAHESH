@@ -37,11 +37,11 @@
             "value": "true"
         },
         "HEROKU_API_KEY": {
-            "description": "යම්කිසි රහස් වචනයක් මෙහි සඳහන් කරන්න. එය කා සමඟවත් බෙදානොගන්න.",
+            "description": "https://dashboard.heroku.com/account මෙම link ක්ලික් කරන්න. API key සඳහා පහළට scroll කරන්න. ඉන්පසු Reveal බොත්තම ක්ලික් කරන්න. එම API key copy කර පහත හිස් කොටුව paste කරන්න.",
             "required": true
         },
         "HEROKU_APP_NAME": {
-            "description": "ඉහත යෙදු රහස් වචනයම යොදන්න.",
+            "description": "ඉහත App name එකම යොදන්න.",
             "required": true
         },
         "MUTE_MESSAGE": {
