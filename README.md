@@ -1,7 +1,7 @@
 # 👁️ hello i am ⚖️🐝KgAmda🐝⚖️
 
 <div align="center">
-  <img src="https://i.ibb.co/QP79fy2/LOGO.jpg" width="300" height="300">      
+  <img src="https://i.ibb.co/N1d9Pxg/LOGO.jpg" width="300" height="300">      
   <h1>👸QUEEN AMDIBELL👸
 </div>
 <p align="center">
