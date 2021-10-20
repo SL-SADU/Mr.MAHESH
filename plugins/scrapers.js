@@ -267,33 +267,33 @@ if (config.WORKTYPE == 'private') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/github/${userName}?apikey=e1ee2b3d3b00e58f2511ad95`)
+          .get(`https://videfikri.com/api/github/?username=${userName}`)
           .then(async (response) => {
 
             const {
               hireable,
-              type,
-              avatar,
-              name,
+              company,
+              profile_pic,
+              username,
               fullname, 
               blog, 
               location,
               email,
-              public_repos,
-              bio,
+              public_repository,
+              biografi,
               following,
               followers,
               public_gists,
-              url,
+              profile_url,
               last_updated,
               joined_on,
             } = response.data.result
 
-            const githubscrap = await axios.get(avatar, 
+            const githubscrap = await axios.get(profile_pic, 
               {responseType: 'arraybuffer',
             })
 
-            const msg = `*${Glang.USERNAME}* ${name} \n*${Glang.NAME}* ${fullname} \n*${Glang.FOLLOWERS}* ${followers} \n*${Glang.FOLLOWİNG}* ${following} \n*${Glang.BİO}* ${bio} \n*${Glang.REPO}* ${public_repos} \n*${Glang.GİST}* ${public_gists} \n*${Glang.LOCATİON}* ${location} \n*${Glang.MAİL}* ${email} \n*${Glang.BLOG}* ${blog} \n*${Glang.COMPANY}* ${type} \n*${Glang.HİRE}* ${hireable === "true" ? Glang.HİRE_TRUE : Glang.HİRE_FALSE} \n*${Glang.JOİN}* ${joined_on} \n*${Glang.UPDATE}* ${last_updated} \n*${Glang.URL}* ${url}`
+            const msg = `*${Glang.USERNAME}* ${username} \n*${Glang.NAME}* ${fullname} \n*${Glang.FOLLOWERS}* ${followers} \n*${Glang.FOLLOWİNG}* ${following} \n*${Glang.BİO}* ${biografi} \n*${Glang.REPO}* ${public_repository} \n*${Glang.GİST}* ${public_gists} \n*${Glang.LOCATİON}* ${location} \n*${Glang.MAİL}* ${email} \n*${Glang.BLOG}* ${blog} \n*${Glang.COMPANY}* ${company} \n*${Glang.HİRE}* ${hireable === "true" ? Glang.HİRE_TRUE : Glang.HİRE_FALSE} \n*${Glang.JOİN}* ${joined_on} \n*${Glang.UPDATE}* ${last_updated} \n*${Glang.URL}* ${profile_url}`
 
             await message.sendMessage(Buffer.from(githubscrap.data), MessageType.image, { 
               caption: msg,
@@ -531,33 +531,33 @@ else if (config.WORKTYPE == 'public') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/github/${userName}?apikey=e1ee2b3d3b00e58f2511ad95`)
+          .get(`https://videfikri.com/api/github/?username=${userName}`)
           .then(async (response) => {
 
             const {
               hireable,
-              type,
-              avatar,
-              name,
+              company,
+              profile_pic,
+              username,
               fullname, 
               blog, 
               location,
               email,
-              public_repos,
-              bio,
+              public_repository,
+              biografi,
               following,
               followers,
               public_gists,
-              url,
+              profile_url,
               last_updated,
               joined_on,
             } = response.data.result
 
-            const githubscrap = await axios.get(avatar, 
+            const githubscrap = await axios.get(profile_pic, 
               {responseType: 'arraybuffer',
             })
 
-            const msg = `*${Glang.USERNAME}* ${name} \n*${Glang.NAME}* ${fullname} \n*${Glang.FOLLOWERS}* ${followers} \n*${Glang.FOLLOWİNG}* ${following} \n*${Glang.BİO}* ${bio} \n*${Glang.REPO}* ${public_repos} \n*${Glang.GİST}* ${public_gists} \n*${Glang.LOCATİON}* ${location} \n*${Glang.MAİL}* ${email} \n*${Glang.BLOG}* ${blog} \n*${Glang.COMPANY}* ${type} \n*${Glang.HİRE}* ${hireable === "true" ? Glang.HİRE_TRUE : Glang.HİRE_FALSE} \n*${Glang.JOİN}* ${joined_on} \n*${Glang.UPDATE}* ${last_updated} \n*${Glang.URL}* ${url}`
+            const msg = `*${Glang.USERNAME}* ${username} \n*${Glang.NAME}* ${fullname} \n*${Glang.FOLLOWERS}* ${followers} \n*${Glang.FOLLOWİNG}* ${following} \n*${Glang.BİO}* ${biografi} \n*${Glang.REPO}* ${public_repository} \n*${Glang.GİST}* ${public_gists} \n*${Glang.LOCATİON}* ${location} \n*${Glang.MAİL}* ${email} \n*${Glang.BLOG}* ${blog} \n*${Glang.COMPANY}* ${company} \n*${Glang.HİRE}* ${hireable === "true" ? Glang.HİRE_TRUE : Glang.HİRE_FALSE} \n*${Glang.JOİN}* ${joined_on} \n*${Glang.UPDATE}* ${last_updated} \n*${Glang.URL}* ${profile_url}`
 
             await message.sendMessage(Buffer.from(githubscrap.data), MessageType.image, { 
               caption: msg,
