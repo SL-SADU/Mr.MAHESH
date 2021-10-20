@@ -1,27 +1,27 @@
-/* Copyright (C) 2021 KgAmda.
+/* Copyright (C) 2020 Yusuf Usta.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Amdibell - KgAmda
+WhatsAsena - Yusuf Usta
 */
 
 const chalk = require('chalk');
 const {WAConnection} = require('@adiwajshing/baileys');
-const {StringSession} = require('./Amdibell/');
+const {StringSession} = require('./whatsasena/');
 const fs = require('fs');
 
-async function Amdibell () {
+async function whatsAsena () {
     const conn = new WAConnection();
     const Session = new StringSession();  
     conn.logger.level = 'warn';
     conn.regenerateQRIntervalMs = 40000;
     
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('Amdi')}${chalk.blue.bold('bell')}
-${chalk.white.italic('AmdiString Kodu Alıcı')}
+        console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
+${chalk.white.italic('AsenaString Kodu Alıcı')}
 
-${chalk.blue.italic('ℹ️  Connecting to Whatsapp..... Please Wait.')}`);
+${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     });
     
 
@@ -44,4 +44,4 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp..... Please Wait.')}`);
     await conn.connect();
 }
 
-Amdibell()
+whatsAsena()
