@@ -1,10 +1,10 @@
 {
-    "__ASENAJSON__": true,
+    "__AMDIJSON__": true,
     "LANGUAGE": "English",
     "LANGCODE": "en",
     "AUTHOR": "AsenaDev",
     "STRINGS": {
-        "_asena": {
+        "_amdi": {
             "COMMAND": "විධානය",
             "DESC": "විස්තර",
             "EXAMPLE": "උදාහරණයක්",
@@ -38,10 +38,10 @@
             "DEMOTE_DESC": "ඕනෑම පරිපාලකයෙකුගේ බලය ගනී.",
             "ALREADY_NOT_ADMIN": "```දැනටමත් admin නොවන කෙනෙකු admin නොකරන්නේ කෙසේද?```",
             "DEMOTED": "```, admin බලතල ඉවත් කර ඇත!```",
-            "MUTE_DESC": "කණ්ඩායම් chat නිශ්ශබ්ද කිරීමට. පණිවිඩයක් යැවිය හැක්කේ adminට පමණි.",
-            "MUTED": "```කණ්ඩායම් chat නිශ්ශබ්ද විය!```",
+            "MUTE_DESC": "කණ්ඩායම් chat නිශ්ශබ්ද කිරීමට. පණිවිඩයක් යැවිය හැක්කේ adminට පමණි. Example : .mute 10m",
+            "MUTED": "```කණ්ඩායම් chat mute විය!```",
             "UNMUTE_DESC": "කණ්ඩායම් chat නිශ්ශබ්ද ඉවත් කරන්න. ඕනෑම කෙනෙකුට පණිවිඩයක් යැවිය හැකිය.",
-            "UNMUTED": "```කණ්ඩායම් කතාබහ නිශ්ශබ්ද වී ඇත!```",
+            "UNMUTED": "```කණ්ඩායම් chat unmute කර ඇත!```",
             "INVITE_DESC": "කණ්ඩායමේ invite සපයයි.",
             "INVITE": "```Invitation link: ```"
         },
@@ -72,7 +72,7 @@
             "MUST_TEXT": "```කරුණාකර ඕනෑම පණිවිඩයකට tag දෙන්න```"
         },
         "heroku": {
-            "RESTART_DESC": "Queen Amdi නැවත ආරම්භ කරන්න",
+            "RESTART_DESC": "Amdibell නැවත ආරම්භ කරන්න",
             "RESTART_MSG": "```Restarting...```",
             "SHUTDOWN_DESC": "Shutdown",
             "SHUTDOWN_MSG": "```Shutting down ⛔```",
@@ -112,8 +112,8 @@
             "NOT_SET_GOODBYE": "*ඔබ සමුගැනීමේ පණිවිඩයක් සකසා නැත!*\n*To set:* ```.goodbye ඔබගේ ආයුබෝවන් පණිවිඩය```",
             "GOODBYE_ALREADY_SETTED": "*✅ සමුගැනීමේ පණිවිඩය සකසා ඇත!*\n*Message:* ```",
             "NEED_GOODBYE_TEXT": "*සමුගැනීමේ පණිවිඩය සැකසීමට ඔබ පණිවිඩයක් ලිවිය යුතුය.*\n*Example:* ```.goodbye Goodbye!```",
-            "GOODBYE_DELETED": "*✅ ආයුබෝවන් පණිවිඩය සාර්ථකව මකා දමා ඇත!*",
-            "GOODBYE_SETTED": "*✅ ආයුබෝවන් පණිවිඩය සාර්ථකව සකසා ඇත!*"
+            "GOODBYE_DELETED": "*✅ සමුගැනීමේ පණිවිඩය සාර්ථකව මකා දමා ඇත!*",
+            "GOODBYE_SETTED": "*✅ සමුගැනීමේ පණිවිඩය සාර්ථකව සකසා ඇත!*"
         },
         "lydia": {
             "ADDLYDIA_DESC": "පරිශීලකයා සඳහා lydia (AI) සක්‍රීය කරයි.",
@@ -179,7 +179,7 @@
             "DOWNLOADING_SONG": "```ඔබේ ගීතය download කරමින් පවති...```",
             "UPLOADING_SONG": "```ඔබේ ගීතය upload කරමින් පවති...```",
             "VIDEO_DESC": "යූ ටියුබ් වෙතින් වීඩියෝ බාගත කරයි.",
-            "NEED_VIDEO": "*කරුණාකර වීඩියෝ link එකක් ලියන්න!*\n*උදාහරණයක්:* ```.video https://www.youtube.com/watch?v=cXcQMXC66c4```",
+            "NEED_VIDEO": "*කරුණාකර වීඩියෝ link එකක් ලියන්න!*\n*උදාහරණයක්:* .video https://www.youtube.com/watch?v=cXcQMXC66c4",
             "DOWNLOADING_VIDEO": "```ඔබගේ වීඩියෝව download කරමින් පවති...```",
             "UPLOADING_VIDEO": "```ඔබේ වීඩියෝව upload කරමින් පවති...```",
             "YT_DESC": "එය යූ ටියුබ් තුළ සොයයි.",
@@ -360,7 +360,7 @@
         "deepai": {
             "DEEPAI_DESC": "කෘතිම ස්නායුක ජාල භාවිතා කරමින් වඩාත් ප්‍රබල කෘතිම බුද්ධි මෙවලම් ධාවනය කරයි.",
             "TEXT": "*You must enter text! Although I am a powerful artificial intelligence, I cannot read your thoughts!*",
-            "URL": "*You must enter the image URL!*\n*Example:* https://i.ibb.co/5rt16dP/Queen-Amdi.jpg"
+            "URL": "*You must enter the image URL!*\n*Example:* https://i.ibb.co/QP79fy2/LOGO.jpg"
         },
         "ttp": {
             "TTP_DESC": "Text සරල image බවට පරිවර්තනය කරයි.",
@@ -393,7 +393,7 @@
             "SAVE_USAGE": "පණිවිඩයකට mention දී ටයිප් කරන්න .save හෝ භාවිතා කරන්න .save <ඔබේ සටහන>",
             "REPLY": "කරුණාකර සටහනක් හෝ පණිවිඩයකට mention දෙන්න.",
             "SUCCESSFULLY_ADDED": "Successfully added new note, check your notes with .notes.",
-            "UNSUCCESSFUL": "Could not add note, please try again later or contact WhatsAsena developers.",
+            "UNSUCCESSFUL": "Could not add note, please try again later or contact Amdibell developers.",
             "DELETE_USAGE": "ඔබගේ සුරකින ලද සටහන් *සියල්ල* මකා දමයි.",
             "SUCCESSFULLY_DELETED": "Successfully deleted all your notes."
         },
@@ -413,7 +413,7 @@
             "NOT_FOUND":"User not found: "
         },
         "github": {
-            "GİTHUB_DESC": "දී ඇති පරිශීලක නාමයෙන් github තොරතුරු රැස් කරයි.\n⌨️ Example: .github BlackAmda",
+            "GİTHUB_DESC": "දී ඇති පරිශීලක නාමයෙන් github තොරතුරු රැස් කරයි.\n⌨️ Example: .github kgamdaofficial",
             "REPLY": "```You Need To Type Any Username!```",
             "NOT": "```User not found!```",
             "FOLLOWERS": "Followers:",
