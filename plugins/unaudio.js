@@ -1,12 +1,9 @@
-/* Copyright (C) 2020 TOXIC DEVIL
-
-CODDED BY TOXIC DEVIL
+/* Copyright (C) 2020 KgAmda.
 
 Licensed under the  GPL-3.0 License;
-
 you may not use this file except in compliance with the License.
-WhatsAsenaPublic - TOXIC DEVIL
 
+Amdibell - KgAmda
 */
 
 const Asena = require('../events');

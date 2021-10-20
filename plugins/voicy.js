@@ -1,4 +1,4 @@
-/* const Asena = require('../events');
+ const Asena = require('../events');
 const ffmpeg = require('fluent-ffmpeg');
 const fs = require('fs');
 const { MessageType } = require('@adiwajshing/baileys');
@@ -123,4 +123,4 @@ if (conf.WORKTYPE == 'public') {
 
 
     }));
-} */
+} 

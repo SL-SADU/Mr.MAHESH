@@ -1,6 +1,10 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
+/* Copyright (C) 2020 KgAmda.
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+Amdibell - KgAmda
+*/
 
 
 const Asena = require('../events');
@@ -1811,4 +1815,4 @@ else if (Config.WORKTYPE == 'public') {
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
-} */
+} 
