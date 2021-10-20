@@ -1,9 +1,6 @@
-/* Copyright (C) 2020 KgAmda.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-Amdibell - KgAmda
+/*Codded by @phaticusthiccy
+Telegram: https://t.me/phaticusthiccy
+Instagram: https://instagram.com/kyrie.baran
 */
 
 const Asena = require('../events');
