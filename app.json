@@ -17,7 +17,7 @@
             "required": false
         },
         "LANGUAGE": {
-            "description": "Bot භාෂාව.සිංහල භාෂාව සඳහා SI ලෙස සඳහන් කරන්න. ",
+            "description": "Bot භාෂාව.සිංහල භාෂාව සඳහා SI | English භාෂාව EN ලෙස සඳහන් කරන්න. ",
             "required": true,
             "value": "SI"
         },

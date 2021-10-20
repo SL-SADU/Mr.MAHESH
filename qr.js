@@ -8,18 +8,18 @@ Amdibell - KgAmda
 
 const chalk = require('chalk');
 const {WAConnection} = require('@adiwajshing/baileys');
-const {StringSession} = require('./whatsasena/');
+const {StringSession} = require('./Amdibell/');
 const fs = require('fs');
 
-async function whatsAsena () {
+async function Amdibell () {
     const conn = new WAConnection();
     const Session = new StringSession();  
     conn.logger.level = 'warn';
     conn.regenerateQRIntervalMs = 40000;
     
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
-${chalk.white.italic('AsenaString Kodu Alıcı')}
+        console.log(`${chalk.green.bold('Amdi')}${chalk.blue.bold('bell')}
+${chalk.white.italic('AmdiString Kodu Alıcı')}
 
 ${chalk.blue.italic('ℹ️  Connecting to Whatsapp..... Please Wait.')}`);
     });
@@ -44,4 +44,4 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp..... Please Wait.')}`);
     await conn.connect();
 }
 
-whatsAsena()
+Amdibell()
