@@ -133,17 +133,17 @@ $ node bot.js
 											<tr>
 												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/fqn5sM7/LOGO.jpg" width="100" height="100" alt="KgAmda"></a></td>
 												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/4my3Tvp/LOGO.jpg" width="100" height="100" alt="Mr.pasiya"></a></td>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/6Nb6hkx/LOGO.jpg" width="100" height="100" alt="Mr.jokah"></a></td>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/gdbjswr/LOGO.jpg" width="100" height="100" alt="Mr.sithum"></a></td>
+												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/6Nb6hkx/LOGO.jpg" width="100" height="100" alt="no"></a></td>
+												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/gdbjswr/LOGO.jpg" width="100" height="100" alt="sithum"></a></td>
 												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/sWjm7g6/LOGO.jpg" width="100" height="100" alt="AmdiBell"></a></td>
-										                <td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/hYMLjVX/LOGO.jpg" width="100" height="100" alt="Mr.kavee"></a></td>										                                                                                </tr>
+										                <td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/hYMLjVX/LOGO.jpg" width="100" height="100" alt="Mr.kaviya"></a></td>										                                                                                </tr>
 											<tr>
 												<td><a href="httsp://github.com/kgamdaofficial">KgAmda</a></br>(Founder)</td>
 												<td><a href="httsp://github.com/kgamdaofficial/">	Mr.pasiya</a></br>(Co-Admin)</td>
-												<td><a href="httsp://github.com/kgamdaofficial/">Mr.jokah</a></br>(Public Supportive)</td>
-												<td><a href="httsp://github.com/kgamdaofficial">	Mr.sithum</a></br>(Web developer)</td>
+												<td><a href="httsp://github.com/kgamdaofficial/">no</a></br>(Public Supportive)</td>
+												<td><a href="httsp://github.com/kgamdaofficial">	sithum</a></br>(Web developer)</td>
 												<td><a href="httsp://github.com/kgamdaofficial/">AmdiBell</a></br>(Graphic Designer)</td>
-												<td><a href="httsp://github.com/kgamdaofficial">Mr.kavee</a></br>(Group Management)</td>
+												<td><a href="httsp://github.com/kgamdaofficial">Mr.kaviya</a></br>(Group Management)</td>
 											</tbody>
 									</table>
                   <table>
