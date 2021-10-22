@@ -1,9 +1,9 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2021 KgAmda.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+Amdibell - KgAmda
 */
 
 const simpleGit = require('simple-git');
@@ -18,6 +18,7 @@ const heroku = new Heroku({ token: Config.HEROKU.API_KEY })
 
 const Language = require('../language');
 const Lang = Language.getString('updater');
+
 
 Asena.addCommand({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
     await git.fetch();
@@ -71,9 +72,12 @@ Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DE
                 await git.addRemote('heroku', git_url);
             } catch { console.log('heroku remote ekli'); }
             await git.push('heroku', Config.BRANCH);
-            
+
             await message.client.sendMessage(
                 message.jid,Lang.UPDATED, MessageType.text);
+
+            await message.sendMessage(Lang.AFTER_UPDATE);
+            
         } else {
             git.pull((async (err, update) => {
                 if(update && update.summary.changes) {

@@ -1,8 +1,9 @@
-/* Codded by @TOXIC-DEVIL
-Telegram: t.me/toxicdevil
-Instagram: www.instagram.com/toxic_devil_abhinav
-Special Thanks:
-@Phaticusthiccy for Unlimitted Helps
+/* Copyright (C) 2021 KgAmda.
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+Amdibell - KgAmda
 */
 
 const Asena = require('../events');
@@ -103,7 +104,7 @@ if (Config.WORKTYPE == 'private') {
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | Amdibell'})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'})
 
     }));
 }
@@ -197,7 +198,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | Amdibell'})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'})
 
     }));
 }

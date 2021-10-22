@@ -1,6 +1,9 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
+/* Copyright (C) 2021 KgAmda.
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+Amdibell - KgAmda
 */
 
 const Asena = require('../events');
@@ -44,7 +47,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -64,7 +67,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -84,7 +87,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -104,7 +107,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -124,7 +127,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -144,7 +147,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -164,7 +167,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -184,7 +187,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -204,7 +207,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -224,7 +227,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -244,7 +247,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -264,7 +267,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
@@ -304,7 +307,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -324,7 +327,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -344,7 +347,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -364,7 +367,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -384,7 +387,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -404,7 +407,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -424,7 +427,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -444,7 +447,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -464,7 +467,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -484,7 +487,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -504,7 +507,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -524,7 +527,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 

@@ -1,12 +1,13 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2021 KgAmda.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+Amdibell - KgAmda
 */
 
 const Asena = require('../events');
+const Heroku = require('heroku-client');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
@@ -15,9 +16,17 @@ const Db = require('./sql/plugin');
 
 const Language = require('../language');
 const Lang = Language.getString('_plugin');
+const NLang = Language.getString('updater');
 
-Asena.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, usage: '.install https://gist.github.com/Quiec/cd5af0c153a613ba55c24f8c6b6f5565'}, (async (message, match) => {
-    if (match[1] === '') return await message.sendMessage('```' + Lang.NEED_URL + '.install https://gist.github.com/Quiec/cd5af0c153a613ba55c24f8c6b6f5565```')
+const heroku = new Heroku({
+    token: Config.HEROKU.API_KEY
+});
+
+
+let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
+
+Asena.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC}, (async (message, match) => {
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/phaticusthiccy/4232b1c8c4734e1f06c3d991149c6fbd')
     try {
         var url = new URL(match[1]);
     } catch {
@@ -79,6 +88,17 @@ Asena.addCommand({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_
         await plugin[0].destroy();
         delete require.cache[require.resolve('./' + match[1] + '.js')]
         fs.unlinkSync('./plugins/' + match[1] + '.js');
-        return await message.client.sendMessage(message.jid, Lang.DELETED, MessageType.text);
+        await message.client.sendMessage(message.jid, Lang.DELETED, MessageType.text);
+        
+        await new Promise(r => setTimeout(r, 1000));
+    
+        await message.sendMessage(NLang.AFTER_UPDATE);
+
+        console.log(baseURI);
+        await heroku.delete(baseURI + '/dynos').catch(async (error) => {
+            await message.sendMessage(error.message);
+
+        });
     }
+
 }));
