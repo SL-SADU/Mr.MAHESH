@@ -1,9 +1,9 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/kgadmaofficial/Amdibell /root/Amdibell
-WORKDIR /root/Amdibell/
+RUN git clone https://github.com/BlackAmda/QueenAmdi /root/QueenAmdi
+WORKDIR /root/QueenAmdi/
 ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
-RUN npm install
+RUN yarn install --no-audit
 
 CMD ["node", "bot.js"]
