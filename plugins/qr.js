@@ -1,9 +1,11 @@
-/* Copyright (C) 2021 KgAmda.
+/* Copyright (C) 2020 TOXIC DEVIL
+
+CODDED BY TOXIC DEVIL
 
 Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
 
-Amdibell - KgAmda
+you may not use this file except in compliance with the License.
+WhatsAsenaPublic - TOXIC DEVIL
 */
 
 const Asena = require('../events');
@@ -23,6 +25,6 @@ Asena.addCommand({pattern: 'qr ?(.*)', fromMe: false, desc: QR_DESC}, (async (me
 
     var webimage = await axios.get(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${match[1].replace(/#/g, '\n')} `, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "Copyright © 2021 | 👸QUEEN AMDIBELL👸"})
+    await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "Copyright © 2021 | Amdibell"})
 
 }));

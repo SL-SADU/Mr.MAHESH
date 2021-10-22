@@ -1,9 +1,10 @@
-/* Copyright (C) 2021 KgAmda.
+/* Copyright (C) 2020 Yusuf Usta.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Amdibell - KgAmda
+WhatsAsena - Yusuf Usta
+Coded by @KursadHD
 */
 
 const Asena = require('../events');
@@ -54,7 +55,7 @@ if (Config.WORKTYPE == 'private') {
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | Amdibell'});
             await info.delete();    
         });
     }));
@@ -98,7 +99,7 @@ else if (Config.WORKTYPE == 'public') {
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | Amdibell'});
             await info.delete();    
         });
     }));
