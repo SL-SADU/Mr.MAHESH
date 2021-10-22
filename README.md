@@ -20,10 +20,6 @@
     <img src="https://komarev.com/ghpvc/?username=kgamdaofficial&label=Profile%20views&color=ff69b4&label=Profile+Views&style=plastic">
 
   </a>
-  <a href="https://github.com/kgamdaofficial/Amdibell?tab=stars">
-    <img src="https://img.shields.io/github/stars/kgamdaofficial?color=ff69b4&label=Stars&style=plastic">
-
-  </a>
   <a href="https://github.com/kgamdaofficial?tab=followers">
     <img src="https://img.shields.io/github/followers/kgamdaofficial?color=ff69b4&label=Followers&style=plastic">
 
