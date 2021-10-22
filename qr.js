@@ -1,47 +1,30 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2020 TOXIC DEVIL
+
+CODDED BY TOXIC DEVIL
 
 Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+you may not use this file except in compliance with the License.
+WhatsAsenaPublic - TOXIC DEVIL
 */
 
-const chalk = require('chalk');
-const {WAConnection} = require('@adiwajshing/baileys');
-const {StringSession} = require('./whatsasena/');
+const Asena = require('../events');
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
+const axios = require('axios');
+const request = require('request');
+const got = require("got");
 
-async function whatsAsena () {
-    const conn = new WAConnection();
-    const Session = new StringSession();  
-    conn.logger.level = 'warn';
-    conn.regenerateQRIntervalMs = 40000;
-    
-    conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
-${chalk.white.italic('AsenaString Kodu Alıcı')}
+// Sentances
+const QR_DESC = "It Converts Text To Qr Code"
+const NEED_TEXT = "*Must Enter Some Words*"
 
-${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
-    });
-    
+Asena.addCommand({pattern: 'qr ?(.*)', fromMe: false, desc: QR_DESC}, (async (message, match) => {
 
-    conn.on('open', () => {
-        var st = Session.createStringSession(conn.base64EncodedAuthInfo());
-        console.log(
-            chalk.green.bold('Asena String Kodunuz: '), Session.createStringSession(conn.base64EncodedAuthInfo())
-        );
-        
-        if (!fs.existsSync('config.env')) {
-            fs.writeFileSync('config.env', `ASENA_SESSION="${st}"`);
-        }
+    if (match[1] === '') return await message.sendMessage(NEED_TEXT);
 
-        console.log(
-            chalk.blue.bold('Locale kuruyorsanız node bot.js ile botu başlatabilirsiniz.')
-        );
-        process.exit(0);
-    });
+    var webimage = await axios.get(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${match[1].replace(/#/g, '\n')} `, { responseType: 'arraybuffer' })
 
-    await conn.connect();
-}
+    await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"})
 
-whatsAsena()
+}));
