@@ -206,7 +206,15 @@ Do not edit copyright messages!
 ### Disclaimer
 `WhatsApp` name, its variations and logo are registered trademarks on Facebook. We have nothing to do with the registered trademark.
 
-	  
+	<details>
+    <summary>&#127942 <b>GitHub Activity</b></summary><br/>
+
+![Metrics](https://metrics.lecoq.io/kgamdaofficial?template=classic&followup=1&isocalendar=1&languages=1&isocalendar.duration=half-year&config.timezone=IndiaStandardTime%2FIstanbul)
+
+[![News](https://github-readme-stats.vercel.app/api/pin/?username=kgamdaofficial&theme=highcontrast&repo=Amdibell)](https://github.com/kgamdaofficial/Amdibell)
+
+</details>
+  
 
 	  
 
