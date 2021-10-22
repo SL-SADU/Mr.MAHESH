@@ -32,7 +32,7 @@ Asena.addCommand({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, asy
     const notes = []
     _notes.map(note => {
         if (!note.note.includes('IMG;;;')) {
-            notes.push('📜' + note.note)
+            notes.push('📝' + note.note)
         }
     })
 

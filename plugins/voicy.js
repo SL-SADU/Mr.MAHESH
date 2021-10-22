@@ -1,4 +1,4 @@
-const Asena = require('../events');
+/* const Asena = require('../events');
 const ffmpeg = require('fluent-ffmpeg');
 const fs = require('fs');
 const { MessageType } = require('@adiwajshing/baileys');
@@ -35,38 +35,92 @@ const convertToWav = file => {
         .save('output.wav')
 }
 
-Asena.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true }, (async (message, match) => {
-    try {
-        if (message.reply_message) {
-            if (!message.reply_message.text && !message.reply_message.video && !message.reply_message.image) {
-                const file = await message.client.downloadAndSaveMediaMessage({
-                    key: {
-                        remoteJid: message.reply_message.jid,
-                        id: message.reply_message.id
-                    },
-                    message: message.reply_message.data.quotedMessage
-                })
 
+if (conf.WORKTYPE == 'private') {
 
-                convertToWav(file).on('end', async () => {
-                    const recognizedText = await recognizeAudio()
+    Asena.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true }, (async (message, match) => {
 
-                    await message.client.sendMessage(message.jid, Lang.TEXT + '```' + recognizedText + '```', MessageType.text)
-                });
+        if (message.jid === '905524317852-1612300121@g.us') {
 
-
-            } else {
-                await message.client.sendMessage(message.jid, Lang.ONLY_AUDIO, MessageType.text)
-
-            }
-        } else {
-            await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text)
-
+            return;
         }
 
-    } catch (err) {
-        console.log(err)
-    }
+        try {
+            if (message.reply_message) {
+                if (!message.reply_message.text && !message.reply_message.video && !message.reply_message.image) {
+                    const file = await message.client.downloadAndSaveMediaMessage({
+                        key: {
+                            remoteJid: message.reply_message.jid,
+                            id: message.reply_message.id
+                        },
+                        message: message.reply_message.data.quotedMessage
+                    })
 
 
-}));
+                    convertToWav(file).on('end', async () => {
+                        const recognizedText = await recognizeAudio()
+
+                        await message.client.sendMessage(message.jid, Lang.TEXT + '```' + recognizedText + '```', MessageType.text)
+                    });
+
+
+                } else {
+                    await message.client.sendMessage(message.jid, Lang.ONLY_AUDIO, MessageType.text)
+
+                }
+            } else {
+                await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text)
+
+            }
+
+        } catch (err) {
+            console.log(err)
+        }
+
+
+    }));
+}
+if (conf.WORKTYPE == 'public') {
+
+    Asena.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: false }, (async (message, match) => {
+
+        if (message.jid === '905524317852-1612300121@g.us') {
+
+            return;
+        }
+
+        try {
+            if (message.reply_message) {
+                if (!message.reply_message.text && !message.reply_message.video && !message.reply_message.image) {
+                    const file = await message.client.downloadAndSaveMediaMessage({
+                        key: {
+                            remoteJid: message.reply_message.jid,
+                            id: message.reply_message.id
+                        },
+                        message: message.reply_message.data.quotedMessage
+                    })
+
+
+                    convertToWav(file).on('end', async () => {
+                        const recognizedText = await recognizeAudio()
+
+                        await message.client.sendMessage(message.jid, Lang.TEXT + '```' + recognizedText + '```', MessageType.text)
+                    });
+
+
+                } else {
+                    await message.client.sendMessage(message.jid, Lang.ONLY_AUDIO, MessageType.text)
+
+                }
+            } else {
+                await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text)
+
+            }
+
+        } catch (err) {
+            console.log(err)
+        }
+
+
+    }));
+} */
