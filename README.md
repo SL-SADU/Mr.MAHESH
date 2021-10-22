@@ -14,8 +14,23 @@
 </p>
 
 ----
+##
+<p align="center">
+  <a href="https://github.com/kgamdaofficial/Amdibell">
+    <img src="https://komarev.com/ghpvc/?username=kgamdaofficial&label=Profile%20views&color=ff69b4&label=Profile+Views&style=plastic">
 
+  </a>
+  <a href="https://github.com/kgamdaofficial/Amdibell?tab=stars">
+    <img src="https://img.shields.io/github/stars/kgamdaofficial?color=ff69b4&label=Stars&style=plastic">
 
+  </a>
+  <a href="https://github.com/kgamdaofficial?tab=followers">
+    <img src="https://img.shields.io/github/followers/kgamdaofficial?color=ff69b4&label=Followers&style=plastic">
+
+  </a>
+</p>
+	
+	
 <p align="center">
   <a href="https://github.com/Kgamdaofficial"><img alt="GitHub Clones" src="https://img.shields.io/badge/dynamic/json?style=flat-square&label=Docker pulls&query=count&url=https://github.com/agentnox/8gh32jk565/blob/main/automated_repo.json?raw=True&logo=github"></a>
   
