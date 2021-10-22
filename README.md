@@ -1,6 +1,5 @@
 <h2 align="center">☠️ Hellow ☠️ <br>I'm <br>⚖️🐝KgAmda🐝⚖️</h1>
 <h4 align="center">I am a simple developer. Not like Dennis Ritchie..</h3>
-<h7 align="left">Amdibell whatsapp user bot project. <br>Amdibell bot 👸</h7>
 
 <div align="center">
   <img src="https://i.ibb.co/QP79fy2/LOGO.jpg" width="300" height="300">      
