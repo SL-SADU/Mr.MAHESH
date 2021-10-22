@@ -1,9 +1,9 @@
-/* Copyright (C) 2021 KgAmda
+/* Copyright (C) 2021 KgAmda.
 
 Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License
+you may not use this file except in compliance with the License.
 
-Amdibell- KgAmda
+Amdibell - KgAmda
 */
 
 // Komutları burada tutacağız.
@@ -23,6 +23,7 @@ function addCommand(info, func) {
         desc: info['desc'] === undefined ? '' : info['desc'],
         usage: info['usage'] === undefined ? '' : info['usage'],
         dontAddCommandList: info['dontAddCommandList'] === undefined ? false : info['dontAddCommandList'],
+        warn: info['warn'] === undefined ? '' : info['warn'],
         function: func
     };
 
