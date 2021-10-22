@@ -1,9 +1,9 @@
-/* Copyright (C) 2021 KgAmda.
+/* Copyright (C) 2020 Yusuf Usta.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Amdibell - KgAmda
+WhatsAsena - Yusuf Usta
 */
 
 const Asena = require('../events');
@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
             );
         
             await message.client.sendMessage(
-                message.jid,'⚖️📃 ●AMDIBELL PANEL● 📃⚖️\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
@@ -85,7 +85,7 @@ if (Config.WORKTYPE == 'private') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'⚖️📃 ●AMDIBELL PANEL● 📃⚖️\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));
@@ -126,7 +126,7 @@ else if (Config.WORKTYPE == 'public') {
             );
         
             await message.client.sendMessage(
-                message.jid,'⚖️📃 ●AMDIBELL PANEL● 📃⚖️\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
@@ -162,7 +162,7 @@ else if (Config.WORKTYPE == 'public') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'⚖️📃 ●AMDIBELL PANEL● 📃⚖️\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));
