@@ -1,9 +1,9 @@
-/* Copyright (C) 2021 KgAmda.
+/* Copyright (C) 2020 Yusuf Usta.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Amdibell - KgAmda
+WhatsAsena - Yusuf Usta
 */
 
 const { Sequelize } = require('sequelize');
@@ -20,7 +20,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 
 module.exports = {
     VERSION: 'v0.16.8 Public Stable',
-    SESSION: process.env.AMDI_SESSION === undefined ? '' : process.env.AMDI_SESSION,
+    SESSION: process.env.ASENA_SESSION === undefined ? '' : process.env.ASENA_SESSION,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.ibb.co/QP79fy2/LOGO.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
