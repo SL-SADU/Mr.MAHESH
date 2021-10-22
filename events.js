@@ -1,9 +1,9 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2021 KgAmda
 
 Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
+you may not use this file except in compliance with the License
 
-WhatsAsena - Yusuf Usta
+Amdibell- KgAmda
 */
 
 // Komutları burada tutacağız.
@@ -23,7 +23,6 @@ function addCommand(info, func) {
         desc: info['desc'] === undefined ? '' : info['desc'],
         usage: info['usage'] === undefined ? '' : info['usage'],
         dontAddCommandList: info['dontAddCommandList'] === undefined ? false : info['dontAddCommandList'],
-        warn: info['warn'] === undefined ? '' : info['warn'],
         function: func
     };
 

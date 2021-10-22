@@ -1,9 +1,9 @@
-/* Copyright (C) 2020 Amdibell.
+/* Copyright (C) 2021 KgAmda
 
 Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
+you may not use this file except in compliance with the License
 
-Amdibell - kgamdaofficial
+Amdibell- KgAmda
 */
 
 const chalk = require('chalk');
@@ -15,13 +15,13 @@ async function whatsAsena () {
     const conn = new WAConnection();
     const Session = new StringSession();  
     conn.logger.level = 'warn';
-    conn.regenerateQRIntervalMs = 40000;
+    conn.regenerateQRIntervalMs = 30000;
     
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.italic('AsenaString Kodu Alıcı')}
 
-${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
+${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please wait.')}`);
     });
     
 

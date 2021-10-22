@@ -1,10 +1,7 @@
-# <h2 align="center">☠️ Hellow ☠️ <br>I'm <br>⚖️🐝KgAmda🐝⚖️</h1>
-
-<h4 align="center">🕯️👁️HELLO⚖️I'm ᏦᎶ ᎪmᎠᎪ⚖️ᗯE ᗩᖇE GOOᗪ TEᗩᗰ🐝thiŞ คll ᑭᖇOGᖇᗩᗰ😾ᴋɢ ᴀᴍᴅᴀ ᴘʀᴏᴊᴇᴄᴛ🤓ᑭᖇOGᖇᗩᗰᔕ ᗩᖇE ᖴOᖇ ᗰY ᖴᑌTᑌᖇ ᗪEᐯEᖇᒪOᑭEᖇᔕ🔑🔓ᴡᴇ ᴀʀᴇ ᴘʀᴏᴛᴇᴄᴛ🥏⚙️Şiຖ¢ē2021🎭..</h3>
-
+# 👁️ hello i am ⚖️🐝KgAmda🐝⚖️
 
 <div align="center">
-  <img src="https://i.ibb.co/V2yzLwK/LOGO.jpg" width="300" height="300">      
+  <img src="https://i.ibb.co/QP79fy2/LOGO.jpg" width="300" height="300">      
   <h1>👸QUEEN AMDIBELL👸
 </div>
 <p align="center">

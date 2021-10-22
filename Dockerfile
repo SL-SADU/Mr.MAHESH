@@ -3,7 +3,14 @@ FROM fusuf/whatsasena:latest
 RUN git clone https://github.com/kgamdaofficial/Amdibell /root/Amdibell
 WORKDIR /root/Amdibell/
 ENV TZ=Europe/Istanbul
+RUN apk add --update nodejs npm
+RUN apk --no-cache --virtual build-dependencies add \
+    python \
+    make \
+    g++ \
+    && npm install \
+    && apk del build-dependencies
 RUN npm install supervisor -g
-RUN yarn install --no-audit
+RUN npm install
 
 CMD ["node", "bot.js"]
