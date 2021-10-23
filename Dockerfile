@@ -1,8 +1,8 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/kgamdaofficial/Amdibell /root/Amdibell
+RUN git clone https://github.com/Kgamdaofficial/Amdibell /root/Amdibell
 WORKDIR /root/Amdibell/
-ENV TZ=Asia/Kolkata
+ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
 RUN yarn install --no-audit
 

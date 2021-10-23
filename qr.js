@@ -1,76 +1,47 @@
-/* Copyright (C) 2021 Queen Amdi.
+/* Copyright (C) 2020 Yusuf Usta.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Queen Amdi - Black Amda
+WhatsAsena - Yusuf Usta
 */
-
 
 const chalk = require('chalk');
 const {WAConnection} = require('@adiwajshing/baileys');
-const {StringSession} = require('./queenamdi/');
+const {StringSession} = require('./whatsasena/');
 const fs = require('fs');
 
-async function queenAmdi () {
+async function whatsAsena () {
     const conn = new WAConnection();
     const Session = new StringSession();  
-    conn.version = [2, 2123, 8]
     conn.logger.level = 'warn';
-    conn.regenerateQRIntervalMs = 50000;
+    conn.regenerateQRIntervalMs = 40000;
     
-    conn.on('🔄 connecting', async () => {
-        console.log(`${chalk.green.bold('Amdi')}${chalk.blue.bold(' bell')}
-${chalk.white.italic('Amdibell Sting session')}
+    conn.on('connecting', async () => {
+        console.log(`${chalk.green.bold('Amdi')}${chalk.blue.bold('bell')}
+${chalk.white.italic('AmdiString Kodu Alıcı')}
 
 ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     });
     
 
-	conn.on('open', async () => {
-		console.log(
-			chalk.green.bold('Amdibell QR Code: '),
-			'AMDI;;;' +
-				Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
-					'base64'
-				)
-		);
-		await conn.sendMessage(
-			conn.user.jid,
-			'AMDI;;;' +
-				Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
-					'base64'
-				),
-			MessageType.text
-		);
-		if (conn.user.jid.startsWith('94')) {
-			await conn.sendMessage(
-				conn.user.jid,
-				'*⚠️ Meka denna epa katawath ' + conn.user.name + '* ⚠️',
-				MessageType.text
-			);
-		} else {
-			await conn.sendMessage(
-				conn.user.jid,
-				'*⚠️ Please Do Not Share This Code With Anyone ' +
-					conn.user.name +
-					'* ⚠️',
-				MessageType.text
-			);
-		}
-		console.log(
-			chalk.green.bold(
-				"Meka copy karanna bari nm whatsapp eke athi bn code eka awith!\n"
-			),
-			chalk.green.bold(
-				'IF YOU CANNOT COPY THE MESSAGE, PLEASE CHECK WHATSAPP. QR CODE SENT TO YOUR OWN NUMBER!'
-			)
-		);
-		process.exit(0);
-	});
+    conn.on('open', () => {
+        var st = Session.createStringSession(conn.base64EncodedAuthInfo());
+        console.log(
+            chalk.green.bold('Amdi String Kodunuz: '), Session.createStringSession(conn.base64EncodedAuthInfo())
+        );
+        
+        if (!fs.existsSync('config.env')) {
+            fs.writeFileSync('config.env', `AMDI_SESSION="${st}"`);
+        }
 
-	await conn.connect();
+        console.log(
+            chalk.blue.bold('Locale kuruyorsanız node bot.js ile botu başlatabilirsiniz.')
+        );
+        process.exit(0);
+    });
+
+    await conn.connect();
 }
 
-queenAmdi()
-
+whatsAsena()

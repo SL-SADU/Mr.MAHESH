@@ -1,43 +1,33 @@
 {
-    "name": "Amdibell 2.9.5v",
+    "name": "Amdibell",
     "description": "Amdibell is a chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.",
     "logo": "https://i.ibb.co/QP79fy2/LOGO.jpg",
-    "keywords": ["whatsapp", "userbot", "bot", "api", "ai", "Amdibell"],
-    "repository": "",
-    "website":   "https://chat.whatsapp.com/LYk6el7Ief41N2ypxVqcXD",
-    "success_url": "https://chat.whatsapp.com/LYk6el7Ief41N2ypxVqcXD",
+    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai", "Amdibell"],
+    "repository": "https://github.com/Kgamdaofficial/Amdibell",
+    "website":   "https://chat.whatsapp.com/CE768WDzDoR3j6g2NxrpFZ",
+    "success_url": "https://chat.whatsapp.com/Hkm79J2sapyLGD0rvRTfkq",
     "stack": "container",
     "env": {
         "AMDI_SESSION": {
-            "description": "Paste your QR session that you got from .",
+            "description": "Qr කේතය scan කළ පසුව ලැබෙන කේතයන්",
             "required": true
         },
         "SUDO": {
-            "description": "If you do not know how to use it, leave it blank! SUDO mode; Your number must be an international number. So you have to have your number after the country code. Example: 947xxxxxxxx (Sri lanka No. 94)",
+            "description": "ඔබ එය භාවිතා කරන්නේ කෙසේදැයි නොදන්නේ නම් හිස්ව තබන්න! සුඩෝ මාදිලිය; ඔබගේ අංකය ජාත්‍යන්තර අංකයක් විය යුතුය. එබැවින් රටේ කේතයෙන් පසුව ඔබේ අංකය තිබිය යුතුය. උදාහරණය: 947xxxxxxxx (Sri lanka අංකය 94)",
             "required": false
         },
         "LANGUAGE": {
-            "description": "Enter your language. To enable Sinhala, type SI. or to enable English, type EN.",
+            "description": "Bot භාෂාව.සිංහල භාෂාව සඳහා En ලෙස සඳහන් කරන්න. ",
             "required": true,
-            "value": "EN"
-        },
-        "AUTO_BIO": {
-            "description": "Setup AUTO BIO feature. Adding a live clock for your WhatsApp about.",
-            "required": true,
-            "value": "false"
+            "value": "En"
         },
         "HANDLERS": {
-            "description": "Enter bot prefix to use commands.",
+            "description": "Bot ගේ ක්‍රියාකාරිත්වය සඳහා යෙදිය යුතු සලකුනු",
             "required": true,
-            "value": "^[.!]"
-        },
-        "CHAT_BOT": {
-            "description": "To enable / disable the AI chat bot. Use true to enable AI chat bot and false to deactivate AI chat bot.",
-            "required": true,
-            "value": "true"
+            "value": "^[.]"
         },
         "SEND_READ": {
-            "description": "Need to show user whether bot message seen or not?",
+            "description": "Bot message seen කළාද නැතිද යන්න පරිශීලකට පෙන්විය යුතුද?",
             "required": true,
             "value": "true"
         },
@@ -47,129 +37,99 @@
             "value": "true"
         },
         "HEROKU_API_KEY": {
-            "description": "https://dashboard.heroku.com/account Click this link. Scroll down for the API key. Then click the Reveal button. Copy the API key and paste the API Key empty box below.",
+            "description": "යම්කිසි රහස් වචනයක් මෙහි සඳහන් කරන්න. එය කා සමඟවත් බෙදානොගන්න.",
             "required": true
         },
         "HEROKU_APP_NAME": {
-            "description": "Use the same App name as first.",
+            "description": "ඉහත යෙදු රහස් වචනයම යොදන්න.",
             "required": true
         },
-        "SONG_TYPE": {
-            "description": "Choose your .song file type.(document or audio)",
-            "required": true,
-            "value": "document"
-        },
-        "CAP": {
-            "description": "Set your caption under medias.",
-            "required": true,
-            "value": "ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ Qᵘᵉᵉⁿ ᴬᵐᵈᶦ₂₀₂₁"
-        },
-        "IMGBB": {
-            "description": "Paste your imgbb API to change ALIVE,Welcome,Bye pictures by a command. (Visit https://imgbb.com/ and signup there. And get an API key from https://api.imgbb.com/)",
-            "required": true,
-            "value": "ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ Qᵘᵉᵉⁿ ᴬᵐᵈᶦ₂₀₂₁"
-        },
         "MUTE_MESSAGE": {
-            "description": "Message received when mute a group. If you do not want to change this message, type default.",
+            "description": "Group එකක් mute කිරිමෙදි ලැබෙන පනිවිඩය. ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
             "required": false,
             "value": "default"
         },
         "BLOCK_CHAT": {
-            "description": "Select the chat where the bot does not work. Ex: 947xxxxxxxx && 947xxxxxxxx හෝ 947xxxxxxxx,947xxxxxxxx",
+            "description": "බොට් වැඩ නොකරන චැට් එක තෝරන්න. Ex: 947xxxxxxxx && 947xxxxxxxx හෝ 947xxxxxxxx,947xxxxxxxx",
             "required": false,
-            "value": "no chats added"
-        },
-        "ANTIBAD": {
-            "description": "Activate Anti-Bad word for your groups.",
-            "required": true,
-            "value": "false"
+            "value": "96176912958-1458298055,"
         },
         "UNMUTE_MESSAGE": {
-            "description": "Message received when unmuteing a group.",
+            "description": "Group එකක් unmute කිරිමෙදි ලැබෙන පනිවිඩය.",
             "required": false,
             "value": "default"
         },
         "BLOCK_MESSAGE": {
-            "description": "Modifiable chat block notification. If you do not want to change this message, type default.",
+            "description": "වෙනස් කළ හැකි චැට් block දැනුම්දීම. ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
             "required": false,
             "value": "default"
         },
         "UNBLOCK_MESSAGE": {
-            "description": "Modifiable chat unblock notification. If you do not want to change this message, type default.",
+            "description": "වෙනස් කළ හැකි චැට් unblock දැනුම්දීම. ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
             "required": false,
             "value": "default"
         },
         "WORK_TYPE": {
-            "description": "The way the bot works. If you use public, everyone can use the bot. If you use private, only you can use your bot.",
+            "description": "Bot වැඩ කරන ක්රමය. ඔබ “public” භාවිතා කරන්නේ නම්, සෑම කෙනෙකුටම bot භාවිතා කළ හැකිය. ඔබ “private” භාවිතා කරන්නේ නම්, ඔබේ bot භාවිතා කළ හැක්කේ ඔබට පමණි.",
             "required": true,
             "value": "private"
         },       
-        "RULES": {
-            "description": "You can set rules display to your groups.",
-            "required": true,
-            "value": "default"
-        },
-        "PANEL_EMOJI": {
-            "description": "You can change panel emojis. (Make sure to split emojis with / )",
-            "required": true,
-            "value": "📘/📖"
-        },
         "DEBUG": {
-            "description": "If you do not know this. Give it up.",
+            "description": "ඔබ මෙය නොදන්නේ නම්. එය අත්හරින්න.",
             "required": true,
             "value": "false"
         },
-        "MENU": {
-            "description": "Customizeable commands list request command. Keep panel if you don't want to change.",
-            "required": true,
-            "value": "panel"
-        },
         "REMOVE_BG_API_KEY": {
-            "description": "Here you go to the website remove.bg and sign up and get an API key. Leave the API key in this space.",
+            "description": "මෙහිදි ඔබ remove.bg යන website එකට පිවිස signup වී, API key එකක් ලබාගන්න. එම API key එක මෙම හිස්තැනේ දමන්න.",
             "required": false
         },
         "ALIVE_MESSAGE": {
-            "description": "The message you get when you check whether the bot is online or not. This is not necessarily the case.",
+            "description": "Bot online ද නැද්ද යන්න පරීක්ෂා කරන විට ලැබෙන මැසේජ් එක. මෙය වෙනස් කිරිමට අත්‍යාවශ්‍යම නොවේ.",
             "required": false,
             "value": "default"
         },
         "BAN_MESSAGE": {
-            "description": "The message you get when someone commands you as .ban and removes it. If you do not want to change this message, type default.",
+            "description": "යම් කෙනෙකු ඔබ .ban ලෙස කොමාන්ඩ් කර remove කලවිට ලැබෙන message එක. ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
             "required": false,
             "value": "default"
         },
         "ADD_MESSAGE": {
-            "description": "If you do not want to change this message, type default.",
+            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
             "required": false,
             "value": "default"
         },
         "KICKME_MESSAGE": {
-            "description": "If you do not want to change this message, type default.",
+            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
             "required": false,
             "value": "default"
         },
         "PROMOTE_MESSAGE": {
-            "description": "If you do not want to change this message, type default.",
+            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
             "required": false,
             "value": "default"
         },
         "DEMOTE_MESSAGE": {
-            "description": "If you do not want to change this message, type default.",
+            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
             "required": false,
             "value": "default"
         },
         "AFK_MESSAGE": {
-            "description": "If you do not want to change this message, type default.",
+            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
             "required": false,
             "value": "default"
         },
+        "GAN_IMAGE": {
+            "description": "මෙය වෙනස් කිරිමට අත්‍යාවශ්‍යම නොවේ.",
+            "required": true,
+            "value": "https://i.hizliresim.com/f8bleo5.png"
+        },
         "NO_ONLINE": {
-            "description": "This is not necessarily the case.",
+            "description": "මෙය වෙනස් කිරිමට අත්‍යාවශ්‍යම නොවේ.",
             "required": false,
             "value": "true"
         },
         "COFFEEHOUSE_API_KEY": {
-            "description": "Give it up. We give you this.",
+            "description": "එය අත්හරින්න. අපි ඔබට මෙය ලබා දෙනවා.",
             "required": false,
             "value": "true"
         }
