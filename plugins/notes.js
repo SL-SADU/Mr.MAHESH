@@ -1,21 +1,31 @@
-/* Copyright (C) 2021 Queen Amdi.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-Queen Amdi - Black Amda
+/*
+# Copyright (C) 2020 MuhammedKpln.
+#
+# WhatsAsena is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# WhatsAsena is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
 */
 
 const fs = require('fs/promises')
 const path = require('path')
 const { MessageType } = require('@adiwajshing/baileys')
-const Amdi = require('../events');
+const Asena = require('../events');
 const { successfullMessage, errorMessage, infoMessage } = require('../helpers');
 const NotesDB = require('./sql/notes');
 const Language = require('../language')
 const Lang = Language.getString('notes')
 
-Amdi.applyCMD({ pattern: 'notes', fromMe: true,  deleteCommand: false,  desc: Lang.NOTES_USAGE }, async (message, match) => {
+Asena.addCommand({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, async (message, match) => {
 
 
     const _notes = await NotesDB.getNotes()
@@ -44,7 +54,7 @@ Amdi.applyCMD({ pattern: 'notes', fromMe: true,  deleteCommand: false,  desc: La
 
 
 
-Amdi.applyCMD({ pattern: 'save ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SAVE_USAGE }, async (message, match) => {
+Asena.addCommand({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
 
     const userNote = match[1]
 
@@ -92,7 +102,7 @@ Amdi.applyCMD({ pattern: 'save ?(.*)', fromMe: true,  deleteCommand: false,  des
     }
 })
 
-Amdi.applyCMD({ pattern: 'deleteNotes', fromMe: true,  deleteCommand: false,  desc: Lang.DELETE_USAGE }, async (message, match) => {
+Asena.addCommand({ pattern: 'deleteNotes', fromMe: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
 
     await NotesDB.deleteAllNotes()
 

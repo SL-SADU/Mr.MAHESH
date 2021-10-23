@@ -1,12 +1,13 @@
-/* Copyright (C) 2021 Queen Amdi.
+/* Copyright (C) 2020 Yusuf Usta.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Queen Amdi - Black Amda
+WhatsAsena - Yusuf Usta
+Coded by @KursadHD
 */
 
-const Amdi = require('../events');
+const Asena = require('../events');
 const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const memeMaker = require('meme-maker')
 const fs = require('fs')
@@ -14,12 +15,18 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('memes');
-let LOL = Config.WORKTYPE == 'public' ? false : true
 
+if (Config.WORKTYPE == 'private') {
 
-Amdi.applyCMD({pattern: 'meme ?(.*)', fromMe: LOL, desc: Lang.MEMES_DESC,  deleteCommand: false}, (async (message, match) => {   
+    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text, {quoted: message.data});
+        if (message.jid === '905524317852-1612300121@g.us') {
+
+            return;
+        }
+ 
+
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;
         if (match[1].includes(';')) {
             var split = match[1].split(';');
@@ -31,7 +38,7 @@ Amdi.applyCMD({pattern: 'meme ?(.*)', fromMe: LOL, desc: Lang.MEMES_DESC,  delet
             bottomText = '';
         }
     
-        var downloading = await message.client.sendMessage(message.jid,Lang.DOWNLOADING,MessageType.text, {quoted: message.data});
+	    var info = await message.reply(Lang.DOWNLOADING);
 	
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -48,7 +55,52 @@ Amdi.applyCMD({pattern: 'meme ?(.*)', fromMe: LOL, desc: Lang.MEMES_DESC,  delet
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: Config.CAP, quoted: message.data});
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})   
+            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸 by ⚖️🐝KgAmda🐝⚖️'});
+            await info.delete();    
         });
-}));
+    }));
+}
+else if (Config.WORKTYPE == 'public') {
+
+    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC}, (async (message, match) => {    
+
+        if (message.jid === '905524317852-1612300121@g.us') {
+
+            return;
+        }
+
+
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
+        var topText, bottomText;
+        if (match[1].includes(';')) {
+            var split = match[1].split(';');
+            bottomText = split[1];
+            topText = split[0];
+        }
+	    else {
+            topText = match[1];
+            bottomText = '';
+        }
+    
+	    var info = await message.reply(Lang.DOWNLOADING);
+	
+        var location = await message.client.downloadAndSaveMediaMessage({
+            key: {
+                remoteJid: message.reply_message.jid,
+                id: message.reply_message.id
+            },
+            message: message.reply_message.data.quotedMessage
+        }); 
+    
+	    memeMaker({
+            image: location,         
+            outfile: 'ammo-meme.png',
+            topText: topText,
+            bottomText: bottomText,
+        }, async function(err) {
+            if(err) throw new Error(err)
+            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | 👸QUEEN AMDIBELL👸 by ⚖️🐝KgAmda🐝⚖️'});
+            await info.delete();    
+        });
+    }));
+}

@@ -1,12 +1,4 @@
-/* Copyright (C) 2021 Queen Amdi.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-Queen Amdi - Black Amda
-*/
-
-const Amdi = require('../events');
+const Asena = require('../events');
 const { MessageType, Mimetype, GroupSettingChange, MessageOptions } = require('@adiwajshing/baileys');
 const dil = require('axios');
 const fs = require('fs');
@@ -22,7 +14,7 @@ const FROM = " From the group with ID, "
 const MSG = "Message: \n\n"
 const SUC = "*Message Successfully Saved to LOG! ✅️*"
 
-Amdi.applyCMD({ pattern: 'log', fromMe: true,  deleteCommand: false,  desc: LOG, warn: ANIM, onlyGroup: true, dontAddCommandList: true}, (async (message, match) => { 
+Asena.addCommand({ pattern: 'log', fromMe: true, desc: LOG, warn: ANIM, onlyGroup: true}, (async (message, match) => { 
 
     const meta = await message.client.groupMetadata(message.jid)
     const usmeta = message.client.isOnWhatsApp(message.jid)

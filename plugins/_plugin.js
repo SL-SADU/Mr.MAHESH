@@ -1,12 +1,12 @@
-/* Copyright (C) 2021 Queen Amdi.
+/* Copyright (C) 2020 Yusuf Usta.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Queen Amdi - Black Amda
+WhatsAsena - Yusuf Usta
 */
 
-const Amdi = require('../events');
+const Asena = require('../events');
 const Heroku = require('heroku-client');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
@@ -25,8 +25,8 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Amdi.applyCMD({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, dontAddCommandList: true, deleteCommand: false,}, (async (message, match) => {
-    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/BlackAmda/49afd28b1932095cc76facbcedef3482')
+Asena.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC}, (async (message, match) => {
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/phaticusthiccy/4232b1c8c4734e1f06c3d991149c6fbd')
     try {
         var url = new URL(match[1]);
     } catch {
@@ -42,8 +42,8 @@ Amdi.applyCMD({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, 
 
     var response = await got(url);
     if (response.statusCode == 200) {
-
-        var plugin_name = response.body.match(/applyCMD\({.*pattern: ["'](.*)["'].*}/);
+        // plugin adı
+        var plugin_name = response.body.match(/addCommand\({.*pattern: ["'](.*)["'].*}/);
         if (plugin_name.length >= 1) {
             plugin_name = "__" + plugin_name[1];
         } else {
@@ -63,7 +63,7 @@ Amdi.applyCMD({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, 
     }
 }));
 
-Amdi.applyCMD({pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC, deleteCommand: false,dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC}, (async (message, match) => {
     var mesaj = Lang.INSTALLED_FROM_REMOTE;
     var plugins = await Db.PluginDB.findAll();
     if (plugins.length < 1) {
@@ -71,14 +71,14 @@ Amdi.applyCMD({pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC, deleteCo
     } else {
         plugins.map(
             (plugin) => {
-                mesaj += plugin.dataValues.name + ': ' + plugin.dataValues.url + '\n';
+                mesaj += '*' + plugin.dataValues.name + '*: ' + plugin.dataValues.url + '\n';
             }
         );
         return await message.client.sendMessage(message.jid, mesaj, MessageType.text);
     }
 }));
 
-Amdi.applyCMD({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC}, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_PLUGIN);
     if (!match[1].startsWith('__')) match[1] = '__' + match[1];
     var plugin = await Db.PluginDB.findAll({ where: {name: match[1]} });

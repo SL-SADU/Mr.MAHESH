@@ -1,19 +1,16 @@
-/* Copyright (C) 2021 Queen Amdi.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-Queen Amdi - Black Amda
+/* Codded by @phaticusthiccy
+Telegram: t.me/phaticusthiccy
+Instagram: www.instagram.com/kyrie.baran
 */
 
-const Amdi = require('../events');
+const Asena = require('../events');
 const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys'); // Boredom 😬
 
 const Language = require('../language');
 const Lang = Language.getString('locate'); // Language supp. 😉
 
 
-    Amdi.applyCMD({pattern: 'locate', fromMe: true,  deleteCommand: false,  desc: Lang.L_DESC, warn: Lang.L_WARN, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'locate', fromMe: true, desc: Lang.L_DESC, warn: Lang.L_WARN}, (async (message, match) => {
 
         var r_text = new Array ();
         r_text[0] = "degreesLatitude: 24.121231, degreesLongitude: 55.1121221"; // Actually, I don't know where is this place..
