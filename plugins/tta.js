@@ -1,26 +1,24 @@
-/* Copyright (C) 2020 TOXIC DEVIL
-
-CODDED BY TOXIC DEVIL
+/* Copyright (C) 2021 Queen Amdi.
 
 Licensed under the  GPL-3.0 License;
-
 you may not use this file except in compliance with the License.
-WhatsAsenaPublic - TOXIC DEVIL
+
+Queen Amdi - Black Amda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
-const config = require('../config');
+const Config = require('../config');
 const fs = require('fs');
 const https = require('https');
 const googleTTS = require('google-translate-tts');
 
-Asena.addCommand({pattern: 'tta (.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Amdi.applyCMD({pattern: 'tta (.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
     if(match[1] === undefined || match[1] == "")
         return;
     
     let 
-        LANG = config.LANG.toLowerCase(),
+        LANG = Config.LANG.toLowerCase(),
         ttsMessage = match[1],
         SPEED = 1.0
 
