@@ -1,12 +1,12 @@
 /*
 # Copyright (C) 2020 MuhammedKpln.
 #
-# WhatsAsena is free software: you can redistribute it and/or modify
+# QueenAmdi is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# WhatsAsena is distributed in the hope that it will be useful,
+# QueenAmdi is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
@@ -16,10 +16,10 @@
 #
 */
 
-const config = require('../../config');
+const Config = require('../../config');
 const { DataTypes } = require('sequelize');
 
-const NotesDB = config.DATABASE.define('notes', {
+const NotesDB = Config.DATABASE.define('notes', {
     note: {
         type: DataTypes.TEXT,
         allowNull: false
