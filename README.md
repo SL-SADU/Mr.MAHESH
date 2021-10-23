@@ -1,6 +1,8 @@
 <h2 align="center">☠️ Hellow ☠️ <br>I'm <br>⚖️🐝KgAmda🐝⚖️</h1>
 <h4 align="center">I am a simple developer. Not like Dennis Ritchie..</h3>
 
+[![Typing SVG](https://bit.ly/2VPUdnC)](https://git.io/typing-svg)
+
 <div align="center">
   <img src="https://i.ibb.co/QP79fy2/LOGO.jpg" width="300" height="300">      
   <h1>👸QUEEN AMDIBELL👸
