@@ -19,7 +19,7 @@ async function whatsAsena () {
     
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Amdi')}${chalk.blue.bold('bell')}
-${chalk.white.italic('AmdiString Kodu Alıcı')}
+${chalk.white.italic('AsenaString Kodu Alıcı')}
 
 ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     });
@@ -28,7 +28,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     conn.on('open', () => {
         var st = Session.createStringSession(conn.base64EncodedAuthInfo());
         console.log(
-            chalk.green.bold('Amdi String Kodunuz: '), Session.createStringSession(conn.base64EncodedAuthInfo())
+            chalk.green.bold('Asena String Kodunuz: '), Session.createStringSession(conn.base64EncodedAuthInfo())
         );
         
         if (!fs.existsSync('config.env')) {
