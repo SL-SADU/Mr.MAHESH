@@ -1,15 +1,15 @@
-/* Copyright (C) 2020 Black Amda.
+/* Copyright (C) 2020 Yusuf Usta.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-QueenAmdi - Black Amda
+WhatsAsena - Yusuf Usta
 */
 
-const Config = require('../../config');
+const config = require('../../config');
 const { DataTypes } = require('sequelize');
 
-const FiltersDB = Config.DATABASE.define('filter', {
+const FiltersDB = config.DATABASE.define('filter', {
     chat: {
       type: DataTypes.STRING,
       allowNull: false
