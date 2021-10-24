@@ -20,7 +20,7 @@ Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (me
     await message.sendMessage(infoMessage("Post බාගත කිරීම..."))
 
     await axios
-      .get(`https://api-anoncybfakeplayer.herokuapp.com/igdown?url=${userName}`)
+      .get(`https://api.zeks.xyz/api/ig?apikey=fHZpP3j61LgH80BzanBm92jch1Q&url=${userName}`)
       .then(async (response) => {
         const {
           url,
@@ -31,11 +31,11 @@ Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (me
 
         const msg = `${type}`
 
-	 if (msg === 'image') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {quoted: message.data}, {
+	 if (msg === 'jpg') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {quoted: message.data}, {
           caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
         })}
 		 	 
-	if (msg === 'video') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
+	if (msg === 'mp4') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
           caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
         })}
 	
@@ -59,19 +59,19 @@ Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async (me
     await message.sendMessage(infoMessage(LOADING))
 
     await axios
-      .get(`https://videfikri.com/api/fbdl/?urlfb=${userName}`)
+      .get(`https://lolhuman.herokuapp.com/api/facebook2?apikey=e1ee2b3d3b00e58f2511ad95&url=${userName}`)
       .then(async (response) => {
         const {
-          url,
-          judul,
+          result,
+          message,
         } = response.data.result
 
-        const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
+        const profileBuffer = await axios.get(result, {responseType: 'arraybuffer'})
 
-        const msg = `*${CAPTION}*: ${judul}`
+        const msg = `*${CAPTION}*: ${message}`
 
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
-          caption: "Copyright © 2021 | 👸Queen Amdibell👸 ⚙️Şiຖ¢ē2021🎭"
+          caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
         })
       })
       .catch(

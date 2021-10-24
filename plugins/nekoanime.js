@@ -23,7 +23,7 @@ const axios = require('axios');
             })
 
             await message.sendMessage(Buffer.from(imageBuffer.data), MessageType.image, {
-                        caption: "Copyright © 2021 | 👸Queen Amdibell👸 ⚙️Şiຖ¢ē2021🎭"
+                        caption: "Copyright © 2021 | Amdibell"
             })
           })
       },
