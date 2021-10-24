@@ -18,7 +18,7 @@ async function whatsAsena () {
     conn.regenerateQRIntervalMs = 40000;
     
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('Amdi')}${chalk.blue.bold('bell')}
+        console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.italic('AsenaString Kodu Alıcı')}
 
 ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
@@ -32,7 +32,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
         );
         
         if (!fs.existsSync('config.env')) {
-            fs.writeFileSync('config.env', `AMDI_SESSION="${st}"`);
+            fs.writeFileSync('config.env', `ASENA_SESSION="${st}"`);
         }
 
         console.log(

@@ -86,6 +86,8 @@ members of the project's leadership.
 
 [Home Page](https://github.com/Kgamdaofficial/Amdibell)
 
+[Thiccy's Blog](https://phaticusthiccy.jimdofree.com)
+
 ### Warning ⚠️
 
 This project is open source. So you are responsible for the changes you make.
