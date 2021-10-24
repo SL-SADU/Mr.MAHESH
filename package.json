@@ -1,14 +1,14 @@
 {
-  "name": "Amdibell",
+  "name": "WhatsAsenaDuplicated",
   "version": "0.16.5",
-  "description": "Amdibell project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-  "main": "./Amdibell/bot.js",
+  "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+  "main": "./WhatsAsenaDuplicated/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kgamdaofficial/Amdibell.git"
+    "url": "git+https://github.com/phaticusthiccy/WhatsAsenaDuplicated.git"
   },
   "keywords": [
     "whatsapp"
@@ -17,9 +17,9 @@
   "developer": "AsenaDev / @phaticusthiccy",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Kgamdaofficial/Amdibell/issues"
+    "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
   },
-  "homepage": "https://github.com/Kgamdaofficial/Amdibell#readme",
+  "homepage": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.4.1",
     "@lh2020/speedtest-net": "^2.1.1",
@@ -33,6 +33,7 @@
     "dotenv": "^8.2.0",
     "exchange-rates-api": "^1.0.2",
     "fluent-ffmpeg": "^2.1.2",
+    "axios": "^0.21.1",
     "form-data": "^3.0.0",
     "g-i-s": "^2.1.6",
     "google-translate-tts": "^0.3.0",
