@@ -1,4 +1,4 @@
-<h2 align="center">☠️ Hellow ☠️ <br>I'm <br>⚖️🐝KgAmda🐝⚖️</h1>
+<h2 align="center"> ☠️ Hellow ☠️ <br>I'm <br>⚖️🐝KgAmda🐝⚖️</h1>
 <h4 align="center">I am a simple developer. Not like Dennis Ritchie..</h3>
 
 
