@@ -32,11 +32,11 @@ Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (me
         const msg = `${type}`
 
 	 if (msg === 'image') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {quoted: message.data}, {
-          caption: "Copyright © 2021 | 👸QUEEN AMDIBELL👸 by ⚖️🐝KgAmda🐝⚖️"
+          caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
         })}
 		 	 
 	if (msg === 'video') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
-          caption: "Copyright © 2021 | 👸QUEEN AMDIBELL👸 by ⚖️🐝KgAmda🐝⚖️"
+          caption: "Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ"
         })}
 	
         
@@ -71,7 +71,7 @@ Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async (me
         const msg = `*${CAPTION}*: ${judul}`
 
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {quoted: message.data}, {
-          caption: "Copyright © 2021 | 👸QUEEN AMDIBELL👸 by ⚖️🐝KgAmda🐝⚖️"
+          caption: "Copyright © 2021 | 👸Queen Amdibell👸 ⚙️Şiຖ¢ē2021🎭"
         })
       })
       .catch(

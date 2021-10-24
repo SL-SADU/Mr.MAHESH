@@ -27,14 +27,14 @@ if (Config.WORKTYPE == 'private') {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now.🤠```\n\n*Version:* ```v1.5 - Stable```\n\n*Developer:* ```KgAmda```*\n\n*Amda contact - wa.me/94761444438*\n\n*WhatsApp Support Group :* https://chat.whatsapp.com/J7EdUBd7E2OIsXOOeAHcuT*\n\n*Youtube channel :* https://www.youtube.com/channel/UCQIo_J1z2MdVeKlY7Wh9TUA\n\n```Thank You For Using Amdibell💖```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 🤠```\n\n*Version:* ```v1.5 - Stable```\n\n*Developer:* ```KgAmda```\n\n*WhatsApp Support Group :* https://chat.whatsapp.com/J7EdUBd7E2OIsXOOeAHcuT\n\n*Youtube channel :* https://www.youtube.com/channel/UCQIo_J1z2MdVeKlY7Wh9TUA\n\n```Thank You For Using Amdibell💖```"})
 
     }
     else {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2021 | 👸QUEEN AMDIBELL👸 by ⚖️🐝KgAmda🐝⚖️*' })
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2021 | 👸Queen Amdibell👸 ⚙️Şiຖ¢ē2021🎭*' })
      }
     }));
 
@@ -59,14 +59,14 @@ else if (Config.WORKTYPE == 'public') {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now.🤠```\n\n*Version:* ```v1.5 - Stable```\n\n*Developer:* ```KgAmda```*\n\n*Amda contact - wa.me/94761444438*\n\n*WhatsApp Support Group :* https://chat.whatsapp.com/J7EdUBd7E2OIsXOOeAHcuT**\n\n*Youtube channel :* https://www.youtube.com/channel/UCQIo_J1z2MdVeKlY7Wh9TUA\n\n```Thank You For Using Amdibell💖```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 🤠```\n\n*Version:* ```v1.5 - Stable```\n\n*Developer:* ```KgAmda```\n\n*WhatsApp Support Group :* https://chat.whatsapp.com/J7EdUBd7E2OIsXOOeAHcuT\n\n*Youtube channel :* https://www.youtube.com/channel/UCQIo_J1z2MdVeKlY7Wh9TUA\n\n```Thank You For Using Amdibell💖```"})
 
     }
     else {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2021 | 👸QUEEN AMDIBELL👸 by ⚖️🐝KgAmda🐝⚖️*' })
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2021 | 👸Queen Amdibell👸 ⚙️Şiຖ¢ē2021🎭*' })
      }
     }));
 
