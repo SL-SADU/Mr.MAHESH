@@ -110,19 +110,6 @@ HAVE A FUN!
 ## 🔎 What Amdibell bot?
 **Queen Amdibell bot,** is a WhatsApp helper bot written by [Amda] and Developed by [mr.pasiya and sithum]. Does not log into your account It is written on WhatsApp Web API.
 
-## Setup
-### Very Simple Method
-`Soon as Possible...`
-
-### පලමු පියවර (run on riplit)
-පලමුව (run on riplit) මත click කරන්න.ඔබගේ whatsapp web වෙත ගොස් scan කර ගන්න.
-
-[![Run on Repl.it](https://replit.com/badge/github/kgamdaofficial/Amdibell)](https://replit.com/@KgAmda/QueenAmdibell-QR?v=1)
-
-### දෙවන පියවර (heroku deploy)
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kgamdaofficial/Amdibell)
-
-
 ### The Hard Method (Not Recommend)
 ```js
 $ git clone https://github.com/kgamdaofficial.git
