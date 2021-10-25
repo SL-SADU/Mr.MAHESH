@@ -3,16 +3,10 @@
 
 
 <div align="center">
-  <img src="https://i.ibb.co/QP79fy2/LOGO.jpg" width="350" height="350">      
+  <img src="https://i.ibb.co/QP79fy2/LOGO.jpg" width="100" height="100">      
   <h1>👸QUEEN AMDIBELL👸
-	  
-<br>
 
 	  
-    <br>
-
-
-
 <p align="center">
   <a href="https://github.com/kgamdaofficial/Amdibell">
     <img src="https://komarev.com/ghpvc/?username=kgamdaofficial&label=Profile%20views&color=ff69b4&label=Profile+Views&style=plastic">
