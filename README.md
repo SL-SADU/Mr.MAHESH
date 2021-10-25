@@ -13,7 +13,14 @@
         <a href="https://www.youtbe.com/channel/UCQioJ1z2MdVeK/IY7Wh9TUA">Youtube Channel</a>
     <br>
 </p>
+		
 <a href="https://xzuospdrllsqzzztwyooeq-on.drv.tw/Amdibell/site%20file">
+<div align="center">
+	<h1>Visit our official website to install the Whatsapp Bot :</h1>
+	<a href="https://www.amdaniwasa.com">
+<img src="https://images.squarespace-cdn.com/content/v1/580515742e69cfedd1fbef58/1525386767826-Z6T2PAXQD6PZJFNGY14U/ke17ZwdGBToddI8pDm48kGzbt7cz3CKX9Rsta-RdWeJZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwXPcCdCfJzTjuw7eD5qoJaUvNnrlJ7-JqE3xnP9OqaaXMr3zNNd3H5Lklmgn1mB80/getbutton.png" width="400"></br></a>
+</div>	
+	
 	
 ----
 ##
