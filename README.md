@@ -20,7 +20,9 @@
 <img src="https://www.google.com/search?q=setup+button&sxsrf=AOaemvKRb3GK1EisFwraXdz5Bk5tf3QAXQ:1635151158058&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjk77fflOXzAhVdH7cAHe6zBZ4Q_AUoAXoECAEQAw&biw=1280&bih=892&dpr=1#imgrc=uOh37xLxpnt6jM.png" width="400"></br></a>
 </div>
 	
-	
+[![METHANA CLICK KARANNA BOT SADHIMATA](https://I.ibb.co/wQxBNKG/LOGO.jpg)](href="https://xzuospdrllsqzzztwyooeq-on.drv.tw/Queen%20Amdibell)
+
+
 ----
 ##
 <p align="center">
