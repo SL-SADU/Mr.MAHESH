@@ -17,12 +17,8 @@
 <div align="center">
 	<h1>Queen Amdibell bot setup</h1>
 	<a href="https://xzuospdrllsqzzztwyooeq-on.drv.tw/Queen%20Amdibell">
-<img src="https://www.google.com/search?q=setup+button&sxsrf=AOaemvKRb3GK1EisFwraXdz5Bk5tf3QAXQ:1635151158058&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjk77fflOXzAhVdH7cAHe6zBZ4Q_AUoAXoECAEQAw&biw=1280&bih=892&dpr=1#imgrc=uOh37xLxpnt6jM.png" width="400"></br></a>
-</div>
+<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FBlackAmda%2FQueenAmdi&count_bg=%2379C83D&title_bg=%23555555&icon=gitpod.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false" alt="Views"/></a>
 	
-[![METHANA CLICK KARANNA BOT SADHIMATA](https://I.ibb.co/wQxBNKG/LOGO.jpg)](href="https://xzuospdrllsqzzztwyooeq-on.drv.tw/Queen%20Amdibell)
-
-
 ----
 ##
 <p align="center">
