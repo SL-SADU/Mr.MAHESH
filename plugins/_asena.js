@@ -15,7 +15,7 @@ const Lang = Language.getString('_asena');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'kg ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'panel ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -40,7 +40,7 @@ if (Config.WORKTYPE == 'private') {
                     } else {
                         HANDLER = '.';
                     }
-                    CMD_HELP += '💖 ' + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
+                    CMD_HELP += '⚙️ ' + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
                     if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
                     if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
                     if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
             );
         
             await message.client.sendMessage(
-                message.jid,'💖📃●QUEEN AMDIBELL PANEL●📃💖\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
@@ -75,7 +75,7 @@ if (Config.WORKTYPE == 'private') {
                         } else {
                             HANDLER = '.';
                         }
-                        CMD_HELP += '💖 ' + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmatch[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
+                        CMD_HELP += '⚙️ ' + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmatch[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
                         if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
                         if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
                         if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
@@ -85,14 +85,14 @@ if (Config.WORKTYPE == 'private') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'💖📃●QUEEN AMDIBELL PANEL●📃💖\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'kg ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'panel ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -117,7 +117,7 @@ else if (Config.WORKTYPE == 'public') {
                     } else {
                         HANDLER = '.';
                     }
-                    CMD_HELP += '*💖 ' + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
+                    CMD_HELP += '*⚙️ ' + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
                     if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
                     if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
                     if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
@@ -126,7 +126,7 @@ else if (Config.WORKTYPE == 'public') {
             );
         
             await message.client.sendMessage(
-                message.jid,'💖📃●QUEEN AMDIBELL PANEL●📃💖\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
@@ -152,7 +152,7 @@ else if (Config.WORKTYPE == 'public') {
                         } else {
                             HANDLER = '.';
                         }
-                        CMD_HELP += '💖 ' + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmatch[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
+                        CMD_HELP += '⚙️ ' + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmatch[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
                         if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
                         if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
                         if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
@@ -162,7 +162,7 @@ else if (Config.WORKTYPE == 'public') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'💖📃●QUEEN AMDIBELL PANEL●📃💖\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));
