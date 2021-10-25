@@ -5,12 +5,12 @@
 <div align="center">
   <img src="https://i.ibb.co/QP79fy2/LOGO.jpg" width="300" height="300">      
   <h1>👸QUEEN AMDIBELL👸
-</div>
-
-        <a href="https://chat.whatsapp.comFsG75qXAN23BI4/AAH6zisn">Whatsapp Group</a> |
-        <a href="https://www.youtbe.com/channel/UCQioJ1z2MdVeK/IY7Wh9TUA">Youtube Channel</a>
+<br>
+        <a href="https://chat.whatsapp.com/LYk6el7Ief41N2ypxVqcD">Whatsapp Group</a> |
+        <a href="https://www.youtube.com/channel/UCQIo_J1z2MdVeKlY7Wh9TUA">Youtube Channel</a>
     <br>
 </p>
+
 		
 ----
 
@@ -79,7 +79,7 @@
 
 <div align="center">
 	<h1>Visit our official website to install the Whatsapp Bot :</h1>
-	<a href="https://www.amdaniwasa.com">
+	<a href="https://xzuospdrllsqzzztwyooeq-on.drv.tw/Queen%20Amdibell">
 <img src="https://images.squarespace-cdn.com/content/v1/580515742e69cfedd1fbef58/1525386767826-Z6T2PAXQD6PZJFNGY14U/ke17ZwdGBToddI8pDm48kGzbt7cz3CKX9Rsta-RdWeJZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwXPcCdCfJzTjuw7eD5qoJaUvNnrlJ7-JqE3xnP9OqaaXMr3zNNd3H5Lklmgn1mB80/getbutton.png" width="400"></br></a>
 </div>
 
