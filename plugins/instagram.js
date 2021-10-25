@@ -1,6 +1,7 @@
 /*
 # Copyright (C) 2020 MuhammedKpln.
 # edited by Vai838
+
 # WhatsAsena is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -14,6 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
+
 */
 
 const Asena = require('../events')
@@ -43,19 +45,19 @@ if (cn.WORKTYPE == 'private') {
         await message.sendMessage(infoMessage(Lang.LOADING))
 
         await axios
-          .get(`https://api.zeks.xyz/api/igstalk?apikey=fHZpP3j61LgH80BzanBm92jch1Q&username=${userName}`)
+          .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
           .then(async (response) => {
             const {
-              profile_pic,
+              profile_hd,
               username,
               bio,
-              follower,
+              followers,
               following,
               full_name,
               is_private,
             } = response.data.result
 
-            const profileBuffer = await axios.get(profile_pic, {
+            const profileBuffer = await axios.get(profile_hd, {
               responseType: 'arraybuffer',
             })
 
@@ -63,7 +65,7 @@ if (cn.WORKTYPE == 'private') {
             *${Lang.NAME}*: ${full_name}
             *${Lang.USERNAME}*: ${username}
             *${Lang.BIO}*: ${bio}
-            *${Lang.FOLLOWERS}*: ${follower}
+            *${Lang.FOLLOWERS}*: ${followers}
             *${Lang.FOLLOWS}*: ${following}
             *${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
 
@@ -94,19 +96,19 @@ else if (cn.WORKTYPE == 'public') {
         await message.sendMessage(infoMessage(Lang.LOADING))
 
         await axios
-          .get(`https://api.zeks.xyz/api/igstalk?apikey=fHZpP3j61LgH80BzanBm92jch1Q&username=${userName}`)
+          .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
           .then(async (response) => {
             const {
-              profile_pic,
+              profile_hd,
               username,
               bio,
-              follower,
+              followers,
               following,
               full_name,
               is_private,
             } = response.data.result
 
-            const profileBuffer = await axios.get(profile_pic, {
+            const profileBuffer = await axios.get(profile_hd, {
               responseType: 'arraybuffer',
             })
 
@@ -114,7 +116,7 @@ else if (cn.WORKTYPE == 'public') {
             *${Lang.NAME}*: ${full_name}
             *${Lang.USERNAME}*: ${username}
             *${Lang.BIO}*: ${bio}
-            *${Lang.FOLLOWERS}*: ${follower}
+            *${Lang.FOLLOWERS}*: ${followers}
             *${Lang.FOLLOWS}*: ${following}
             *${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
 

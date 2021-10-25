@@ -41,7 +41,7 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Copyright © 2021 | 👸Queen Amdibell👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -60,7 +60,7 @@ if (Config.WORKTYPE == 'private') {
                 .videoFilters(`${match[1]}`)
                 .save('output.jpg')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 👸Queen Amdibell👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -111,7 +111,7 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Copyright © 2021 | 👸Queen Amdibell👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
@@ -130,7 +130,7 @@ else if (Config.WORKTYPE == 'public') {
                 .videoFilters(`${match[1]}`)
                 .save('output.jpg')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | Amdibell'});
+                    await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 👸Queen Amdibell👸'});
                 });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }

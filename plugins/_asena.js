@@ -15,7 +15,7 @@ const Lang = Language.getString('_asena');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'panel ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'kg ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
             );
         
             await message.client.sendMessage(
-                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'●==============================●QUEEN AMDIBELL PANEL●==============================●\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
@@ -85,14 +85,14 @@ if (Config.WORKTYPE == 'private') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'●==============================●QUEEN AMDIBELL PANEL●==============================●\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'panel ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'kg ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -126,7 +126,7 @@ else if (Config.WORKTYPE == 'public') {
             );
         
             await message.client.sendMessage(
-                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'●==============================●QUEEN AMDIBELL PANEL●==============================●\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
@@ -162,7 +162,7 @@ else if (Config.WORKTYPE == 'public') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'💠📃 ●AMDIBELL PANEL● 📃💠\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'●==============================●QUEEN AMDIBELL PANEL●==============================●\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));

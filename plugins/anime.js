@@ -103,7 +103,7 @@ if (Config.WORKTYPE == 'private') {
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | Amdibell'})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | 👸Queen Amdibell👸'})
 
     }));
 }
@@ -197,7 +197,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | Amdibell'})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data}, {mimetype: Mimetype.png, caption: 'Copyright © 2021 | 👸Queen Amdibell👸'})
 
     }));
 }
