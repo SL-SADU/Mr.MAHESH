@@ -9,7 +9,7 @@
         <a href="https://chat.whatsapp.com/LYk6el7Ief41NpxVqcD">Whatsapp Group</a> |
         <a href="https://www.youtube.com/channel/UCQIo_J1z2MdVeKlY7Wh9TUA">Youtube Channel</a>
     <br>
-</p>
+
 
 
 <p align="center">
