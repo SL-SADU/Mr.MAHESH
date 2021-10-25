@@ -17,8 +17,8 @@
 <div align="center">
 	<h1>Queen Amdibell bot setup</h1>
 	<a href="https://xzuospdrllsqzzztwyooeq-on.drv.tw/Queen%20Amdibell">
-<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FBlackAmda%2FQueenAmdi&count_bg=%2379C83D&title_bg=%23555555&icon=gitpod.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false" alt="Views"/></a>
-	
+<img src="https://images.squarespace-cdn.com/content/v1/580515742e69cfedd1fbef58/1525386767826-Z6T2PAXQD6PZJFNGY14U/ke17ZwdGBToddI8pDm48kGzbt7cz3CKX9Rsta-RdWeJZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwXPcCdCfJzTjuw7eD5qoJaUvNnrlJ7-JqE3xnP9OqaaXMr3zNNd3H5Lklmgn1mB80/getbutton.png" width="400"></br></a>
+</div>
 ----
 ##
 <p align="center">
