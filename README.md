@@ -4,7 +4,7 @@
 
 <div align="center">
   <img src="https://i.ibb.co/QP79fy2/LOGO.jpg" width="300" height="300">      
-  <h1>👸QUEEN AMDIBELL👸
+  <h1>👸QUEEN AMDIBELL👸</h1>
 
 	  
 <p align="center">
