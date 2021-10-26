@@ -72,7 +72,7 @@
             "MUST_TEXT": "```කරුණාකර ඕනෑම පණිවිඩයකට tag දෙන්න```"
         },
         "heroku": {
-            "RESTART_DESC": "Amdibell නැවත ආරම්භ කරන්න",
+            "RESTART_DESC": "Queen Amdi නැවත ආරම්භ කරන්න",
             "RESTART_MSG": "```Restarting...```",
             "SHUTDOWN_DESC": "Shutdown",
             "SHUTDOWN_MSG": "```Shutting down ⛔```",
@@ -213,7 +213,7 @@
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
             "UPDATED": "*✅ Successfully Updated!*",
             "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "*💬 Amdibell Restarting Automatically!*"
+            "AFTER_UPDATE": "*💬 Queen amdi Restarting Automatically!*"
         },
         "weather": {
             "WEATHER_DESC": "කාලගුණය පෙන්වයි.",
@@ -360,7 +360,7 @@
         "deepai": {
             "DEEPAI_DESC": "කෘතිම ස්නායුක ජාල භාවිතා කරමින් වඩාත් ප්‍රබල කෘතිම බුද්ධි මෙවලම් ධාවනය කරයි.",
             "TEXT": "*You must enter text! Although I am a powerful artificial intelligence, I cannot read your thoughts!*",
-            "URL": "*You must enter the image URL!*\n*Example:* https://i.ibb.co/QP79fy2/LOGO.jpg"
+            "URL": "*You must enter the image URL!*\n*Example:* https://i.ibb.co/5rt16dP/Queen-Amdi.jpg"
         },
         "ttp": {
             "TTP_DESC": "Text සරල image බවට පරිවර්තනය කරයි.",
@@ -413,7 +413,7 @@
             "NOT_FOUND":"User not found: "
         },
         "github": {
-            "GİTHUB_DESC": "දී ඇති පරිශීලක නාමයෙන් github තොරතුරු රැස් කරයි.\n⌨️ Example: .github kgamdaofficial",
+            "GİTHUB_DESC": "දී ඇති පරිශීලක නාමයෙන් github තොරතුරු රැස් කරයි.\n⌨️ Example: .github BlackAmda",
             "REPLY": "```You Need To Type Any Username!```",
             "NOT": "```User not found!```",
             "FOLLOWERS": "Followers:",
