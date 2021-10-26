@@ -55,7 +55,7 @@ if (Config.WORKTYPE == 'private') {
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | 👸💖QUEEN AMDIBELL💖👸'});
             await info.delete();    
         });
     }));
@@ -99,7 +99,7 @@ else if (Config.WORKTYPE == 'public') {
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | Queen Amdi-ᴮʸ ᴮˡᵃᶜᵏ ᴬᵐᵈᵃ'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('ammo-meme.png'), MessageType.image, {filename: 'ammo-meme.png', mimetype: Mimetype.png, caption: 'Copyright © 2021 | 👸💖QUEEN AMDIBELL💖👸'});
             await info.delete();    
         });
     }));
