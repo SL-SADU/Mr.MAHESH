@@ -3,12 +3,12 @@
     "description": "Amdibell is a chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.",
     "logo": "https://i.ibb.co/QP79fy2/LOGO.jpg",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai", "Amdibell"],
-    "repository": "https://github.com/kgamdaofficial/Amdibell",
-    "website":   "https://www.youtbe.com/channel/UCQioJ1z2MdVeK/IY7Wh9TUA",
-    "success_url": "https://chat.whatsapp.comFsG75qXAN23BI4/AAH6zisn",
+    "repository": "https://github.com/Kgamdaofficial/Amdibell",
+    "website":   "https://chat.whatsapp.comFsG75qXAN23BI4/AAH6zisn",
+    "success_url": "https://www.youtube.com/channel/UCQIo_J1z2MdVeKlY7Wh9TUA",
     "stack": "container",
     "env": {
-        "ASENA_SESSION": {
+        "AMDI_SESSION": {
             "description": "Qr කේතය scan කළ පසුව ලැබෙන කේතයන්",
             "required": true
         },
