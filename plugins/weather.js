@@ -1,12 +1,12 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2020 KgAmda.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+Amdibell - KgAmda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 const Config = require('../config');
@@ -17,7 +17,7 @@ const Lang = Language.getString('weather');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'weather ?(.*)', desc: Lang.WEATHER_DESC, fromMe: true}, async (message, match) => {
+    Amdi.addCommand({pattern: 'weather ?(.*)', desc: Lang.WEATHER_DESC, fromMe: true}, async (message, match) => {
 
             if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -42,7 +42,7 @@ if (Config.WORKTYPE == 'private') {
 }
 if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'weather ?(.*)', desc: Lang.WEATHER_DESC, fromMe: false}, async (message, match) => {
+    Amdi.addCommand({pattern: 'weather ?(.*)', desc: Lang.WEATHER_DESC, fromMe: false}, async (message, match) => {
 
             if (message.jid === '905524317852-1612300121@g.us') {
 

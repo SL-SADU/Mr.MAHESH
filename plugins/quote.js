@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 
@@ -9,7 +9,7 @@ const QUOTE = "Quote :"
 const AUTHOR = "Author :"
 const NOT_FOUNDA = "```Sorry,I could not find a quote. 😖```"
 
-Asena.addCommand({pattern: 'quote ?(.*)', fromMe: false, desc: QUOTE_DESC}, async (message, match) => {
+Amdi.addCommand({pattern: 'quote ?(.*)', fromMe: false, desc: QUOTE_DESC}, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(NEED_LOCATIONA);
 	const url = `https://api.quotable.io/random`;
 	try {

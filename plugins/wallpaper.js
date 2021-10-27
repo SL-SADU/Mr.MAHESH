@@ -1,12 +1,12 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
+/* Copyright (C) 2020 KgAmda.
 
-Special Thanks:
-@Unique_hunter for Helps
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+Amdibell - KgAmda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
@@ -16,7 +16,7 @@ const Lang = Language.getString('wallpaper');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'wallpaper', fromMe: true, desc: Lang.WP}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'wallpaper', fromMe: true, desc: Lang.WP}, (async (message, match) => {
 
         var r_text = new Array ();
 
@@ -651,7 +651,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'wallpaper', fromMe: false, desc: Lang.WP}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'wallpaper', fromMe: false, desc: Lang.WP}, (async (message, match) => {
 
         var r_text = new Array ();
 

@@ -2,12 +2,12 @@
 # Copyright (C) 2020 MuhammedKpln.
 # edited by Vai838
 
-# WhatsAsena is free software: you can redistribute it and/or modify
+# Amdibell is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# WhatsAsena is distributed in the hope that it will be useful,
+# Amdibell is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
@@ -18,7 +18,7 @@
 
 */
 
-const Asena = require('../events')
+const Amdi = require('../events')
 const { MessageType } = require('@adiwajshing/baileys')
 const axios = require('axios')
 const cn = require('../config');
@@ -30,7 +30,7 @@ const Lang = Language.getString('instagram')
 
 if (cn.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'readig ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+   Amdi.addCommand({ pattern: 'readig ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -81,7 +81,7 @@ if (cn.WORKTYPE == 'private') {
 }
 else if (cn.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'readig ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+   Amdi.addCommand({ pattern: 'readig ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 

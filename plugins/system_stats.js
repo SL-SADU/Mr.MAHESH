@@ -1,14 +1,12 @@
-/* Copyright (C) 2020 TOXIC DEVIL
-
-CODDED BY TOXIC DEVIL
+/* Copyright (C) 2020 KgAmda.
 
 Licensed under the  GPL-3.0 License;
-
 you may not use this file except in compliance with the License.
-WhatsAsenaPublic - TOXIC DEVIL
+
+Amdibell - KgAmda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
 const Config = require('../config');
@@ -21,7 +19,7 @@ const Lang = Language.getString('system_stats');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             
@@ -38,7 +36,7 @@ if (Config.WORKTYPE == 'private') {
      }
     }));
 
-    Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -53,7 +51,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             
@@ -70,7 +68,7 @@ else if (Config.WORKTYPE == 'public') {
      }
     }));
 
-    Asena.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 

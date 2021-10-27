@@ -1,11 +1,12 @@
-/* Codded by @TOXIC-DEVIL
-Telegram: t.me/toxicdevil
-Instagram: www.instagram.com/toxic_devil_abhinav
-Special Thanks:
-@Phaticusthiccy for Unlimitted Helps
+/* Copyright (C) 2020 KgAmda.
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+Amdibell - KgAmda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
@@ -15,7 +16,7 @@ const Lang = Language.getString('anime');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'ranime ?(.*)', fromMe: true, desc: Lang.AN}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'ranime ?(.*)', fromMe: true, desc: Lang.AN}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -109,7 +110,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'ranime ?(.*)', fromMe: false, desc: Lang.AN}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'ranime ?(.*)', fromMe: false, desc: Lang.AN}, (async (message, match) => {
 
     var r_text = new Array ();
 

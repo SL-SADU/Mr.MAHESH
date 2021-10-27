@@ -1,13 +1,12 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2020 KgAmda.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
-Coded by @KursadHD
+Amdibell - KgAmda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const memeMaker = require('meme-maker')
 const fs = require('fs')
@@ -18,7 +17,7 @@ const Lang = Language.getString('memes');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
+    Amdi.addCommand({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -62,7 +61,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC}, (async (message, match) => {    
+    Amdi.addCommand({pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 

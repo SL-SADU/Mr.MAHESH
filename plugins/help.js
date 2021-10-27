@@ -1,8 +1,11 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
+/* Copyright (C) 2020 KgAmda.
 
-const Asena = require('../events');
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+Amdibell - KgAmda
+
+const Amdi = require('../events');
 const {MessageType, MessageOptions} = require('@adiwajshing/baileys');
 const Config = require('../config');
 
@@ -27,7 +30,7 @@ const sudoEN = "SUDO, Shares your bot to the user you choose with all its powers
 
 if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
     
-    Asena.addCommand({pattern: 'help ?(.*)', fromMe: true, desc: h_Des}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'help ?(.*)', fromMe: true, desc: h_Des}, (async (message, match) => {
 
         if (match[1] === '') {
             return await message.client.sendMessage(
@@ -75,7 +78,7 @@ if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
 }
 else {
     
-    Asena.addCommand({pattern: 'help ?(.*)', fromMe: true, desc: h_DedEN}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'help ?(.*)', fromMe: true, desc: h_DedEN}, (async (message, match) => {
 
         if (match[1] === '') {
             return await message.client.sendMessage(

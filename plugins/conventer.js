@@ -1,9 +1,12 @@
-/*Codded by @phaticusthiccy
-Telegram: https://t.me/phaticusthiccy
-Instagram: https://instagram.com/kyrie.baran
+/* Copyright (C) 2020 KgAmda.
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+Amdibell - KgAmda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
@@ -16,7 +19,7 @@ const Lang = Language.getString('conventer');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'mp4audio', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    Amdi.addCommand({pattern: 'mp4audio', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -42,7 +45,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    Asena.addCommand({pattern: 'imagesticker', fromMe: true, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
+    Amdi.addCommand({pattern: 'imagesticker', fromMe: true, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -70,7 +73,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'mp4audio', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    Amdi.addCommand({pattern: 'mp4audio', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -96,7 +99,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    Asena.addCommand({pattern: 'imagesticker', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
+    Amdi.addCommand({pattern: 'imagesticker', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 

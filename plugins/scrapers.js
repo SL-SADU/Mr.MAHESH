@@ -1,12 +1,12 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2020 KgAmda.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+Amdibell - KgAmda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
@@ -43,7 +43,7 @@ var gis = require('g-i-s');
 
 if (config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -64,7 +64,7 @@ if (config.WORKTYPE == 'private') {
         }
     }));
 
-    Asena.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -94,7 +94,7 @@ if (config.WORKTYPE == 'private') {
         }
     }));
 
-    Asena.addCommand({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -125,7 +125,7 @@ if (config.WORKTYPE == 'private') {
         await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
     }));
 
-    Asena.addCommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -163,7 +163,7 @@ if (config.WORKTYPE == 'private') {
             });
     }));
 
-    Asena.addCommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -189,7 +189,7 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
-    Asena.addCommand({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -214,7 +214,7 @@ if (config.WORKTYPE == 'private') {
         await reply.delete();
     }));
 
-    Asena.addCommand({pattern: 'wiki ?(.*)', fromMe: true, desc: Lang.WIKI_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'wiki ?(.*)', fromMe: true, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -232,7 +232,7 @@ if (config.WORKTYPE == 'private') {
         await reply.delete();
     }));
 
-    Asena.addCommand({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -254,7 +254,7 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
-    Asena.addCommand({ pattern: 'github ?(.*)', fromMe: true, desc: Glang.GİTHUB_DESC }, async (message, match) => {
+    Amdi.addCommand({ pattern: 'github ?(.*)', fromMe: true, desc: Glang.GİTHUB_DESC }, async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -307,7 +307,7 @@ if (config.WORKTYPE == 'private') {
 }
 else if (config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -328,7 +328,7 @@ else if (config.WORKTYPE == 'public') {
         }
     }));
 
-    Asena.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: false}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: false}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -358,7 +358,7 @@ else if (config.WORKTYPE == 'public') {
         }
     }));
 
-    Asena.addCommand({pattern: 'tts (.*)', fromMe: false, desc: Lang.TTS_DESC}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'tts (.*)', fromMe: false, desc: Lang.TTS_DESC}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -389,7 +389,7 @@ else if (config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
     }));
 
-    Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -427,7 +427,7 @@ else if (config.WORKTYPE == 'public') {
             });
     }));
 
-    Asena.addCommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -453,7 +453,7 @@ else if (config.WORKTYPE == 'public') {
         });
     }));
 
-    Asena.addCommand({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -478,7 +478,7 @@ else if (config.WORKTYPE == 'public') {
         await reply.delete();
     }));
 
-    Asena.addCommand({pattern: 'wiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'wiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -496,7 +496,7 @@ else if (config.WORKTYPE == 'public') {
         await reply.delete();
     }));
 
-    Asena.addCommand({pattern: 'img ?(.*)', fromMe: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'img ?(.*)', fromMe: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -518,7 +518,7 @@ else if (config.WORKTYPE == 'public') {
         });
     }));
 
-    Asena.addCommand({ pattern: 'github ?(.*)', fromMe: false, desc: Glang.GİTHUB_DESC }, async (message, match) => {
+    Amdi.addCommand({ pattern: 'github ?(.*)', fromMe: false, desc: Glang.GİTHUB_DESC }, async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 

@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
@@ -9,7 +9,7 @@ const SPDF_DESC = "Converts a Site into PDF"
 const SPDF_PROC = "```Converting Site into PDF```"
 const SPDF_LINK = "*Must Enter a URL*"
 
-Asena.addCommand({pattern: 'spdf ?(.*)', fromMe: false, desc: SPDF_DESC }, (async (message, match) => {
+Amdi.addCommand({pattern: 'spdf ?(.*)', fromMe: false, desc: SPDF_DESC }, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(SPDF_LINK);
 

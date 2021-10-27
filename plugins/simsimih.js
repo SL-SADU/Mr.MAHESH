@@ -1,10 +1,12 @@
-/* Copyright (C) 2021 Vai838.
+/* Copyright (C) 2020 KgAmda.
+
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAsenaDuplicated
+
+Amdibell - KgAmda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 
@@ -14,7 +16,7 @@ const BOT = ":"
 const NOT_FOUNDAC = "*Invaild Request*"
 const NEED_LOCATIONA = "*Invaild Request*"
 
-Asena.addCommand({pattern: 'bot ?(.*)', fromMe: false, desc: BOT_DESC}, async (message, match) => {
+Amdi.addCommand({pattern: 'bot ?(.*)', fromMe: false, desc: BOT_DESC}, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(NEED_LOCATIONA);
 	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 	try {

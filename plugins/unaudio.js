@@ -1,15 +1,12 @@
-/* Copyright (C) 2020 TOXIC DEVIL
-
-CODDED BY TOXIC DEVIL
+/* Copyright (C) 2020 KgAmda.
 
 Licensed under the  GPL-3.0 License;
-
 you may not use this file except in compliance with the License.
-WhatsAsenaPublic - TOXIC DEVIL
 
+Amdibell - KgAmda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
@@ -22,7 +19,7 @@ const UA_DESC = "Converts sound recording to an audio File."
 const UA_NEEDREPLY = "*Must Reply to a sound recording*"
 const UA_PROC = "```Converting Sound recording To an Audio File```"
 
-    Asena.addCommand({pattern: 'unaudio', fromMe: true, desc: UA_DESC}, (async (message, match) => {    
+    Amdi.addCommand({pattern: 'unaudio', fromMe: true, desc: UA_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 

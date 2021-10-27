@@ -1,21 +1,19 @@
-/* Copyright (C) 2020 TOXIC DEVIL
-
-CODDED BY TOXIC DEVIL
+/* Copyright (C) 2020 KgAmda.
 
 Licensed under the  GPL-3.0 License;
-
 you may not use this file except in compliance with the License.
-WhatsAsenaPublic - TOXIC DEVIL
+
+Amdibell - KgAmda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const config = require('../config');
 const fs = require('fs');
 const https = require('https');
 const googleTTS = require('google-translate-tts');
 
-Asena.addCommand({pattern: 'tta (.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Amdi.addCommand({pattern: 'tta (.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
     if(match[1] === undefined || match[1] == "")
         return;
     

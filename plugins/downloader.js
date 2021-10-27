@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 const fs = require('fs');
@@ -11,7 +11,7 @@ const LOADING = "වීඩියෝ බාගත කිරීම..."
 const NOT_FOUNDFB = "වීඩියෝව හමු නොවීය"
 const CAPTION = "Caption"
 
-Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => {
+Amdi.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => {
 
     const userName = match[1]
 
@@ -50,7 +50,7 @@ Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (me
 
 
 
-Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async (message, match) => {
+Amdi.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async (message, match) => {
 
     const userName = match[1]
 

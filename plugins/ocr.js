@@ -1,13 +1,12 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2020 KgAmda.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
-Thanks to github/@justinthoms for base and helps.
+Amdibell - KgAmda
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 const tesseract = require("node-tesseract-ocr")
@@ -17,7 +16,7 @@ const Lang = Language.getString('ocr');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'ocr ?(.*)', fromMe: true, desc: Lang.OCR_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'ocr ?(.*)', fromMe: true, desc: Lang.OCR_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -59,7 +58,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'ocr ?(.*)', fromMe: false, desc: Lang.OCR_DESC}, (async (message, match) => { 
+    Amdi.addCommand({pattern: 'ocr ?(.*)', fromMe: false, desc: Lang.OCR_DESC}, (async (message, match) => { 
 
         if (message.jid === '905524317852-1612300121@g.us') {
 

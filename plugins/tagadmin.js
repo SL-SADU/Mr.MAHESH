@@ -1,9 +1,9 @@
-const Asena = require('../events');
+const Amdi = require('../events');
 const TAGADMİN = "Tags group admins."
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
 
-    Asena.addCommand({pattern: 'tagadmin', fromMe: false, desc: TAGADMİN}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'tagadmin', fromMe: false, desc: TAGADMİN}, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';

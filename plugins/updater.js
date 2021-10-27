@@ -1,14 +1,14 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2020 KgAmda.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+Amdibell - KgAmda
 */
 
 const simpleGit = require('simple-git');
 const git = simpleGit();
-const Asena = require('../events');
+const Amdi = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
 const exec = require('child_process').exec;
@@ -20,7 +20,7 @@ const Language = require('../language');
 const Lang = Language.getString('updater');
 
 
-Asena.addCommand({pattern: 'update now', fromMe: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
+Amdi.addCommand({pattern: 'update now', fromMe: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -43,7 +43,7 @@ Asena.addCommand({pattern: 'update now', fromMe: true, desc: Lang.UPDATER_DESC},
     }
 }));
 
-Asena.addCommand({pattern: 'update now', fromMe: true, desc: Lang.UPDATE_NOW_DESC, dontAddCommandList: true}, (async (message, match) => {
+Amdi.addCommand({pattern: 'update now', fromMe: true, desc: Lang.UPDATE_NOW_DESC, dontAddCommandList: true}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
