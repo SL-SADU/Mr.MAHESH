@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kgamdaofficial/Amdibell.git"
+    "url": "git+https://github.com/BlackSuis/Amdibell.git"
   },
   "keywords": [
     "whatsapp"
   ],
-  "author": "AmdiDev / KgAmda",
-  "developer": "AmdiuDev / @kgamdaofficial",
+  "author": "AmdiDev / BlackSuis",
+  "developer": "AmdiDev / @BlackSuis",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/kgamdaofficial/Amdibell/issues"
+    "url": "https://github.com/BlackSuis/Amdibell/issues"
   },
-  "homepage": "https://github.com/kgamdaofficial/Amdibell#readme",
+  "homepage": "https://github.com/BlackSuis/Amdibell#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.4.1",
     "@lh2020/speedtest-net": "^2.1.1",
