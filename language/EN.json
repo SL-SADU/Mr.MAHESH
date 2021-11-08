@@ -433,16 +433,6 @@
             "HİRE": "Can s/he Hirable?:",
             "URL": "Profile URL:",
             "UPDATE": "Last Update:"
-            },
-        "info": {
-            "INFO_DESC": "අදාළ chatහි විස්තර පතක් සපයයි.",
-            "GRP_NAME": "*ℹ️ කණ්ඩායම් නම :*",
-            "GRP_JID": "*💬 කණ්ඩායම් JID අංකය :*",
-            "GRP_OWN": "*⚜️ කණ්ඩායම අයිතිය :*",
-            "GRP_COD": "*🆔 කණ්ඩායම් කේතය :*",
-            "GRP_DES": "*🗨️ කණ්ඩායම් විස්තරය :*",
-            "PRO_JID": "*💬 User JID අංකය :*",
-            "PRO_DES": "*🗨️ විස්තරය :*"
         }
     }
 }
