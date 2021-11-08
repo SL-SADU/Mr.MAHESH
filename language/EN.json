@@ -205,15 +205,15 @@
             "ADMİN": "*මම මෙම කණ්ඩායමේ admin නොවේ!*"
         },
         "updater": {
-            "UPDATER_DESC": "Checks the update.",
-            "UPDATE": "*Your bot is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for Bot!*\n\nChanges:\n```",
-            "UPDATE_NOW_DESC": "It makes updates.",
+            "UPDATER_DESC": "යාවත්කාලීනය පරීක්ෂා කරයි.",
+            "UPDATE": "*✅ඔබේ බොට් සම්පූර්ණයෙන්ම යාවත්කාලීනයි!*",
+            "NEW_UPDATE": "*Bot සඳහා නව යාවත්කාලීන තිබේ!*\n\nවෙනස් කිරීම්:\n```",
+            "UPDATE_NOW_DESC": "එය යාවත්කාලීන කරයි.",
             "UPDATING": "_Updating..._",
-            "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
-            "UPDATED": "*✅ Successfully Updated!*",
-            "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "*💬 Amdibell Restarting Automatically!*"
+            "INVALID_HEROKU": "*❌ ඔබේ Heroku තොරතුරු වැරදියි!*",
+            "UPDATED": "*✅ සාර්ථකව යාවත්කාලීන කරන ලදී!*",
+            "UPDATED_LOCAL": "*✅ සාර්ථකව යාවත්කාලීන කරන ලදී!*",
+            "AFTER_UPDATE": "*💬 Amdibell ස්වයංක්‍රීයව නැවත ආරම්භ කිරීම!!*"
         },
         "weather": {
             "WEATHER_DESC": "කාලගුණය පෙන්වයි.",
