@@ -210,7 +210,7 @@ if (config.WORKTYPE == 'private') {
             mesaj += '*' + video.title + '* - ' + video.url + '\n'
         });
 
-        await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
+        await message.client.sendMessage(message.jid, '*❖ Amdibell Search Engine ❖*\n' + Lang.YTS + '\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n' + ytgot,MessageType.text, {quoted: message.data});
         await reply.delete();
     }));
 
