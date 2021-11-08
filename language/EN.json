@@ -12,18 +12,18 @@
             "WARN": "අවවාදයයි"
         },
         "_plugin": {
-            "INSTALL_DESC": "Install external plugins.",
-            "NEED_URL": "Please enter a URL! Example:",
-            "INVALID_URL": "```Please enter a valid url!```",
-            "INVALID_PLUGIN": "*❌ Your plugin is invalid!*\n*Error:*",
-            "INSTALLED": "*✅ Plugin has been successfully installed!*",
-            "PLUGIN_DESC": "Shows the plugins you have installed.",
-            "INSTALLED_FROM_REMOTE": "*Plugins you install externally:*\n",
-            "NO_PLUGIN": "*You have not installed any external plugins!*",
-            "REMOVE_DESC": "Removes the plugin.",
-            "NEED_PLUGIN": "```Please enter a Plugin! Example: .plugin __test```",
-            "NOT_FOUND_PLUGIN": "```Maybe you have installed such a plugin, or maybe not. But it sure isn't right now.```",
-            "DELETED": "*✅ Module successfully deleted!*"
+            "INSTALL_DESC": "බාහිර ප්ලගීන ස්ථාපනය කරන්න.",
+            "NEED_URL": "බාහිර ප්ලගීන ස්ථාපනය කරන්න.",
+            "INVALID_URL": "```වලංගු URL එක ඇතුලත් කරන්න!```",
+            "INVALID_PLUGIN": "*❌ ඔබගේ ප්ලගිනය වලංගු නොවේ!*\n*දෝෂය:*",
+            "INSTALLED": "*✅ ප්ලගිනය සාර්ථකව ස්ථාපනය කර ඇත!*",
+            "PLUGIN_DESC": "ඔබ ස්ථාපනය කර ඇති ප්ලගීන පෙන්වයි.",
+            "INSTALLED_FROM_REMOTE": "*ඔබ බාහිරව ස්ථාපනය කරන ප්ලගීන:*\n",
+            "NO_PLUGIN": "*ඔබ බාහිර ප්ලගින කිසිවක් ස්ථාපනය කර නැත!*",
+            "REMOVE_DESC": "ප්ලගිනය ඉවත් කරයි.",
+            "NEED_PLUGIN": "```කරුණාකර ප්ලගිනයක් ඇතුළු කරන්න! උදාහරණය: .plugin __test```",
+            "NOT_FOUND_PLUGIN": "```සමහර විට ඔබ එවැනි ප්ලගිනයක් ස්ථාපනය කර ඇත, නැතහොත් සමහරවිට නොවේ. නමුත් දැන් එය නිවැරදි නොවන බව සහතිකයි.```",
+            "DELETED": "*✅ මොඩියුලය සාර්ථකව මකා ඇත!*"
         },
         "admin": {
             "BAN_DESC": "කණ්ඩායමේ කෙනෙකු ඉවත් කරන්න. පණිවිඩයට පිළිතුරු දෙන්න හෝ විධානය භාවිතා කිරීමට පුද්ගලයෙකු ටැග් කරන්න.",
@@ -69,26 +69,26 @@
         "nekobin": {
             "NEKO_DESC": "පිළිතුරු දුන් පණිවිඩ nekobin.com වෙත එක් කරනු ඇත.",
             "NEED_REPLY": "```කරුණාකර පණිවිඩයකට tag දෙන්න!```",
-            "MUST_TEXT": "```කරුණාකර ඕනෑම පණිවිඩයකට tag දෙන්න```"
+            "MUST_TEXT": "```කරුණාකර ඕනෑම පණිවිඩයකට tag දෙන්න.```"
         },
         "heroku": {
             "RESTART_DESC": "Amdibell නැවත ආරම්භ කරන්න",
-            "RESTART_MSG": "```Restarting...```",
-            "SHUTDOWN_DESC": "Shutdown",
-            "SHUTDOWN_MSG": "```Shutting down ⛔```",
-            "DYNO_DESC": "Check heroku dyno usage",
+            "RESTART_MSG": "``නැවත ආරම්භ කිරීම...```",
+            "SHUTDOWN_DESC": "Bot වසා දමන්න.",
+            "SHUTDOWN_MSG": "```Amdibell වසා දමන ලදී.⛔```",
+            "DYNO_DESC": "Heroku dyno භාවිතය පරීක්ෂා කරන්න.",
             "DYNO_TOTAL": "```Total Quota```",
             "DYNO_USED": "```Quota used```",
             "PERCENTAGE": "```Percentage```",
             "DYNO_LEFT": "```Remaining```",
-            "SETVAR_DESC": "Set heroku config var",
-            "SET_SUCCESS": "Successfully set ```{} ➜ {}```",
-            "KEY_VAL_MISSING": "```Either Key or Value is missing```",
-            "INVALID": "```Invalid key:value format```",
-            "GETVAR_DESC": "Get heroku config var",
-            "DELVAR_DESC": "Delete heroku config var",
-            "DEL_SUCCESS": "```{} successfully deleted```",
-            "NOT_FOUND": "```no results found for this key```"           
+            "SETVAR_DESC": "Heroku config var සකසන්න.",
+            "SET_SUCCESS": "සාර්ථකව සකසා ඇත ```{} ➜ {}```",
+            "KEY_VAL_MISSING": "```යතුර හෝ අගය අස්ථානගත වී ඇත.```",
+            "INVALID": "```වලංගු නොවන යතුර:අගය ආකෘතිය.```",
+            "GETVAR_DESC": "Heroku config var ලබා ගන්න.",
+            "DELVAR_DESC": "Heroku config var මකන්න.",
+            "DEL_SUCCESS": "```{} සාර්ථකව මකා දමන ලදී.```",
+            "NOT_FOUND": "```මෙම යතුර සඳහා ප්‍රතිඵල කිසිවක් හමු නොවීය.```"           
         },
         "filters": {
             "FILTER_DESC": "එය filters එක් කරයි. කවුරුහරි ඔබේ filters ලියන්නේ නම්, එය පිළිතුර යවයි. ඔබ .filter ලියන්නේ නම්, එය ඔබගේ filters ලැයිස්තුව පෙන්වයි.",
@@ -229,7 +229,7 @@
         "web": {
             "SPEEDTEST_DESC": "Download කිරීම සහ Upload කිරීමේ වේගය මැනීම.",
             "SPEEDTESTING": "```Running speed test...```",
-            "SPEEDTEST_RESULT": "*Speed ​​test completed!*",
+            "SPEEDTEST_RESULT": "*වේගය ​​පරීක්ෂණය අවසන්!*",
             "UPLOAD": "Upload",
             "DOWNLOAD": "Download",
             "PING_DESC": "ඔබේ ping මැනීම.",
