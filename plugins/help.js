@@ -5,7 +5,7 @@ Instagram: www.instagram.com/kyrie.baran
 const Asena = require('../events');
 const {MessageType, MessageOptions} = require('@adiwajshing/baileys');
 const Config = require('../config');
-*/
+
 
 // ==================== MAIN DESCRIPTION TEXT ====================
 const h_Des = "Yardım menüsünden botu kullanım hakkında bilgi verir."
@@ -121,4 +121,4 @@ else {
             );
         }
     }));
-} 
+} */
