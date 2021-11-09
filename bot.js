@@ -148,7 +148,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
         await new Promise(r => setTimeout(r, 1100));
 
         if (config.WORKTYPE == 'public') {
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+            if (infosi !== '' && config.LANG == 'SI') {
 
                 if (conn.user.jid === '@s.whatsapp.net') {
 
@@ -196,7 +196,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
             }
         }
         else if (config.WORKTYPE == 'private') {
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+            if (infosi !== '' && config.LANG == 'SI') {
 
                 if (conn.user.jid === '@s.whatsapp.net') {
 
@@ -331,7 +331,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                         try {
                             await command.function(whats, match);
                         } catch (error) {
-                            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+                            if (infosi !== '' && config.LANG == 'SI') {
                                 await conn.sendMessage(conn.user.jid, '*📵 දෝෂ වාර්තාව [AMDI_BELL] 📵*' + 
                                     '\n*Bot දෝෂයක් සිදුවී ඇත!*'+
                                     '\n_මෙම දෝෂ logs ඔබගේ අංකය හෝ ප්‍රති පාර්ශ්වයේ අංකය අඩංගු විය හැකිය. කරුණාකර එය සමග සැලකිලිමත් වන්න!_' +
