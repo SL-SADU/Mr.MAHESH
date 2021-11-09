@@ -1,584 +1,176 @@
-const Asena = require('../events');
+/* Copyright (C) 2021 Queen Amdi.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+Queen Amdi - Black Amda
+*/
+
+const Amdi = require('../events');
 const Config = require('../config');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const fs = require('fs');
-const axios = require('axios');
+const {MessageType} = require('@adiwajshing/baileys');
 
-// LIST
-const EFFECT_DESC = "Text effective රූප බවට පරිවර්තනය කිරීම සඳහා විධාන කට්ටලයක්."
-const NEED_WORD = "*ඔබ වචනයක් ඇතුළත් කළ යුතුය*"
+const Language = require('../language');
+const Lang = Language.getString('scrapers');
 
-if (Config.WORKTYPE == 'private') {
+const sin = `💠📃 ● *Text සිට Image Effect List* ● 📃💠\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n` + 
+`⚙️විධානය: *.glitch*\nℹ️විස්තර: Text සිට Tiktok glitch effect.\n_(Ex: .glitch Queen;Amdi)_\n\n` + 
+`⚙️විධානය: *.pemoji*\nℹ️විස්තර: Emoji සිට පින්තූරයට.\n\n` + 
+`⚙️විධානය: *.hacker*\nℹ️විස්තර: ඔබේ නම සමඟ hacker wallpaper සෑදීම.\n\n` + 
+`⚙️විධානය: *.matrix*\nℹ️විස්තර: ඔබේ නම සමඟ matrix wallpaper සෑදීම.\n\n` + 
+`⚙️විධානය: *.hbd*\nℹ️විස්තර: ඔබේ නම සමඟ උපන්දින කේක් එකක් සෑදීම.\n\n` + 
+`⚙️විධානය: *.gaming*\nℹ️විස්තර: ඔබේ නම සමඟ gaming logo සෑදීම.\n\n` + 
+`⚙️විධානය: *.fpslogo*\nℹ️විස්තර: ඔබේ නම සමඟ fps gaming logo සෑදීම.\n\n` + 
+`⚙️විධානය: *.sand*\nℹ️විස්තර: ඔබේ text සමඟ sand summer effect wallpaper සෑදීම.\n\n` + 
+`⚙️විධානය: *.holo*\nℹ️විස්තර: ඔබේ text සඳහා holographic effect wallpaper සෑදිය හැකිය.\n\n` + 
+`⚙️විධානය: *.shadow*\nℹ️විස්තර: ඔබේ text සඳහා සෙවනැලි effect wallpaper සෑදිය හැකිය.\n\n` + 
+`⚙️විධානය: *.grafiti*\nℹ️විස්තර: ඔබේ text සඳහා grafiti wallpaper සෑදිය හැකිය.\n\n` + 
+`⚙️විධානය: *.cup*\nℹ️විස්තර: ඔබට ඔබේ text කෝප්පයක් මත ටයිප් කළ හැකිය.\n\n` + 
+`⚙️විධානය: *.sad*\nℹ️විස්තර: ඔබට ඔබේ text glass මත ටයිප් කළ හැකිය.\n\n` + 
+`⚙️විධානය: *.wolfm*\nℹ️විස්තර: ලෝහමය වෘක බැනරයකින් ඔබේ text ටයිප් කළ හැකිය.\n\n` + 
+`⚙️විධානය: *.wflogo*\nℹ️විස්තර: වෘක logo ඔබේ text ටයිප් කළ හැකිය.\n\n` + 
+`⚙️විධානය: *.naruto*\nℹ️විස්තර: Naruto themed බැනරයකින් ඔබේ text ටයිප් කළ හැකිය.\n\n` + 
+`⚙️විධානය: *.fflogo*\nℹ️විස්තර: ඔබේ නම සමඟ Free Fire logo සෑදීම.\n\n` + 
+`⚙️විධානය: *.flame*\nℹ️විස්තර: ඔබට ඔබේ text ගිනිදැල් බවට පත් කළ හැකිය.\n\n` + 
+`⚙️විධානය: *.avenger*\nℹ️විස්තර: ඔබේ නම සමඟ Avengers logo සෑදීම.\n_(Ex: .avenger Queen/Amdi)_\n\n` + 
+`⚙️විධානය: *.harry*\nℹ️විස්තර: ඔබට හැරීපොටර් වර්ගයේ logo සෑදිය හැකිය.\n\n` + 
+`⚙️විධානය: *.dota*\nℹ️විස්තර: ඔබේ නම සමඟ DOTA logo සෑදිය හැකිය.\n\n` + 
+`⚙️විධානය: *.lol*\nℹ️විස්තර: ඔබේ නම සමඟ LEAGUE OF LEGENDS logo සෑදිය හැකිය.\n\n` + 
+`⚙️විධානය: *.aov*\nℹ️විස්තර: ඔබේ නම සමඟ Arena Of Valor logo සෑදිය හැකිය.\n\n` + 
+`⚙️විධානය: *.ml*\nℹ️විස්තර: ඔබේ නම සමඟ Mobile Legends logo සෑදිය හැකිය.\n\n` + 
+`⚙️විධානය: *.valorant*\nℹ️විස්තර: ඔබේ නම සමඟ valorant logo සෑදිය හැකිය. \n_(Ex: .valorant QueenAmdi/Facebook/Twitter)_\n\n` + 
+`⚙️විධානය: *.lionlogo*\nℹ️විස්තර: ඔබේ නම සමඟ lion logo සෑදීම.\n_(Ex: .lionlogo Queen/Amdi)_\n\n` + 
+`⚙️විධානය: *.metal*\nℹ️විස්තර: ඔබේ නම සමඟ iron logo සෑදීම.\n\n` + 
+`⚙️විධානය: *.pornhub*\nℹ️විස්තර: එය සපයා ඇති text කළු පැහැති තැඹිලි පාට රූපයක් යවයි.\nඔබ පිළිවෙලින් */* මගින් වෙන් කර ඇති top සහ bottom text ඇතුළත් කළ යුතුය.\n\n` + 
+`⚙️විධානය: *.sandwriting*\nℹ️විස්තර: එය සපයා ඇති textයේ වැලි රූපයක් යවයි.\n\n` + 
+`⚙️විධානය: *.vintage*\nℹ️විස්තර: එය සපයා ඇති textයේ buld display රූපයක් යවයි. \n_(Ex: .vintage Queen/Amdi_\n\n` + 
+`⚙️විධානය: *.bplogo*\nℹ️විස්තර: එය සපයා ඇති textයේ black pink logo යවයි.\n\n` + 
+`⚙️විධානය: *.blood*\nℹ️විස්තර: එය සපයා ඇති textයේ රුධිර රූපයක් යවයි.\n\n` + 
+`⚙️විධානය: *.silk*\nℹ️විස්තර: එය සපයා ඇති textයේ silk cloth රූපයක් යවයි.\n\n` + 
+`⚙️විධානය: *.snow*\nℹ️විස්තර: එය සපයා ඇති textයේ හිම රූපයක් යවයි.\n\n` + 
+`⚙️විධානය: *.light*\nℹ️විස්තර: එය සපයා ඇති textයේ light effect යවයි.\n\n` + 
+`⚙️විධානය: *.cloud*\nℹ️විස්තර: එය සපයා ඇති textයේ අහස රූපයක් යවයි.\n\n` + 
+`⚙️විධානය: *.sparkling*\nℹ️විස්තර: Text දීප්තිමත් තේමා රූපයක් බවට පරිවර්තනය කරයි\nඔබ පිළිවෙලින් */* මගින් වෙන් කර ඇති top සහ bottom text ඇතුළත් කළ යුතුය.\n\n` + 
+`⚙️විධානය: *.watercolour*\nℹ️විස්තර: Text ජල වර්ණ තේමා රූපයක් බවට පරිවර්තනය කරයි.\n\n` + 
+`⚙️විධානය: *.royal*\nℹ️විස්තර: Text royal තේමා රූපයක් බවට පරිවර්තනය කරයි.\n\n` + 
+`⚙️විධානය: *.gneon*\nℹ️විස්තර: Text green neon ආලෝක තේමා රූපයක් බවට පරිවර්තනය කරයි.\n\n` + 
+`⚙️විධානය: *.3dtext*\nℹ️විස්තර: ලබා දී ඇති text ත්රිමාණ විලාසිතාවේ රූපයක් බවට පරිවර්තනය කරයි.\n\n` + 
+`⚙️විධානය: *.v3d*\nℹ️විස්තර: සපයා ඇති text violet ත්රිමාණ විලාසිතාවේ රූපයක් බවට පරිවර්තනය කරයි.\n\n` + 
+`⚙️විධානය: *demon*\nℹ️විස්තර: සපයා ඇති text සමඟ demon තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *rust*\nℹ️විස්තර: සපයා ඇති text සමඟ rust තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *transformer*\nℹ️විස්තර: සපයා ඇති text සමඟ transformer තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *fiction*\nℹ️විස්තර: සපයා ඇති text සමඟ fiction තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *berry*\nℹ️විස්තර: සපයා ඇති text සමඟ berry තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *thunder*\nℹ️විස්තර: සපයා ඇති text සමඟ thunder තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *magma*\nℹ️විස්තර: සපයා ඇති text සමඟ magma තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *stone*\nℹ️විස්තර: සපයා ඇති text සමඟ stone තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *2glitch*\nℹ️විස්තර: සපයා ඇති text සමඟ 2glitch තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *harry*\nℹ️විස්තර: සපයා ඇති text සමඟ harry තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *cracked*\nℹ️විස්තර: සපයා ඇති text සමඟ cracked තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *glass*\nℹ️විස්තර: සපයා ඇති text සමඟ glass තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *glossy*\nℹ️විස්තර: සපයා ඇති text සමඟ glossy තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *beach*\nℹ️විස්තර: සපයා ඇති text සමඟ beach තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *devil*\nℹ️විස්තර: සපයා ඇති text සමඟ devil තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *underwater*\nℹ️විස්තර: සපයා ඇති text සමඟ underwater තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *bear*\nℹ️විස්තර: සපයා ඇති text සමඟ bear තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *xmas*\nℹ️විස්තර: සපයා ඇති text සමඟ xmas තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *future*\nℹ️විස්තර: සපයා ඇති text සමඟ future තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *cloud*\nℹ️විස්තර: සපයා ඇති text සමඟ cloud තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *luxury*\nℹ️විස්තර: සපයා ඇති text සමඟ luxury තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *leaves*\nℹ️විස්තර: සපයා ඇති text සමඟ leaves තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`⚙️විධානය: *gneon*\nℹ️විස්තර: සපයා ඇති text සමඟ gneon තේමා රූපයක් සෑදිය හැකියි.\n\n` +
+`Check official website : https://www.amdaniwasa.com/`
 
-    Asena.addCommand({pattern: 'effectimg', fromMe: true, desc: EFFECT_DESC}, (async (message, match) => {    
+const eng = `💠📃 ● *Text to effect images List* ● 📃💠\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n` + 
+`⚙️Command: *.glitch*\nℹ️Description: Text to Tiktok glitch effect.\n_(Ex: .glitch Queen;Amdi)_\n\n` + 
+`⚙️Command: *.pemoji*\nℹ️Description: Emoji to PNG.\n\n` + 
+`⚙️Command: *.hacker*\nℹ️Description: Text to Hacker wallpaper.\n\n` + 
+`⚙️Command: *.matrix*\nℹ️Description: Text to matrix wallpaper\n\n` + 
+`⚙️Command: *.hbd*\nℹ️Description: Making birthday cake with a name.\n\n` + 
+`⚙️Command: *.gaming*\nℹ️Description: Text to Gaming logo.\n\n` + 
+`⚙️Command: *.fpslogo*\nℹ️Description: Text to FPS Gaming logo.\n\n` + 
+`⚙️Command: *.sand*\nℹ️Description: Text to Sand summer themed wallpaper.\n\n` + 
+`⚙️Command: *.holo*\nℹ️Description: Text to holographic effect.\n\n` + 
+`⚙️Command: *.shadow*\nℹ️Description: Text to shadow effect.\n\n` + 
+`⚙️Command: *.grafiti*\nℹ️Description: Text to grafiti wallpaper.\n\n` + 
+`⚙️Command: *.cup*\nℹ️Description: Cup themed image.\n\n` + 
+`⚙️Command: *.sad*\nℹ️Description: Text to wet glass effect.\n\n` + 
+`⚙️Command: *.wolfm*\nℹ️Description: Text to metal wolf badge.\n\n` + 
+`⚙️Command: *.wflogo*\nℹ️Description: Wolf logo with your text.\n\n` + 
+`⚙️Command: *.naruto*\nℹ️Description: Text to naruto themed banner.\n\n` + 
+`⚙️Command: *.fflogo*\nℹ️Description: Text to FreeFire logo\n\n` + 
+`⚙️Command: *.flame*\nℹ️Description: Text to fire effect.\n\n` + 
+`⚙️Command: *.avenger*\nℹ️Description: Text to avenger logo\n_(Ex: .avenger Queen/Amdi)_\n\n` + 
+`⚙️Command: *.harrypoter*\nℹ️Description: Text to harry potter themed logo.\n\n` + 
+`⚙️Command: *.dota*\nℹ️Description: Text to DOTA logo.\n\n` + 
+`⚙️Command: *.lol*\nℹ️Description: Text to League Of Legends logo.\n\n` + 
+`⚙️Command: *.aov*\nℹ️Description: Text to  Arena Of Valor logo.\n\n` + 
+`⚙️Command: *.ml*\nℹ️Description: Text to Mobile Legends logo.\n\n` + 
+`⚙️Command: *.valorant*\nℹ️Description: Text to Valorant Banner. \n_(Ex: .valorant QueenAmdi/Facebook/Twitter)_\n\n` + 
+`⚙️Command: *.lionlogo*\nℹ️Description: Text to lion logo.\n_(Ex: .lionlogo Queen/Amdi)_\n\n` + 
+`⚙️Command: *.metal*\nℹ️Description: Text to metalic logo.\n\n` + 
+`⚙️Command: *.pornhub*\nℹ️Description: Text to PornHub themed logo.\nType */* to split two words.\n\n` + 
+`⚙️Command: *.sandwriting*\nℹ️Description: Text to sand themed logo.\n\n` + 
+`⚙️Command: *.vintage*\nℹ️Description: Text to bulb display unit. \n_(Ex: .vintage Queen/Amdi_\n\n` + 
+`⚙️Command: *.bplogo*\nℹ️Description: Text to Black Pink themed logo.\n\n` + 
+`⚙️Command: *.blood*\nℹ️Description: Text to Blood themed.\n\n` + 
+`⚙️Command: *.silk*\nℹ️Description: Text to silk cloth.\n\n` + 
+`⚙️Command: *.snow*\nℹ️Description: Text to Snow theme.\n\n` + 
+`⚙️Command: *.light*\nℹ️Description: Text to light theme banner.\n\n` + 
+`⚙️Command: *.cloud*\nℹ️Description: Text to CLoud themed wallpaper.\n\n` + 
+`⚙️Command: *.sparkling*\nℹ️Description: Text to sparkling effect.\nType */* to split two words.\n\n` + 
+`⚙️Command: *.watercolour*\nℹ️Description: Text to Water Colour art.\n\n` + 
+`⚙️Command: *.royal*\nℹ️Description: Text to royal themed text.\n\n` + 
+`⚙️Command: *.gneon*\nℹ️Description: Text to green neon light theme.\n\n` + 
+`⚙️Command: *.3dtext*\nℹ️Description: Text to 3D text effect.\n\n` + 
+`⚙️Command: *.v3d*\nℹ️Description: Text to 3D violet text effect.\n\n` + 
+`⚙️Command: *demon*\nℹ️Description: Make demon themed photo with your text.\n\n` +
+`⚙️Command: *rust*\nℹ️Description: Make rust themed photo with your text.\n\n` +
+`⚙️Command: *transformer*\nℹ️Description: Make transformer themed photo with your text.\n\n` +
+`⚙️Command: *fiction*\nℹ️Description: Make fiction themed photo with your text.\n\n` +
+`⚙️Command: *berry*\nℹ️Description: Make berry themed photo with your text.\n\n` +
+`⚙️Command: *thunder*\nℹ️Description: Make thunder themed photo with your text.\n\n` +
+`⚙️Command: *magma*\nℹ️Description: Make magma themed photo with your text.\n\n` +
+`⚙️Command: *stone*\nℹ️Description: Make stone themed photo with your text.\n\n` +
+`⚙️Command: *2glitch*\nℹ️Description: Make glitch themed photo with your text.\n_(Ex: .glitch Queen;Amdi)_\n\n` +
+`⚙️Command: *harry*\nℹ️Description: Make harry potter themed photo with your text.\n\n` +
+`⚙️Command: *cracked*\nℹ️Description: Make cracked themed photo with your text.\n\n` +
+`⚙️Command: *glass*\nℹ️Description: Make glass themed photo with your text.\n\n` +
+`⚙️Command: *glossy*\nℹ️Description: Make glossy themed photo with your text.\n\n` +
+`⚙️Command: *beach*\nℹ️Description: Make beach themed photo with your text.\n\n` +
+`⚙️Command: *devil*\nℹ️Description: Make devil themed photo with your text.\n\n` +
+`⚙️Command: *underwater*\nℹ️Description: Make underwater themed photo with your text.\n\n` +
+`⚙️Command: *bear*\nℹ️Description: Make bear themed photo with your text.\n\n` +
+`⚙️Command: *xmas*\nℹ️Description: Make xmas themed photo with your text.\n\n` +
+`⚙️Command: *future*\nℹ️Description: Make future themed photo with your text.\n\n` +
+`⚙️Command: *cloud*\nℹ️Description: Make cloud themed photo with your text.\n\n` +
+`⚙️Command: *luxury*\nℹ️Description: Make luxury themed photo with your text.\n\n` +
+`⚙️Command: *leaves*\nℹ️Description: Make leaves themed photo with your text.\n\n` +
+`⚙️Command: *gneon*\nℹ️Description: Make Green Neon themed photo with your text.\n\n` +
+`Check official website : https://www.amdaniwasa.com/`
 
-    await message.sendMessage('💻Usage: *.pemoji*\nℹ️Desc: Convert emoji to image.\n💻Usage: *.pornhub*\nℹ️Desc: එය සපයා ඇති text කළු පැහැති තැඹිලි පාට රූපයක් යවයි.\nYou must enter the heading and subheading seperated by */* in order!.\n\n💻Usage: *.sandwriting*\nℹ️Desc: It Sends a sand image of the text provided.\n\n💻Usage: *.blackpink*\nℹ️Desc: It Sends a blackish pink image of the text provided.\n\n💻Usage: *.blood*\nℹ️Desc: It Sends a blood image of the text provided.\n\n💻Usage: *.snow*\nℹ️Desc: It Sends a snow image of the text provided.\n\n💻Usage: *.cloud*\nℹ️Desc: It Sends a sky image of the text provided\n\n💻Usage: *.sparkling*\nℹ️Desc: Converts the text into a sparkling themed image\nYou must enter the heading and subheading seperated by */* in order!\n\n💻Usage: *.watercolour*\nℹ️Desc: Converts the text into a watercolour themed image.\n\n💻Usage: *.ninjalogo*\nℹ️Desc: Enters the text as the caption for a ninja themed logo.\n\n💻Usage: *.neonlight*\nℹ️Desc: Converts the text into a neonlight themed image.\n\n💻Usage: *.3dtext*\nℹ️Desc: Converts the provided text into a 3D style image.\n\nCheck github : https://github.com/kgamdaofficial/Amdibell');
-        
-    }));
+if (Config.LANG == 'EN') {
+    if (Config.WORKTYPE == 'private') {
+        Amdi.applyCMD({pattern: 'effectimg', fromMe: true,  deleteCommand: false, desc: Lang.EFFECT_DESC}, (async (message, match) => {    
+            await message.client.sendMessage(message.jid,eng, MessageType.text,{quoted: message.data});
+        }));
+    }
 
-    Asena.addCommand({pattern: 'glitch ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-  
-  var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
-        bottomText = split[1];
-        topText = split[0];
+    else if (Config.WORKTYPE == 'public') {
+        Amdi.applyCMD({pattern: 'effectimg', fromMe: false, desc: Lang.EFFECT_DESC}, (async (message, match) => {    
+            await message.client.sendMessage(message.jid,eng, MessageType.text,{quoted: message.data});
+        }));
+    }
 }
 
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/tiktokeffect/?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'pemoji ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/emoji2png?emoji=${match[1]}=apple`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-
-    Asena.addCommand({pattern: 'wood ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/woodblock/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: '8bit ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-  
-  var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
-        bottomText = split[1];
-        topText = split[0];
-}
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/8bit/?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'shadow ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/shadowtext/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'underwater ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/underwater/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'flower ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/mugflower/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'burn ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/burnpaper/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'candy ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/sweetcandy/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'harrypotter ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/hpotter/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'sparkling ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-  
-  var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
-        bottomText = split[1];
-        topText = split[0];
-}
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/sparkling?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'watercolour ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/watercolor?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'ninjalogo ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.NEED_WORD);
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'neonlight ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/neon_light?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'sandwriting ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/sandwriting?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'cloud ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/cloudtext?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'pornhub ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-  
-  var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
-        bottomText = split[1];
-        topText = split[0];
-}
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/ph?text=${topText}&text2=${bottomText}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'snow ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/snowtext?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'grass ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/paperonglass/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'candlemug ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/candlemug/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'romance ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/romancetext/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'lovemsg ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/lovemsg/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'blood ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/bloodontheroastedglass?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'blackpink ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/blackpink?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: '3dtext ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/text3d?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-}
-else if (Config.WORKTYPE == 'public') {
-
-    Asena.addCommand({pattern: 'effectimg', fromMe: false, desc: EFFECT_DESC}, (async (message, match) => {    
-
-    await message.sendMessage('💻Usage: *.pemoji*\nℹ️Desc: Convert emoji to image.\n💻Usage: *.pornhub*\nℹ️Desc: එය සපයා ඇති text කළු පැහැති තැඹිලි පාට රූපයක් යවයි.\nYou must enter the heading and subheading seperated by */* in order!.\n\n💻Usage: *.sandwriting*\nℹ️Desc: It Sends a sand image of the text provided.\n\n💻Usage: *.blackpink*\nℹ️Desc: It Sends a blackish pink image of the text provided.\n\n💻Usage: *.blood*\nℹ️Desc: It Sends a blood image of the text provided.\n\n💻Usage: *.snow*\nℹ️Desc: It Sends a snow image of the text provided.\n\n💻Usage: *.cloud*\nℹ️Desc: It Sends a sky image of the text provided\n\n💻Usage: *.sparkling*\nℹ️Desc: Converts the text into a sparkling themed image\nYou must enter the heading and subheading seperated by */* in order!\n\n💻Usage: *.watercolour*\nℹ️Desc: Converts the text into a watercolour themed image.\n\n💻Usage: *.ninjalogo*\nℹ️Desc: Enters the text as the caption for a ninja themed logo.\n\n💻Usage: *.neonlight*\nℹ️Desc: Converts the text into a neonlight themed image.\n\n💻Usage: *.3dtext*\nℹ️Desc: Converts the provided text into a 3D style image.\n\nCheck github : https://github.com/kgamdaofficial/Amdibell');
-
-    }));
-
-    Asena.addCommand({pattern: 'glitch ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-  
-  var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
-        bottomText = split[1];
-        topText = split[0];
-}
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/tiktokeffect/?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'pemoji ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/emoji2png?emoji=${match[1]}=apple`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-
-    Asena.addCommand({pattern: 'wood ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/woodblock/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: '8bit ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-  
-  var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
-        bottomText = split[1];
-        topText = split[0];
-}
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/8bit/?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'shadow ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/shadowtext/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'underwater ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/underwater/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'flower ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/mugflower/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'burn ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/burnpaper/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'candy ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/sweetcandy/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'harrypotter ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/hpotter/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'sparkling ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-  
-  var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
-        bottomText = split[1];
-        topText = split[0];
-}
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/sparkling?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'watercolour ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/watercolor?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'ninjalogo ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.NEED_WORD);
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'neonlight ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/neon_light?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'sandwriting ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/sandwriting?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'cloud ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/cloudtext?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'pornhub ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-  
-  var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
-        bottomText = split[1];
-        topText = split[0];
-}
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/ph?text=${topText}&text2=${bottomText}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'snow ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/snowtext?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'grass ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/paperonglass/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'candlemug ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/candlemug/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'romance ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/romancetext/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'lovemsg ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/lovemsg/?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'blood ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/bloodontheroastedglass?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: 'blackpink ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://api.xteam.xyz/textpro/blackpink?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
-
-    Asena.addCommand({pattern: '3dtext ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/text3d?text=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
+if (Config.LANG == 'SI') {
+    if (Config.WORKTYPE == 'private') {
+        Amdi.applyCMD({pattern: 'effectimg', fromMe: true,  deleteCommand: false, desc: Lang.EFFECT_DESC}, (async (message, match) => {    
+            await message.client.sendMessage(message.jid,sin, MessageType.text,{quoted: message.data});
+        }));
+    }
+
+    else if (Config.WORKTYPE == 'public') {
+        Amdi.applyCMD({pattern: 'effectimg', fromMe: false, desc: Lang.EFFECT_DESC}, (async (message, match) => {    
+            await message.client.sendMessage(message.jid,sin, MessageType.text,{quoted: message.data});
+        }));
+    }
 }
