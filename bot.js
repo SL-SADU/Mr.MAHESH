@@ -78,7 +78,7 @@ async function whatsAsena () {
     
     const conn = new WAConnection();
     const Session = new StringSession();
-    conn.version = [2, 2140, 12]
+    conn.version = [2, 2119, 6]
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
     var nodb;
@@ -107,7 +107,7 @@ async function whatsAsena () {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
-${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙමින් පවතී... කරුණාකර රැඳී සිටින්න.')}`);
+${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
     });
     
 
@@ -148,7 +148,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
         await new Promise(r => setTimeout(r, 1100));
 
         if (config.WORKTYPE == 'public') {
-            if (infosi !== '' && config.LANG == 'SI') {
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
 
                 if (conn.user.jid === '@s.whatsapp.net') {
 
@@ -196,7 +196,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
             }
         }
         else if (config.WORKTYPE == 'private') {
-            if (infosi !== '' && config.LANG == 'SI') {
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
 
                 if (conn.user.jid === '@s.whatsapp.net') {
 
@@ -331,7 +331,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                         try {
                             await command.function(whats, match);
                         } catch (error) {
-                            if (infosi !== '' && config.LANG == 'SI') {
+                            if (config.LANG == 'TR' || config.LANG == 'AZ') {
                                 await conn.sendMessage(conn.user.jid, '*📵 දෝෂ වාර්තාව [AMDI_BELL] 📵*' + 
                                     '\n*Bot දෝෂයක් සිදුවී ඇත!*'+
                                     '\n_මෙම දෝෂ logs ඔබගේ අංකය හෝ ප්‍රති පාර්ශ්වයේ අංකය අඩංගු විය හැකිය. කරුණාකර එය සමග සැලකිලිමත් වන්න!_' +
