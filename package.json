@@ -1,14 +1,14 @@
 {
   "name": "amdibell",
   "version": "0.16.5",
-  "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+  "description": "Amdibell project - a Whatsapp userbot helping to improve your Whatsapp experience.",
   "main": "./Amdibell/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlackSuis/Amdibell.git"
+    "url": "git+https://github.com/AmdaOfficial/Amdibell.git"
   },
   "keywords": [
     "whatsapp"
@@ -17,9 +17,9 @@
   "developer": "AmdiDev / @BlackSuis",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/BlackSuis/Amdibell/issues"
+    "url": "https://github.com/AmdaOfficial/Amdibell/issues"
   },
-  "homepage": "https://github.com/BlackSuis/Amdibell#readme",
+  "homepage": "https://github.com/AmdaOfficial/Amdibell#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.4.1",
     "@lh2020/speedtest-net": "^2.1.1",
