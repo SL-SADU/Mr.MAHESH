@@ -54,6 +54,21 @@
             "required": false,
             "value": "96176912958-1458298055,"
         },
+        "ALIVE_LOGO": {
+            "description": "Alive පණිවිඩ ලාංඡනය. රූපය වෙනස් කිරීමට පහත ඔබේ පින්තුර ඇතුළු කරන්න.",
+            "required": true,
+            "value": "https://i.ibb.co/HTZDMQX/LOGO.jpg"    
+        },
+        "WELCOME_LOGO": {
+            "description": "පිළිගැනීමේ පණිවිඩ Logo. රූපය වෙනස් කිරීමට පහත ඔබේ පින්තුර ඇතුළු කරන්න. ",
+            "required": true,
+            "value": "https://i.ibb.co/d54sGdd/f2097d7ddc39.jpg"
+        },
+        "BYE_LOGO": {
+            "description": "රූපය වෙනස් කිරීමට පහත ඔබේ පින්තුර ඇතුළු කරන්න.",
+            "required": true,
+            "value": "https://i.ibb.co/pbjB2pS/93f527f9f2fb.jpg"    
+        },
         "UNMUTE_MESSAGE": {
             "description": "Group එකක් unmute කිරිමෙදි ලැබෙන පනිවිඩය.",
             "required": false,
@@ -121,7 +136,7 @@
         "GAN_IMAGE": {
             "description": "මෙය වෙනස් කිරිමට අත්‍යාවශ්‍යම නොවේ.",
             "required": true,
-            "value": "https://i.hizliresim.com/f8bleo5.png"
+            "value": "https://i.ibb.co/mT0KMwh/LOGO.jpg"
         },
         "NO_ONLINE": {
             "description": "මෙය වෙනස් කිරිමට අත්‍යාවශ්‍යම නොවේ.",
