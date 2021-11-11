@@ -582,13 +582,4 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
     
-    Asena.addCommand({pattern: 'team ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-
-    var webimage = await axios.get(palayan yanna)
-
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
-
-    }));
 }
