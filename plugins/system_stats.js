@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'private') {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 😙```\n\n*Version:* ```v1.5 - Stable```\n\n*Developer:* ```KgAmda```\n\n*WhatsApp Support Group :* https://chat.whatsapp.com/Hkm79J2sapyLGD0rvRTfkq\n\n*Youtube channel :* https://www.youtube.com/channel/UCQIoJ1z2Md-VeKlY7Wh9TUA\n\n```Thank You For Using Amdibell❤```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 😙```\n\n*Version:* ```v1.5 - Stable```\n\n*Developer:* ```KgAmda```\n\n*WhatsApp Support Group :* https://chat.whatsapp.com/J7EdUBd7E2OIsXOOeAHcuT\n\n*Youtube channel :* https://www.youtube.com/channel/UCQIoJ1z2Md-VeKlY7Wh9TUA\n\n```Thank You For Using Amdibell❤```"})
 
     }
     else {
@@ -59,7 +59,7 @@ else if (Config.WORKTYPE == 'public') {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 😙```\n\n*Version:* ```v1.5 - Stable```\n\n*Developer:* ```KgAmda```\n\n*WhatsApp Support Group :* https://chat.whatsapp.com/Hkm79J2sapyLGD0rvRTfkq\n\n*Youtube channel :* https://www.youtube.com/channel/UCQIoJ1z2Md-VeKlY7Wh9TUA\n\n```Thank You For Using Amdibell❤```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 😙```\n\n*Version:* ```v1.5 - Stable```\n\n*Developer:* ```KgAmda```\n\n*WhatsApp Support Group :* https://chat.whatsapp.com/J7EdUBd7E2OIsXOOeAHcuT\n\n*Youtube channel :* https://www.youtube.com/channel/UCQIoJ1z2Md-VeKlY7Wh9TUA\n\n```Thank You For Using Amdibell❤```"})
 
     }
     else {
