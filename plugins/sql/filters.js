@@ -6,10 +6,10 @@ you may not use this file except in compliance with the License.
 WhatsAsena - Yusuf Usta
 */
 
-const config = require('../../config');
+const Config = require('../../config');
 const { DataTypes } = require('sequelize');
 
-const FiltersDB = config.DATABASE.define('filter', {
+const FiltersDB = Config.DATABASE.define('filter', {
     chat: {
       type: DataTypes.STRING,
       allowNull: false
