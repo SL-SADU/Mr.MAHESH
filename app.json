@@ -26,6 +26,11 @@
             "required": true,
             "value": "^[.]"
         },
+        "CHAT_BOT": {
+            "description": "To enable / disable the AI chat bot. Use true to enable AI chat bot and false to deactivate AI chat bot.",
+            "required": true,
+            "value": "true"    
+        },
         "SEND_READ": {
             "description": "Bot message seen කළාද නැතිද යන්න පරිශීලකට පෙන්විය යුතුද?",
             "required": true,
