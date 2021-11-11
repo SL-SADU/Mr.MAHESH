@@ -153,12 +153,6 @@
             "JID_DESC": "User's JID දීම.",
             "JID": "```JID address of``` @{} ```: {}```",
             "JID_CHAT": "```Chat's JID address: {}```"
-            "ALIVE_DESC": "Alive Logo එකට පින්තූරයක් උඩුගත කරන්න.",
-            "BYE_DESC": "Bye Logo එකට පින්තූරයක් උඩුගත කරන්න.",
-            "WEL_DESC":"Welcome Logo එකට පින්තූරයක් උඩුගත කරන්න.",
-            "SET_ALIVE": "*✅ Alive logo සාර්ථකව එකතු කරන ලදි!*",
-            "SET_WEL": "*✅ Welcome logo සාර්ථකව එකතු කරන ලදි!*",
-            "SET_BYE": "*✅ Bye logo සාර්ථකව එකතු කරන ලදි!*"
         },
         "removebg": {
             "REMOVEBG_DESC": "ඡායාරූපවල පසුබිම ඉවත් කරයි.",
