@@ -582,4 +582,9 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
     
+    Asena.addCommand({pattern: 'team', fromMe: true, desc: EFFECT_DESC}, (async (message, match) => {    
+
+    await message.sendMessage('palayan hutto yanna tama hadan gaman ');
+        
+    }));
 }
