@@ -8,22 +8,22 @@
 
 	  
 <p align="center">
-  <a href="https://github.com/kgamdaofficial/Amdibell">
-    <img src="https://komarev.com/ghpvc/?username=kgamdaofficial&label=Profile%20views&color=ff69b4&label=Profile+Views&style=plastic">
+  <a href="https://github.com/AmdaOfficial/Amdibell">
+    <img src="https://komarev.com/ghpvc/?username=AmdaOfficial&label=Profile%20views&color=ff69b4&label=Profile+Views&style=plastic">
 
   </a>
-  <a href="https://github.com/kgamdaofficial?tab=followers">
-    <img src="https://img.shields.io/github/followers/kgamdaofficial?color=ff69b4&label=Followers&style=plastic">
+  <a href="https://github.com/AmdaOfficial?tab=followers">
+    <img src="https://img.shields.io/github/followers/AmdaOfficial?color=ff69b4&label=Followers&style=plastic">
 
   </a>
 </p>
 	
 	
 <p align="center">
-  <a href="https://github.com/Kgamdaofficial"><img alt="GitHub Clones" src="https://img.shields.io/badge/dynamic/json?style=flat-square&label=Docker pulls&query=count&url=https://github.com/agentnox/8gh32jk565/blob/main/automated_repo.json?raw=True&logo=github"></a>
+  <a href="https://github.com/AmdaOfficial"><img alt="GitHub Clones" src="https://img.shields.io/badge/dynamic/json?style=flat-square&label=Docker pulls&query=count&url=https://github.com/agentnox/8gh32jk565/blob/main/automated_repo.json?raw=True&logo=github"></a>
   
   </a>
-  <a href="https://github.com/Kgamdaofficial">
+  <a href="https://github.com/AmdaOfficial">
     <img src="https://img.shields.io/docker/image-size/fusuf/whatsasena?style=flat-square&logo=github&label=Image Size">
     
   </a>
@@ -31,33 +31,33 @@
 
 <p align="center">
 
-  <a href="https://github.com/Kgamdaofficial">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FBKgamdaofficial%2FAmdibell&count_bg=%2379C83D&title_bg=%23555555&icon=gitpod.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false" alt="Views"/></a>
+  <a href="https://github.com/AmdaOfficial">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FBAmdaOfficial%2FAmdibell&count_bg=%2379C83D&title_bg=%23555555&icon=gitpod.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false" alt="Views"/></a>
   
   </a>
-  <a href="https://github.com/Kgamdaofficial/fork">
+  <a href="https://github.com/AmdaOfficial/fork">
     <img src="https://img.shields.io/github/forks/Kgamdaofficial/Amdibell?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/Kgamdaofficial/stargazers">
+  <a href="https://github.com/AmdaOfficial/stargazers">
     <img src="https://img.shields.io/github/stars/Kgamdaofficial/Amdibell?style=social">
   </a>
 </p>
 
 <p align="center">
-  <a href="httsp://github.com/Kgamdaofficial">
-    <img src="https://img.shields.io/github/repo-size/Kgamdaofficial/Amdibell?color=purple&label=Repo%20Size&style=plastic">
+  <a href="httsp://github.com/AmdaOfficial">
+    <img src="https://img.shields.io/github/repo-size/AmdaOfficial/Amdibell?color=purple&label=Repo%20Size&style=plastic">
 
   </a>
-  <a href="httsp://github.com/Kgamdaofficial">
-    <img src="https://img.shields.io/github/license/Kgamdaofficial/Amdibell?color=purple&label=License&style=plastic">
+  <a href="httsp://github.com/AmdaOfficial">
+    <img src="https://img.shields.io/github/license/AmdaOfficial/Amdibell?color=purple&label=License&style=plastic">
 
   </a>
-  <a href="httsp://github.com/Kgamdaofficial">
-    <img src="https://img.shields.io/github/languages/top/Kgamdaofficial/Amdibell?color=purple&label=Javascript&style=plastic">
+  <a href="httsp://github.com/AmdaOfficial">
+    <img src="https://img.shields.io/github/languages/top/AmdaOfficial/Amdibell?color=purple&label=Javascript&style=plastic">
 
   </a>
-  <a href="httsp://github.com/Kgamdaofficial">
+  <a href="httsp://github.com/AmdaOfficial">
     <img src="https://img.shields.io/static/v1?label=Author&message=kg%20amda&color=purple&style=plastic">
 
   </a>
