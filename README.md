@@ -113,7 +113,7 @@ $ nano config.env
 $ node bot.js
 ```
 
-#### KgAmda Project Team
+#### AmdA Team
 
 <table>
 										<tbody>
