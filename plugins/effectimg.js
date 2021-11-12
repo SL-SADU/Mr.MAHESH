@@ -582,10 +582,4 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
     
-    Asena.addCommand({pattern: 'team', fromMe: false, desc: EFFECT_DESC}, (async (message, match) => {    
-
-    await message.sendMessage('https://i.ibb.co/mT0KMwh/LOGO.jpg\n\n=====*AmdAteam*=====\n\n\n*QueenAmdibell bot created by AmdA team*')
-
-    }));
-    
 }
