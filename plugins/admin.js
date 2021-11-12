@@ -21,11 +21,6 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Asena.applyCMD({pattern: 'admin', desc: Lang.ADMINDESC, fromMe: true, dontAddCommandList: false, deleteCommand: false}, (async (message, match) => {    
-
-    await message.sendMessage(Lang.AD_DESC);
-}));
-
 Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
