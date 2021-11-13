@@ -49,6 +49,11 @@
             "description": "ඉහත යෙදු රහස් වචනයම යොදන්න.",
             "required": true
         },
+        "SONG_TYPE": {
+            "description": "Choose your .song file type.(document or audio)",
+            "required": true,
+            "value": "document"    
+        },
         "CAP": {
             "description": "Set your caption under medias.",
             "required": true,
