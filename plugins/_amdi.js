@@ -6,16 +6,16 @@ you may not use this file except in compliance with the License.
 Amdibell - AmdA
 */
 
-const Asena = require('../events');
+const Amdi = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 
 const Language = require('../language');
-const Lang = Language.getString('_asena');
+const Lang = Language.getString('_amdi');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'bell ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'bell ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -24,7 +24,7 @@ if (Config.WORKTYPE == 'private') {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-            Asena.commands.map(
+            Amdi.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -58,7 +58,7 @@ if (Config.WORKTYPE == 'private') {
                 return;
             }
             var CMD_HELP = '';
-            Asena.commands.map(
+            Amdi.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -92,7 +92,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'bell ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Amdi.addCommand({pattern: 'bell ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -101,7 +101,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-            Asena.commands.map(
+            Amdi.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -135,7 +135,7 @@ else if (Config.WORKTYPE == 'public') {
                 return;
             }
             var CMD_HELP = '';
-            Asena.commands.map(
+            Amdi.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
