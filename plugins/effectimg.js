@@ -588,10 +588,10 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
     
-    Asena.addCommand({pattern: 'team', fromMe: false, desc: EFFECT_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'team', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
-    await message.sendMessage('tama hadana gaman bng 😴');
-
+    await message.sendMessage("tama hadana gaman bng 😴");
+        
     }));
     
 }
