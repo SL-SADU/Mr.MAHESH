@@ -588,7 +588,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
     
-    Asena.addCommand({pattern: 'effectimg', fromMe: false, desc: EFFECT_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'team', fromMe: false, desc: EFFECT_DESC}, (async (message, match) => {    
 
     await message.sendMessage('tama hadana gaman bng 😴');
 
