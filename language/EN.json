@@ -1,10 +1,10 @@
 {
-    "__ASENAJSON__": true,
+    "__AMDIJSON__": true,
     "LANGUAGE": "English",
     "LANGCODE": "en",
-    "AUTHOR": "AsenaDev",
+    "AUTHOR": "AmdiDev",
     "STRINGS": {
-        "_asena": {
+        "_amdi": {
             "COMMAND": "විධානය",
             "DESC": "විස්තර",
             "EXAMPLE": "උදාහරණයක්",
