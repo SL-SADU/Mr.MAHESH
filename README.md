@@ -96,6 +96,16 @@ Install their own plugins to the original software and use as they please.
 Usage is entirely the responsibility of the user. The operating system is not responsible.
 HAVE A FUN!
 ```
+## Simple Metherd
+
+### step 1
+
+[![Run on Repl.it](https://repl.it/badge/github/AmdaOffical/Amdibell)](https://replit.com/@KgAmda/Amdibell-QR?v=1)
+
+### step 2
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AmdaOfficial/Amdibell)
+
 
 
 ## 🔎 What Amdibell bot?
