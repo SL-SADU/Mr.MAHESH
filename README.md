@@ -6,6 +6,7 @@
   <h1>👸QUEEN AMDIBELL👸</h1>
 
 	  
+	
 <p align="center">
   <a href="https://github.com/AmdaOfficial/Amdibell">
     <img src="https://komarev.com/ghpvc/?username=AmdaOfficial&label=Profile%20views&color=ff69b4&label=Profile+Views&style=plastic">
