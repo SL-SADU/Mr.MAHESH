@@ -294,6 +294,18 @@ if (Config.WORKTYPE == 'private') {
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
 
     }));
+    
+    Asena.addCommand({pattern: 'team', fromMe: false, desc: EFFECT_DESC}, (async (message, match) => {    
+
+    await message.sendMessage('tama hadana gaman bng 😴');
+        
+   }));
+    
+    Asena.addCommand({pattern: 'amda', fromMe: false, desc: EFFECT_DESC}, (async (message, match) => {    
+
+    await message.sendMessage('tama hadana gaman bng 😴');
+        
+   }));
 }
 else if (Config.WORKTYPE == 'public') {
 
