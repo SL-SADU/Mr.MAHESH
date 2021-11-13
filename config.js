@@ -15,11 +15,11 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 
-DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : process.env.DATABASE_URL;
+DATABASE_URL = process.env.DATABASE_URL === undefined ? './amdibell.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v0.16.8 Public Stable',
+    VERSION: 'Amdibell v0.16.8 Public Stable',
     SESSION: process.env.AMDI_SESSION === undefined ? '' : process.env.AMDI_SESSION,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.ibb.co/HTZDMQX/LOGO.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
@@ -27,6 +27,7 @@ module.exports = {
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://i.ibb.co/HTZDMQX/LOGO.jpg' : process.env.ALIVE_LOGO,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
+    PANEL_EMOJI: process.env.PANEL_EMOJI === undefined ? '📘/📖' : process.env.PANEL_EMOJI,
     BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
     UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
     CHAT_BOT: process.env.CHAT_BOT === undefined ? 'true' : process.env.CHAT_BOT,
@@ -45,7 +46,7 @@ module.exports = {
         APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME
     },
     DATABASE_URL: DATABASE_URL,
-    DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
+    DATABASE: DATABASE_URL === './amdibell.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
     RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
     NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
     SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
