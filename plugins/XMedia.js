@@ -1814,5 +1814,10 @@ else if (Config.WORKTYPE == 'public') {
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
+    
+    Asena.addCommand({pattern: 'team', fromMe: false, desc: Lang.XMEDİA_DESC}, (async (message, match) => {    
+
+        await message.sendMessage('tama hadanava bng');
+    }));
 }
 
