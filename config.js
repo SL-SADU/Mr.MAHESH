@@ -27,6 +27,7 @@ module.exports = {
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://i.ibb.co/HTZDMQX/LOGO.jpg' : process.env.ALIVE_LOGO,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
+    PANEL_EMOJI: process.env.PANEL_EMOJI === undefined ? '❤/🔆' : process.env.PANEL_EMOJI,
     BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
     UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
     CHAT_BOT: process.env.CHAT_BOT === undefined ? 'true' : process.env.CHAT_BOT,
