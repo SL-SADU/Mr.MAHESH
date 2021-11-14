@@ -522,8 +522,24 @@ else if (config.WORKTYPE == 'public') {
             message.reply(Lang.IMG.format((result.length < 5 ? result.length : 5), match[1]));
         });
     }));
+    Asena.addCommand({ pattern: 'wame ?(.*)', fromMe: false, desc: Lang.WAME_DESC }, async (message, match) => {
 
-    Asena.addCommand({ pattern: 'github ?(.*)', fromMe: false, desc: Glang.GİTHUB_DESC }, async (message, match) => {
+        if (message.reply_message !== false) {
+        await message.client.sendMessage(message.jid, Lang.WAME.format(message.reply_message.jid.split('@')[0], message.reply_message.jid.replace('@s.whatsapp.net', ' ')), MessageType.text, {
+                quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
+        });
+    } else if (message.mention !== false) {
+        message.mention.map(async user => {
+            await message.client.sendMessage(message.jid, Lang.WAME.format(user.split('@')[0], user.replace('@s.whatsapp.net', ' ')), {quoted: message.data}, MessageType.text, {
+                contextInfo: {mentionedJid: [user.replace('c.us', 's.whatsapp.net')]}
+            }); 
+        });
+    } else {
+        await message.client.sendMessage(message.jid, Lang.NEED_UWONG, MessageType.text, {quoted: message.data});
+    }
+   
+    }));
+    Asena.addCommand({ pattern: 'github ?(.*)', fromMe: false, desc: Lang.GİTHUB_DESC }, async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -533,7 +549,7 @@ else if (config.WORKTYPE == 'public') {
 
         const userName = match[1]
  
-        if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
+        if (userName === '') return await message.client.sendMessage(message.jid, Lang.REPLY, MessageType.text)
 
         await axios
           .get(`https://videfikri.com/api/github/?username=${userName}`)
