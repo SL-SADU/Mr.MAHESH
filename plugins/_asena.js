@@ -15,30 +15,33 @@ const Lang = Language.getString('_asena');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'bell ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-        if (message.jid === '905524317852-1612300121@g.us') {
-
-            return;
-        }
-
+    Asena.addCommand({pattern: Config.MENU + '?(.*)', fromMe: LOL, dontAddCommandList: true}, (async (message, match) => {
+        
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
-                        var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
-                    } catch {
-                        var match = [command.pattern];
-                    }
+                    var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
+                    var mmatch = command.pattern.toString().match(/(\W*)([A-Za-züşiğ öç1234567890]*)/)[2]
+                } catch {
+                    var match = [command.pattern];
+                }
     
-                    var HANDLER = '';
+                var HANDLER = '';
     
                     if (/\[(\W*)\]/.test(Config.HANDLERS)) {
                         HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
                     } else {
                         HANDLER = '.';
+                    }
+
+                    var comEmoji, descEmoji;
+                    if (Config.PANEL_EMOJI.includes('/')) {
+                        var split = Config.PANEL_EMOJI.split('/');
+                        comEmoji = split[0];
+                        descEmoji = split[1];
                     }
                     CMD_HELP += '❤ ' + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
                     if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
@@ -62,19 +65,26 @@ if (Config.WORKTYPE == 'private') {
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
-                        var cmatch = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
-                    } catch {
-                        var cmatch = [command.pattern];
-                    }
-                
-                    if (cmatch[2] == match[1]) {
-                        var HANDLER = '';
+                    var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
+                    var mmatch = command.pattern.toString().match(/(\W*)([A-Za-züşiğ öç1234567890]*)/)[2]
+                } catch {
+                    var match = [command.pattern];
+                }
     
-                        if (/\[(\W*)\]/.test(Config.HANDLERS)) {
-                            HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
-                        } else {
-                            HANDLER = '.';
-                        }
+                var HANDLER = '';
+    
+                    if (/\[(\W*)\]/.test(Config.HANDLERS)) {
+                        HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
+                    } else {
+                        HANDLER = '.';
+                    }
+
+                    var comEmoji, descEmoji;
+                    if (Config.PANEL_EMOJI.includes('/')) {
+                        var split = Config.PANEL_EMOJI.split('/');
+                        comEmoji = split[0];
+                        descEmoji = split[1];
+                    }
                         CMD_HELP += '❤ ' + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmatch[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
                         if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
                         if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
@@ -92,7 +102,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'bell ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: Config.MENU + '?(.*)', fromMe: LOL, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -105,17 +115,25 @@ else if (Config.WORKTYPE == 'public') {
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
-                        var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
-                    } catch {
-                        var match = [command.pattern];
-                    }
+                    var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
+                    var mmatch = command.pattern.toString().match(/(\W*)([A-Za-züşiğ öç1234567890]*)/)[2]
+                } catch {
+                    var match = [command.pattern];
+                }
     
-                    var HANDLER = '';
+                var HANDLER = '';
     
                     if (/\[(\W*)\]/.test(Config.HANDLERS)) {
                         HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
                     } else {
                         HANDLER = '.';
+                    }
+
+                    var comEmoji, descEmoji;
+                    if (Config.PANEL_EMOJI.includes('/')) {
+                        var split = Config.PANEL_EMOJI.split('/');
+                        comEmoji = split[0];
+                        descEmoji = split[1];
                     }
                     CMD_HELP += '❤ ' + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
                     if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
@@ -139,19 +157,26 @@ else if (Config.WORKTYPE == 'public') {
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
-                        var cmatch = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
-                    } catch {
-                        var cmatch = [command.pattern];
-                    }
-                
-                    if (cmatch[2] == match[1]) {
-                        var HANDLER = '';
+                    var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
+                    var mmatch = command.pattern.toString().match(/(\W*)([A-Za-züşiğ öç1234567890]*)/)[2]
+                } catch {
+                    var match = [command.pattern];
+                }
     
-                        if (/\[(\W*)\]/.test(Config.HANDLERS)) {
-                            HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
-                        } else {
-                            HANDLER = '.';
-                        }
+                var HANDLER = '';
+    
+                    if (/\[(\W*)\]/.test(Config.HANDLERS)) {
+                        HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
+                    } else {
+                        HANDLER = '.';
+                    }
+
+                    var comEmoji, descEmoji;
+                    if (Config.PANEL_EMOJI.includes('/')) {
+                        var split = Config.PANEL_EMOJI.split('/');
+                        comEmoji = split[0];
+                        descEmoji = split[1];
+                    }
                         CMD_HELP += '❤ ' + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmatch[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
                         if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
                         if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
