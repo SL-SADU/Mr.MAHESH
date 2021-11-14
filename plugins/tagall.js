@@ -23,6 +23,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 }
 
 Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.ADMİN,MessageType.text);
 
@@ -45,11 +46,11 @@ Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC 
             mesaj = '';
             grup['participants'].map(
                 async (uye) => {
-                    mesaj += '▫️ @' + uye.id.split('@')[0] + '\n';
+                    mesaj += '║ 🎫 @' + uye.id.split('@')[0] + '\n';
                     jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
                 }
             );
-            await message.client.sendMessage(message.jid,mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
+            await message.client.sendMessage(message.jid,'╔════════════════\n' + '║ *📧 Group Members List 📧*\n' + '║ \n' + mesaj + '║ \n' + '╚════════════════', MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
         }
     }
     else if (message.reply_message) {
@@ -65,15 +66,4 @@ Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC 
         var tx = message.reply_message.text
         await message.client.sendMessage(message.jid,tx, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
     }
-}));
-var stag_dsc = ''
-
-Asena.addCommand({pattern: 'stam$', fromMe: true, desc: stag_dsc }, (async (message, match) => {
-    if (!message.reply_message) return await message.client.sendMessage(message.jid,SLang.NEED_REPLY, MessageType.text)
-    grup = await message.client.groupMetadata(message.jid);
-    var jids = [];
-    mesaj = '';
-    grup['participants'].map(async (uye) => {
-        await message.client.sendMessage(uye.jid, message.reply_message.text, MessageType.text)
-    })
 }));
