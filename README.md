@@ -1,4 +1,4 @@
-<h2 align="center"> 🕵🔑🕯🎩☠️ Hellow ☠️🎩🕯🔑🕵 <br>I'm <br>⚖️🐝Black Suis🐝⚖️</h1>
+<h2 align="center"> 🕵🔑🕯🎩☠️ Hellow ☠️🎩🕯🔑🕵 <br>I'm <br>⚖️🐝Black Vampired🐝⚖️</h1>
 <h4 align="center">I am a simple developer. Not like Dennis Ritchie..</h3>
 
 <div align="center">
@@ -8,22 +8,22 @@
 	  
 	
 <p align="center">
-  <a href="https://github.com/AmdaOfficial/Amdibell">
-    <img src="https://komarev.com/ghpvc/?username=AmdaOfficial&label=Profile%20views&color=ff69b4&label=Profile+Views&style=plastic">
+  <a href="https://github.com/BlackVampired/Amdibell">
+    <img src="https://komarev.com/ghpvc/?username=BlackVampired&label=Profile%20views&color=ff69b4&label=Profile+Views&style=plastic">
 
   </a>
-  <a href="https://github.com/AmdaOfficial?tab=followers">
-    <img src="https://img.shields.io/github/followers/AmdaOfficial?color=ff69b4&label=Followers&style=plastic">
+  <a href="https://github.com/BlackVampired?tab=followers">
+    <img src="https://img.shields.io/github/followers/BlackVampired?color=ff69b4&label=Followers&style=plastic">
 
   </a>
 </p>
 	
 	
 <p align="center">
-  <a href="https://github.com/AmdaOfficial"><img alt="GitHub Clones" src="https://img.shields.io/badge/dynamic/json?style=flat-square&label=Docker pulls&query=count&url=https://github.com/agentnox/8gh32jk565/blob/main/automated_repo.json?raw=True&logo=github"></a>
+  <a href="https://github.com/BlackVampired"><img alt="GitHub Clones" src="https://img.shields.io/badge/dynamic/json?style=flat-square&label=Docker pulls&query=count&url=https://github.com/agentnox/8gh32jk565/blob/main/automated_repo.json?raw=True&logo=github"></a>
   
   </a>
-  <a href="https://github.com/AmdaOfficial">
+  <a href="https://github.com/BlackVampired">
     <img src="https://img.shields.io/docker/image-size/fusuf/whatsasena?style=flat-square&logo=github&label=Image Size">
     
   </a>
@@ -31,40 +31,40 @@
 
 <p align="center">
 
-  <a href="https://github.com/AmdaOfficial">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FBAmdaOfficial%2FAmdibell&count_bg=%2379C83D&title_bg=%23555555&icon=gitpod.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false" alt="Views"/></a>
+  <a href="https://github.com/BlackVampired">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FBBlackVampired%2FAmdibell&count_bg=%2379C83D&title_bg=%23555555&icon=gitpod.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false" alt="Views"/></a>
   
   </a>
-  <a href="https://github.com/AmdaOfficial/fork">
-    <img src="https://img.shields.io/github/forks/Kgamdaofficial/Amdibell?label=Fork&style=social">
+  <a href="https://github.com/BlackVampired/fork">
+    <img src="https://img.shields.io/github/forks/BlackVampired/Amdibell?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/AmdaOfficial/stargazers">
-    <img src="https://img.shields.io/github/stars/Kgamdaofficial/Amdibell?style=social">
+  <a href="https://github.com/BlackVampired/stargazers">
+    <img src="https://img.shields.io/github/stars/BlackVampired/Amdibell?style=social">
   </a>
 </p>
 
 <p align="center">
-  <a href="httsp://github.com/AmdaOfficial">
-    <img src="https://img.shields.io/github/repo-size/AmdaOfficial/Amdibell?color=purple&label=Repo%20Size&style=plastic">
+  <a href="httsp://github.com/BlackVampired">
+    <img src="https://img.shields.io/github/repo-size/BlackVampired/Amdibell?color=purple&label=Repo%20Size&style=plastic">
 
   </a>
-  <a href="httsp://github.com/AmdaOfficial">
-    <img src="https://img.shields.io/github/license/AmdaOfficial/Amdibell?color=purple&label=License&style=plastic">
+  <a href="httsp://github.com/BlackVampired">
+    <img src="https://img.shields.io/github/license/BlackVampired/Amdibell?color=purple&label=License&style=plastic">
 
   </a>
-  <a href="httsp://github.com/AmdaOfficial">
-    <img src="https://img.shields.io/github/languages/top/AmdaOfficial/Amdibell?color=purple&label=Javascript&style=plastic">
+  <a href="httsp://github.com/BlackVampired">
+    <img src="https://img.shields.io/github/languages/top/BlackVampired/Amdibell?color=purple&label=Javascript&style=plastic">
 
   </a>
-  <a href="httsp://github.com/AmdaOfficial">
-    <img src="https://img.shields.io/static/v1?label=Author&message=kg%20amda&color=purple&style=plastic">
+  <a href="httsp://github.com/BlackVampired">
+    <img src="https://img.shields.io/static/v1?label=Author&message=kg%20Vampired&color=purple&style=plastic">
 
   </a>
   </p>
  <p align="center">
   <a href="https://wa.me/94761444438">
-    <img src="https://img.shields.io/badge/Contact%20Me%20On%20Whatsapp-%20Amda%20-purple&style=plastic">
+    <img src="https://img.shields.io/badge/Contact%20Me%20On%20Whatsapp-%20Vampired%20-purple&style=plastic">
 
   </a>
 </p>
@@ -93,11 +93,11 @@ HAVE A FUN!
 
 ### step 1
 
-[![Run on Repl.it](https://repl.it/badge/github/AmdaOffical/Amdibell)](https://replit.com/@KgAmda/Amdibell-QR?v=1)
+[![Run on Repl.it](https://repl.it/badge/github/BlackVampired/Amdibell)](https://replit.com/@KgAmda/Amdibell-QR?v=1)
 
 ### step 2
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AmdaOfficial/Amdibell)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BlackVampired/Amdibell)
 
 
 
@@ -120,42 +120,42 @@ $ node bot.js
 <table>
 										<tbody>
 											<tr>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/fqn5sM7/LOGO.jpg" width="100" height="100" alt="KgAmda"></a></td>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/4my3Tvp/LOGO.jpg" width="100" height="100" alt="Mr.pasiya"></a></td>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/6Nb6hkx/LOGO.jpg" width="100" height="100" alt="no"></a></td>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/gdbjswr/LOGO.jpg" width="100" height="100" alt="sithum"></a></td>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/sWjm7g6/LOGO.jpg" width="100" height="100" alt="AmdiBell"></a></td>
-										                <td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/hYMLjVX/LOGO.jpg" width="100" height="100" alt="Mr.kaviya"></a></td>										                                                                                </tr>
+												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/fqn5sM7/LOGO.jpg" width="100" height="100" alt="KgAmda"></a></td>
+												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/4my3Tvp/LOGO.jpg" width="100" height="100" alt="Mr.pasiya"></a></td>
+												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/6Nb6hkx/LOGO.jpg" width="100" height="100" alt="no"></a></td>
+												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/gdbjswr/LOGO.jpg" width="100" height="100" alt="sithum"></a></td>
+												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/sWjm7g6/LOGO.jpg" width="100" height="100" alt="AmdiBell"></a></td>
+										                <td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/hYMLjVX/LOGO.jpg" width="100" height="100" alt="Mr.kaviya"></a></td>										                                                                                </tr>
 											<tr>
-												<td><a href="httsp://github.com/kgamdaofficial">KgAmda</a></br>(Founder)</td>
-												<td><a href="httsp://github.com/kgamdaofficial/">	Mr.pasiya</a></br>(Co-Admin)</td>
-												<td><a href="httsp://github.com/kgamdaofficial/">no</a></br>(Public Supportive)</td>
-												<td><a href="httsp://github.com/kgamdaofficial">	sithum</a></br>(Web developer)</td>
-												<td><a href="httsp://github.com/kgamdaofficial/">AmdiBell</a></br>(Graphic Designer)</td>
-												<td><a href="httsp://github.com/kgamdaofficial">Mr.kaviya</a></br>(Group Management)</td>
+												<td><a href="httsp://github.com/BlackVampired">KgAmda</a></br>(Founder)</td>
+												<td><a href="httsp://github.com/BlackVampired/">	Mr.pasiya</a></br>(Co-Admin)</td>
+												<td><a href="httsp://github.com/BlackVampired/">no</a></br>(Public Supportive)</td>
+												<td><a href="httsp://github.com/BlackVampired">	sithum</a></br>(Web developer)</td>
+												<td><a href="httsp://github.com/BlackVampired/">AmdiBell</a></br>(Graphic Designer)</td>
+												<td><a href="httsp://github.com/BlackVampired">Mr.kaviya</a></br>(Group Management)</td>
 											</tbody>
 									</table>
                   <table>
 										<tbody>
 											<tr>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/3CP2DPR/LOGO.jpg" width="100" height="100" alt="BlackHunt"></a></td>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/cXVY9Yw/LOGO.jpg" width="100" height="100" alt="Gimhana"></a></td>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/nz7BbrN/LOGO.jpg" width="100" height="100" alt="Mr.hasiya"></a></td>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/8gMSvBB/LOGO.jpg" width="100" height="100" alt="Yasas dilipa"></a></td>
-												<td><a href="httsp://github.com/kgamdaofficial/"><img src="https://i.ibb.co/VBzzh95/LOGO.jpg" width="100" height="100" alt="Adeesha"></a></td>
+												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/3CP2DPR/LOGO.jpg" width="100" height="100" alt="BlackHunt"></a></td>
+												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/cXVY9Yw/LOGO.jpg" width="100" height="100" alt="Gimhana"></a></td>
+												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/nz7BbrN/LOGO.jpg" width="100" height="100" alt="Mr.hasiya"></a></td>
+												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/8gMSvBB/LOGO.jpg" width="100" height="100" alt="Yasas dilipa"></a></td>
+												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/VBzzh95/LOGO.jpg" width="100" height="100" alt="Adeesha"></a></td>
 				                                                        </tr>
 											<tr>
-												<td><a href="httsp://github.com/kgamdaofficial">BlackHunt</a></br>(Group Management)</td>
-												<td><a href="httsp://github.com/kgamdaofficial/">Gimhana</a></br>(Group Management)</td>
-												<td><ahref="httsp://github.com/kgamdaofficial/">Mr.hasiya</a></br>(Ideas)</td>
-												<td><a href="httsp://github.com/kgamdaofficial">Yasas dilipa</a></br>(Mamber)</td>
-												<td><a href="httsp://github.com/kgamdaofficial">Adeesha</a></br>(Mamber)</td>
+												<td><a href="httsp://github.com/BlackVampired">BlackHunt</a></br>(Group Management)</td>
+												<td><a href="httsp://github.com/BlackVampired/">Gimhana</a></br>(Group Management)</td>
+												<td><ahref="httsp://github.com/BlackVampired/">Mr.hasiya</a></br>(Ideas)</td>
+												<td><a href="httsp://github.com/BlackVampired">Yasas dilipa</a></br>(Mamber)</td>
+												<td><a href="httsp://github.com/BlackVampired">Adeesha</a></br>(Mamber)</td>
 										</tbody>
 									</table>
 
 
 ### What does Amda mean?
-[Amda](https://tr.wikipedia.org/wiki/Amda), comes from Turkish mythology. According to Turkish mythology, Asena is a she-wolf that plays an important role.
+[BlackVampired](https://tr.wikipedia.org/wiki/Amda), comes from Turkish mythology. According to Turkish mythology, Asena is a she-wolf that plays an important role.
 
 <details>
   <summary><h3>Other Questions ❔</h3></summary>
