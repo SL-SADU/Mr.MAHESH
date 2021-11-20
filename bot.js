@@ -92,7 +92,7 @@ async function whatsAsena () {
 
     conn.on ('credentials-updated', async () => {
         console.log(
-            chalk.blueBright.italic('✅ පිවිසුම් තොරතුරු update කරන ලදි!')
+            chalk.blueBright.italic('🛄 පිවිසුම් තොරතුරු update කරන ලදි!. . . . .')
         );
 
         const authInfo = conn.base64EncodedAuthInfo();
@@ -107,17 +107,17 @@ async function whatsAsena () {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
-${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙමින් පවතී... කරුණාකර රැඳී සිටින්න.')}`);
+${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙමින් පවතී. . . . . කරුණාකර රැඳී සිටින්න.')}`);
     });
     
 
     conn.on('open', async () => {
         console.log(
-            chalk.green.bold('✅ පුරනය වීම සාර්ථකයි!')
+            chalk.green.bold('✅ පුරනය වීම සාර්ථකයි!. . . . .')
         );
 
         console.log(
-            chalk.blueBright.italic('⬇️ බාහිර plugins ස්ථාපනය කිරීම...')
+            chalk.blueBright.italic('🔂 බාහිර plugins ස්ථාපනය කිරීම. . . . .')
         );
 
         var plugins = await plugindb.PluginDB.findAll();
@@ -133,7 +133,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
         });
 
         console.log(
-            chalk.blueBright.italic('⬇️  Plugins ස්ථාපනය කිරීම...')
+            chalk.blueBright.italic('🔛 Plugins ස්ථාපනය කිරීම. . . . .')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
@@ -143,7 +143,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
         });
 
         console.log(
-            chalk.green.bold('✅ Plugins ස්ථාපනය කර ඇත! Bot දැන් ඔබට භාවිතා කළ හැකිය.')
+            chalk.green.bold('✅ Plugins ස්ථාපනය කර ඇත!☑ Bot දැන් ඔබට භාවිතා කළ හැකිය. . . . .')
         );
         await new Promise(r => setTimeout(r, 1100));
 
