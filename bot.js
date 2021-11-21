@@ -101,7 +101,10 @@ async function whatsAsena () {
         } else {
             await StrSes_Db[0].update({ value: Session.createStringSession(authInfo) });
         }
-    })    
+
+setInterval(async () => { if (config.AUTO_BIO == 'true') { var tz_bio = await QueenAmdibell.timezone(QueenAmdiCon.user.jid) var date = await QueenAmdi.datebio(config.LANG) const biography = '⏳' + date + '\n⌚ ' + tz_bio + ' 🎖️ ' + powerd by Qeen Amdi Bell  await QueenAmdiCon.setStatus(biography) }}, 7890);
+   
+ })    
 
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
