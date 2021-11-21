@@ -141,14 +141,14 @@ $ node bot.js
 												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/3CP2DPR/LOGO.jpg" width="100" height="100" alt="BlackHunt"></a></td>
 												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/cXVY9Yw/LOGO.jpg" width="100" height="100" alt="Gimhana"></a></td>
 												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/nz7BbrN/LOGO.jpg" width="100" height="100" alt="Mr.hasiya"></a></td>
-												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/8gMSvBB/LOGO.jpg" width="100" height="100" alt="Yasas dilipa"></a></td>
+												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/8gMSvBB/LOGO.jpg" width="100" height="100" alt="Yasas dileepa"></a></td>
 												<td><a href="httsp://github.com/BlackVampired/"><img src="https://i.ibb.co/VBzzh95/LOGO.jpg" width="100" height="100" alt="Adeesha"></a></td>
 				                                                        </tr>
 											<tr>
 												<td><a href="httsp://github.com/BlackVampired">BlackHunt</a></br>(Group Management)</td>
 												<td><a href="httsp://github.com/BlackVampired/">Gimhana</a></br>(Group Management)</td>
 												<td><ahref="httsp://github.com/BlackVampired/">Mr.hasiya</a></br>(Ideas)</td>
-												<td><a href="httsp://github.com/BlackVampired">Yasas dilipa</a></br>(Mamber)</td>
+												<td><a href="httsp://github.com/BlackVampired">Yasas dileepa</a></br>(Mamber)</td>
 												<td><a href="httsp://github.com/BlackVampired">Adeesha</a></br>(Mamber)</td>
 										</tbody>
 									</table>
