@@ -9,7 +9,7 @@ Amdibell - AmdA
 const Asena = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
-
+const amdi = fs.readFileSync('./media/amdi1.mp3')
 const Language = require('../language');
 const Lang = Language.getString('_asena');
 
@@ -47,9 +47,8 @@ if (Config.WORKTYPE == 'private') {
 
                 }
             );
-        
-            await message.client.sendMessage(
-                message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+            await message.client.sendMessage(message.jid, amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
+            await message.client.sendMessage(message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
@@ -84,8 +83,8 @@ if (Config.WORKTYPE == 'private') {
                 }
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
-            await message.client.sendMessage(
-                message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+            await message.client.sendMessage(message.jid, amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
+            await message.client.sendMessage(message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));
@@ -124,9 +123,8 @@ else if (Config.WORKTYPE == 'public') {
 
                 }
             );
-        
-            await message.client.sendMessage(
-                message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+            await message.client.sendMessage(message.jid, amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
+            await message.client.sendMessage(message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
@@ -161,8 +159,8 @@ else if (Config.WORKTYPE == 'public') {
                 }
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
-            await message.client.sendMessage(
-                message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+            await message.client.sendMessage(message.jid, amdi, MessageType.audio, {mimetype: 'audio/mp4', ptt:true}, {quoted: message.data})
+            await message.client.sendMessage(message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));
