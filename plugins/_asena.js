@@ -9,7 +9,7 @@ Amdibell - AmdA
 const Asena = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
-const amdi = fs.readFileSync('./media/amdi1.mp3')
+const amdi = fs.readFileSync('./media/gif/amdi1.mp3')
 const Language = require('../language');
 const Lang = Language.getString('_asena');
 
