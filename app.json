@@ -52,7 +52,7 @@
         "CAP": {
             "description": "Set your caption under medias.",
             "required": true,
-            "value": "ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ Amdibell₂₀₂₁"
+            "value": "ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅 ₂₀₂₁"
         },
         "MUTE_MESSAGE": {
             "description": "Group එකක් mute කිරිමෙදි ලැබෙන පනිවිඩය. ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
