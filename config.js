@@ -49,6 +49,12 @@ module.exports = {
     RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
     NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
     SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
+    OWN: process.env.OWN === undefined ? '94757405652,0' : process.env.OWN,
+    OWN2: process.env.OWN2 === undefined ? '94719077818,0' : process.env.OWN2,
+    OWN3: process.env.OWN3 === undefined ? '94757672873,0' : process.env.OWN3,
+    OWN4: process.env.OWN4 === undefined ? '94774976567,0' : process.env.OWN4,
+    OWN5: process.env.OWN5 === undefined ? '94766426385,0' : process.env.OWN5,
+    OWN6: process.env.OWN6 === undefined ? '94711870791,0' : process.env.OWN6,
     DEBUG: DEBUG,
     COFFEEHOUSE_API_KEY: process.env.COFFEEHOUSE_API_KEY === undefined ? false : process.env.COFFEEHOUSE_API_KEY,
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG"
