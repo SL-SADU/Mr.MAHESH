@@ -192,6 +192,28 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                 else {
                     await conn.sendMessage(conn.user.jid, '*Amdibell public ආකාරයට ක්‍රියාත්මක විය.👸*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n*ඔබේ command list එක ලබාගැනීමට .bell command එක භාවිතා කරන්න.*\n\n*ඔබේ bot public ක්‍රියාත්මක වේ. වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.*\n\n*github - https://github.com/AmdaOfficial/Amdibell*\n\n*Amdibell භාවිතා කිරීම ගැන ස්තූතියි ❤👸*', MessageType.text);
                 }
+            }
+            else {
+
+                if (conn.user.jid === '@s.whatsapp.net') {
+
+                    await conn.sendMessage(conn.user.jid, '```🛡️ Blacklist Detected!``` \n```User:```  \n```Reason:``` ', MessageType.text)
+
+                    await new Promise(r => setTimeout(r, 1800));
+
+                    console.log('🛡️ Blacklist Detected 🛡️')
+                    await heroku.get(baseURI + '/formation').then(async (formation) => {
+                        forID = formation[0].id;
+                        await heroku.patch(baseURI + '/formation/' + forID, {
+                            body: {
+                                quantity: 0
+                            }
+                        });
+                    })
+                }
+                else {
+                    await conn.sendMessage(conn.user.jid, '*queen bell npm public bot new relesed*\n\n_කරුණාකර මෙහි command උත්සාහ නොකරන්න. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය :)_\n\n*ඔබේ command list එක ලබාගැනීමට .bell command එක භාවිතා කරන්න.*\n\n*ඔබේ bot public ක්‍රියාත්මක වේ. වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.*\n\n*github - https://github.com/AmdaOfficial/Amdibell*\n\n*queenbell භාවිතා කිරීම ගැන ස්තූතියි ❤👸*', MessageType.text);
+                }
 
             }
         }
