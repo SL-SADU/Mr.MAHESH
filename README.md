@@ -149,7 +149,7 @@ $ node bot.js
 												<td><a href="httsp://github.com/BlackVampired">BlackHunt</a></br>(Group Management)</td>
 												<td><a href="httsp://github.com/BlackVampired/">Gimhana</a></br>(Group Management)</td>
 												<td><ahref="httsp://github.com/BlackVampired/">Mr.hasiya</a></br>(Ideas)</td>
-												<td><a href="httsp://github.com/BlackVampired">Yasas dileepa</a></br>(group management)</td>
+												<td><a href="httsp://github.com/BlackVampired">Yasas dileepa</a></br>(Ideas)</td>
 												<td><a href="httsp://github.com/BlackVampired">Adeesha</a></br>(group management)</td>
 										</tbody>
 									</table>
