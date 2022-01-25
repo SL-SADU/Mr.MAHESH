@@ -1,8 +1,8 @@
 {
-  "name": "amdibell",
-  "version": "0.16.5",
-  "description": "Amdibell project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-  "main": "./Amdibell/bot.js",
+  "name": "mahesh",
+  "version": "1.0.0",
+  "description": "bot project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+  "main": "./Mr.MAHESH/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
