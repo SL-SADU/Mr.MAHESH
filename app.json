@@ -1,6 +1,6 @@
 {
-    "name": "Amdibell v0.16.8",
-    "description": "Amdibell is a chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.",
+    "name": "Ms sadu",
+    "description": "Ms sadu is a chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.",
     "logo": "https://i.ibb.co/HTZDMQX/LOGO.jpg",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai", "Amdibell"],
     "repository": "https://github.com/BlackVampired/Amdibell",
@@ -53,7 +53,7 @@
         "CAP": {
             "description": "Set your caption under medias.",
             "required": true,
-            "value": "ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅 ₂₀₂₁"
+            "value": "ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ MS SADU"
         },
         "MUTE_MESSAGE": {
             "description": "Group එකක් mute කිරිමෙදි ලැබෙන පනිවිඩය. ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
@@ -68,7 +68,7 @@
         "ALIVE_LOGO": {
             "description": "Alive පණිවිඩ ලාංඡනය. රූපය වෙනස් කිරීමට පහත ඔබේ පින්තුර ඇතුළු කරන්න.",
             "required": true,
-            "value": "https://i.ibb.co/HTZDMQX/LOGO.jpg"    
+            "value": "https://i.ibb.co/grStDDW/20220126-162823.jpg"    
         },
         "WELCOME_LOGO": {
             "description": "පිළිගැනීමේ පණිවිඩ Logo. රූපය වෙනස් කිරීමට පහත ඔබේ පින්තුර ඇතුළු කරන්න. ",
