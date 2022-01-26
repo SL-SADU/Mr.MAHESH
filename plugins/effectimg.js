@@ -12,7 +12,7 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'effectimg', fromMe: true, desc: EFFECT_DESC}, (async (message, match) => {    
 
-    await message.sendMessage('▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬QUEEN AMDIBELL EFFECT LIST▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nUsage: *.pemoji*\nℹ️Desc: ඉමොජි රූපයට පරිවර්තනය කරන්න.\n\n💻Usage: *.pornhub*\nℹ️Desc: එය සැපය ඇති text කළු පැහැති පෙනුම රූපයක් යවයි.\nඔබ විසින් */* මගින් වෙන් කර ඇති ශීර්ෂය සහ උපසිරැසි අනුපිළිවෙලට ඇතුළත් කළ යුතුය!.\n\n💻Usage: *.sandwriting*\nℹ️Desc: එය සපයා ඇති පෙළෙහි වැලි රූපයක් යවයි.\n\n💻Usage: *.blackpink*\nℹ️Desc: එය සපයා ඇති පෙළෙහි කළු රෝස රූපයක් යවයි.\n\n💻Usage: *.blood*\nℹ️Desc: එය සපයා ඇති පෙළෙහි ලේ රූපයක් යවයි.\n\n💻Usage: *.snow*\nℹ️Desc: එය සපයා ඇති පෙළෙහි හිම රූපයක් යවයි.\n\n💻Usage: *.cloud*\nℹ️Desc: එය සපයා ඇති පෙළෙහි අහස රූපයක් යවයි.\n\n💻Usage: *.sparkling*\nℹ️Desc: පාඨය දීප්තිමත් තේමා රූපයක් බවට පරිවර්තනය කරයි\nඔබ විසින් */* මගින් වෙන් කර ඇති ශීර්ෂය සහ උපමාතෘකාව අනුපිළිවෙලට ඇතුළත් කළ යුතුය!\n\n💻Usage: *.watercolour*\nℹ️Desc: පාඨය ජල වර්ණ තේමා රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.gaming*\nℹ️Desc: නින්ජා තේමා ලාංඡනය සඳහා ශීර්ෂ පාඨය ලෙස පෙළ ඇතුළු කරයි.\n\n💻Usage: *.neonlight*\nℹ️Desc: පෙළ neonlight තේමා රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.3dtext*\nℹ️Desc: සපයා ඇති පෙළ ත්‍රිමාණ මෝස්තර රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.glitch*\nℹ️Desc:එය ඔබට glitch සකසයි.\n\n💻Usage: *.wood*\nℹ️Desc:එය ඔබට දැව ආකාරයේ logo සකසයි.\n\n💻Usage: *.8bit*\nℹ️Desc:එය ඔබට bit ආකාරයේ logo සකසයි.\n\n💻Usage: *.shadow*\nℹ️Desc:එය ඔබට සෙවනැල්ල ආකාරයේ logo සකසයි.\n\n💻Usage: *.underwater*\nℹ️Desc:එය ඔබට දිය යට ආකාරයේ logo සකසයි.\n\n💻Usage: *.flower*\nℹ️Desc:එය ඔබට දිය යට logo සකසයි.\n\n💻Usage: *.burn*\nℹ️Desc:එය ඔබට පුළුස්සා දමන logo සකසයි.\n\n💻Usage: *.candy*\nℹ️Desc:එය ඔබට රසකැවිලි logo සකසයි.\n\n💻Usage: *.harrypotter*\nℹ️Desc:එය ඔබට හැරී පොටර් logo සකසයි.\n\n💻Usage: *.grass*\nℹ️Desc:එය ඔබට තණකොළ logo සකසයි.\n\n💻Usage: *.candlemug*\nℹ️Desc:එය ඔබට candlemug logo සකසයි.\n\n💻Usage: *.romance*\nℹ️Desc:එය ඔබට ආදර logo සකසයි.\n\n💻Usage: *.lovemsg*\nℹ️Desc:එය ඔබට ආදරයකතා logo සකසයි.\n\n*Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅*');
+    await message.sendMessage('▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬MS BOT EFFECT LIST▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nUsage: *.pemoji*\nℹ️Desc: ඉමොජි රූපයට පරිවර්තනය කරන්න.\n\n💻Usage: *.pornhub*\nℹ️Desc: එය සැපය ඇති text කළු පැහැති පෙනුම රූපයක් යවයි.\nඔබ විසින් */* මගින් වෙන් කර ඇති ශීර්ෂය සහ උපසිරැසි අනුපිළිවෙලට ඇතුළත් කළ යුතුය!.\n\n💻Usage: *.sandwriting*\nℹ️Desc: එය සපයා ඇති පෙළෙහි වැලි රූපයක් යවයි.\n\n💻Usage: *.blackpink*\nℹ️Desc: එය සපයා ඇති පෙළෙහි කළු රෝස රූපයක් යවයි.\n\n💻Usage: *.blood*\nℹ️Desc: එය සපයා ඇති පෙළෙහි ලේ රූපයක් යවයි.\n\n💻Usage: *.snow*\nℹ️Desc: එය සපයා ඇති පෙළෙහි හිම රූපයක් යවයි.\n\n💻Usage: *.cloud*\nℹ️Desc: එය සපයා ඇති පෙළෙහි අහස රූපයක් යවයි.\n\n💻Usage: *.sparkling*\nℹ️Desc: පාඨය දීප්තිමත් තේමා රූපයක් බවට පරිවර්තනය කරයි\nඔබ විසින් */* මගින් වෙන් කර ඇති ශීර්ෂය සහ උපමාතෘකාව අනුපිළිවෙලට ඇතුළත් කළ යුතුය!\n\n💻Usage: *.watercolour*\nℹ️Desc: පාඨය ජල වර්ණ තේමා රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.gaming*\nℹ️Desc: නින්ජා තේමා ලාංඡනය සඳහා ශීර්ෂ පාඨය ලෙස පෙළ ඇතුළු කරයි.\n\n💻Usage: *.neonlight*\nℹ️Desc: පෙළ neonlight තේමා රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.3dtext*\nℹ️Desc: සපයා ඇති පෙළ ත්‍රිමාණ මෝස්තර රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.glitch*\nℹ️Desc:එය ඔබට glitch සකසයි.\n\n💻Usage: *.wood*\nℹ️Desc:එය ඔබට දැව ආකාරයේ logo සකසයි.\n\n💻Usage: *.8bit*\nℹ️Desc:එය ඔබට bit ආකාරයේ logo සකසයි.\n\n💻Usage: *.shadow*\nℹ️Desc:එය ඔබට සෙවනැල්ල ආකාරයේ logo සකසයි.\n\n💻Usage: *.underwater*\nℹ️Desc:එය ඔබට දිය යට ආකාරයේ logo සකසයි.\n\n💻Usage: *.flower*\nℹ️Desc:එය ඔබට දිය යට logo සකසයි.\n\n💻Usage: *.burn*\nℹ️Desc:එය ඔබට පුළුස්සා දමන logo සකසයි.\n\n💻Usage: *.candy*\nℹ️Desc:එය ඔබට රසකැවිලි logo සකසයි.\n\n💻Usage: *.harrypotter*\nℹ️Desc:එය ඔබට හැරී පොටර් logo සකසයි.\n\n💻Usage: *.grass*\nℹ️Desc:එය ඔබට තණකොළ logo සකසයි.\n\n💻Usage: *.candlemug*\nℹ️Desc:එය ඔබට candlemug logo සකසයි.\n\n💻Usage: *.romance*\nℹ️Desc:එය ඔබට ආදර logo සකසයි.\n\n💻Usage: *.lovemsg*\nℹ️Desc:එය ඔබට ආදරයකතා logo සකසයි.\n\n*Copyright © 2022 | MS BOT*');
         
     }));
 
@@ -29,7 +29,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/tiktokeffect/?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -39,7 +39,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/emoji2png?emoji=${match[1]}=apple`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -50,7 +50,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/woodblock/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -67,7 +67,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/8bit/?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -77,7 +77,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/shadowtext/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -87,7 +87,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/underwater/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -97,7 +97,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/mugflower/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -107,7 +107,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/burnpaper/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -117,7 +117,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/sweetcandy/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -127,7 +127,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/hpotter/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -144,7 +144,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/sparkling?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -154,7 +154,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/watercolor?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -164,7 +164,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -174,7 +174,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/neon_light?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -184,7 +184,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/sandwriting?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -194,7 +194,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/cloudtext?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -211,7 +211,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/ph?text=${topText}&text2=${bottomText}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -221,7 +221,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/snowtext?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -231,7 +231,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/paperonglass/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -241,7 +241,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/candlemug/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -251,7 +251,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/romancetext/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -261,7 +261,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/lovemsg/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -271,7 +271,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/bloodontheroastedglass?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -281,7 +281,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/blackpink?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -291,7 +291,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/text3d?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 }
@@ -299,7 +299,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'effectimg', fromMe: false, desc: EFFECT_DESC}, (async (message, match) => {    
 
-    await message.sendMessage('▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬QUEEN AMDIBELL EFFECT LIST▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nUsage: *.pemoji*\nℹ️Desc: ඉමොජි රූපයට පරිවර්තනය කරන්න.\n\n💻Usage: *.pornhub*\nℹ️Desc: එය සැපය ඇති text කළු පැහැති පෙනුම රූපයක් යවයි.\nඔබ විසින් */* මගින් වෙන් කර ඇති ශීර්ෂය සහ උපසිරැසි අනුපිළිවෙලට ඇතුළත් කළ යුතුය!.\n\n💻Usage: *.sandwriting*\nℹ️Desc: එය සපයා ඇති පෙළෙහි වැලි රූපයක් යවයි.\n\n💻Usage: *.blackpink*\nℹ️Desc: එය සපයා ඇති පෙළෙහි කළු රෝස රූපයක් යවයි.\n\n💻Usage: *.blood*\nℹ️Desc: එය සපයා ඇති පෙළෙහි ලේ රූපයක් යවයි.\n\n💻Usage: *.snow*\nℹ️Desc: එය සපයා ඇති පෙළෙහි හිම රූපයක් යවයි.\n\n💻Usage: *.cloud*\nℹ️Desc: එය සපයා ඇති පෙළෙහි අහස රූපයක් යවයි.\n\n💻Usage: *.sparkling*\nℹ️Desc: පාඨය දීප්තිමත් තේමා රූපයක් බවට පරිවර්තනය කරයි\nඔබ විසින් */* මගින් වෙන් කර ඇති ශීර්ෂය සහ උපමාතෘකාව අනුපිළිවෙලට ඇතුළත් කළ යුතුය!\n\n💻Usage: *.watercolour*\nℹ️Desc: පාඨය ජල වර්ණ තේමා රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.gaming*\nℹ️Desc: නින්ජා තේමා ලාංඡනය සඳහා ශීර්ෂ පාඨය ලෙස පෙළ ඇතුළු කරයි.\n\n💻Usage: *.neonlight*\nℹ️Desc: පෙළ neonlight තේමා රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.3dtext*\nℹ️Desc: සපයා ඇති පෙළ ත්‍රිමාණ මෝස්තර රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.glitch*\nℹ️Desc:එය ඔබට glitch සකසයි.\n\n💻Usage: *.wood*\nℹ️Desc:එය ඔබට දැව ආකාරයේ logo සකසයි.\n\n💻Usage: *.8bit*\nℹ️Desc:එය ඔබට bit ආකාරයේ logo සකසයි.\n\n💻Usage: *.shadow*\nℹ️Desc:එය ඔබට සෙවනැල්ල ආකාරයේ logo සකසයි.\n\n💻Usage: *.underwater*\nℹ️Desc:එය ඔබට දිය යට ආකාරයේ logo සකසයි.\n\n💻Usage: *.flower*\nℹ️Desc:එය ඔබට දිය යට logo සකසයි.\n\n💻Usage: *.burn*\nℹ️Desc:එය ඔබට පුළුස්සා දමන logo සකසයි.\n\n💻Usage: *.candy*\nℹ️Desc:එය ඔබට රසකැවිලි logo සකසයි.\n\n💻Usage: *.harrypotter*\nℹ️Desc:එය ඔබට හැරී පොටර් logo සකසයි.\n\n💻Usage: *.grass*\nℹ️Desc:එය ඔබට තණකොළ logo සකසයි.\n\n💻Usage: *.candlemug*\nℹ️Desc:එය ඔබට candlemug logo සකසයි.\n\n💻Usage: *.romance*\nℹ️Desc:එය ඔබට ආදර logo සකසයි.\n\n💻Usage: *.lovemsg*\nℹ️Desc:එය ඔබට ආදරයකතා logo සකසයි.\n\n*Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅*');
+    await message.sendMessage('▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬MS BOT EFFECT LIST▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nUsage: *.pemoji*\nℹ️Desc: ඉමොජි රූපයට පරිවර්තනය කරන්න.\n\n💻Usage: *.pornhub*\nℹ️Desc: එය සැපය ඇති text කළු පැහැති පෙනුම රූපයක් යවයි.\nඔබ විසින් */* මගින් වෙන් කර ඇති ශීර්ෂය සහ උපසිරැසි අනුපිළිවෙලට ඇතුළත් කළ යුතුය!.\n\n💻Usage: *.sandwriting*\nℹ️Desc: එය සපයා ඇති පෙළෙහි වැලි රූපයක් යවයි.\n\n💻Usage: *.blackpink*\nℹ️Desc: එය සපයා ඇති පෙළෙහි කළු රෝස රූපයක් යවයි.\n\n💻Usage: *.blood*\nℹ️Desc: එය සපයා ඇති පෙළෙහි ලේ රූපයක් යවයි.\n\n💻Usage: *.snow*\nℹ️Desc: එය සපයා ඇති පෙළෙහි හිම රූපයක් යවයි.\n\n💻Usage: *.cloud*\nℹ️Desc: එය සපයා ඇති පෙළෙහි අහස රූපයක් යවයි.\n\n💻Usage: *.sparkling*\nℹ️Desc: පාඨය දීප්තිමත් තේමා රූපයක් බවට පරිවර්තනය කරයි\nඔබ විසින් */* මගින් වෙන් කර ඇති ශීර්ෂය සහ උපමාතෘකාව අනුපිළිවෙලට ඇතුළත් කළ යුතුය!\n\n💻Usage: *.watercolour*\nℹ️Desc: පාඨය ජල වර්ණ තේමා රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.gaming*\nℹ️Desc: නින්ජා තේමා ලාංඡනය සඳහා ශීර්ෂ පාඨය ලෙස පෙළ ඇතුළු කරයි.\n\n💻Usage: *.neonlight*\nℹ️Desc: පෙළ neonlight තේමා රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.3dtext*\nℹ️Desc: සපයා ඇති පෙළ ත්‍රිමාණ මෝස්තර රූපයක් බවට පරිවර්තනය කරයි.\n\n💻Usage: *.glitch*\nℹ️Desc:එය ඔබට glitch සකසයි.\n\n💻Usage: *.wood*\nℹ️Desc:එය ඔබට දැව ආකාරයේ logo සකසයි.\n\n💻Usage: *.8bit*\nℹ️Desc:එය ඔබට bit ආකාරයේ logo සකසයි.\n\n💻Usage: *.shadow*\nℹ️Desc:එය ඔබට සෙවනැල්ල ආකාරයේ logo සකසයි.\n\n💻Usage: *.underwater*\nℹ️Desc:එය ඔබට දිය යට ආකාරයේ logo සකසයි.\n\n💻Usage: *.flower*\nℹ️Desc:එය ඔබට දිය යට logo සකසයි.\n\n💻Usage: *.burn*\nℹ️Desc:එය ඔබට පුළුස්සා දමන logo සකසයි.\n\n💻Usage: *.candy*\nℹ️Desc:එය ඔබට රසකැවිලි logo සකසයි.\n\n💻Usage: *.harrypotter*\nℹ️Desc:එය ඔබට හැරී පොටර් logo සකසයි.\n\n💻Usage: *.grass*\nℹ️Desc:එය ඔබට තණකොළ logo සකසයි.\n\n💻Usage: *.candlemug*\nℹ️Desc:එය ඔබට candlemug logo සකසයි.\n\n💻Usage: *.romance*\nℹ️Desc:එය ඔබට ආදර logo සකසයි.\n\n💻Usage: *.lovemsg*\nℹ️Desc:එය ඔබට ආදරයකතා logo සකසයි.\n\n*Copyright © 2022 | MS BOT*');
 
     }));
 
@@ -316,7 +316,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/tiktokeffect/?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -326,7 +326,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/emoji2png?emoji=${match[1]}=apple`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -337,7 +337,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/woodblock/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -354,7 +354,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/8bit/?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -364,7 +364,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/shadowtext/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -374,7 +374,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/underwater/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -384,7 +384,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/mugflower/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -394,7 +394,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/burnpaper/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -404,7 +404,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/sweetcandy/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -414,7 +414,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/hpotter/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -431,7 +431,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/sparkling?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -441,7 +441,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/watercolor?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -451,7 +451,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -461,7 +461,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/neon_light?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -471,7 +471,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/sandwriting?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -481,7 +481,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/cloudtext?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -498,7 +498,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/ph?text=${topText}&text2=${bottomText}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -508,7 +508,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/snowtext?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -518,7 +518,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/paperonglass/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -528,7 +528,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/candlemug/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -538,7 +538,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/romancetext/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -548,7 +548,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/lovemsg/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -558,7 +558,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/bloodontheroastedglass?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -568,7 +568,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/blackpink?text=${match[1]}&APIKEY=ab9942f95c09ca89`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
 
@@ -578,7 +578,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/text3d?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | MS BOT'})
 
     }));
     
