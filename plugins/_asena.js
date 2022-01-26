@@ -15,7 +15,7 @@ const Lang = Language.getString('_asena');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'bell ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'MS ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
             );
         
             await message.client.sendMessage(
-                message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'❤🗒 ●MS BOT LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
@@ -85,7 +85,7 @@ if (Config.WORKTYPE == 'private') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'❤🗒 MS BOT LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));
@@ -126,7 +126,7 @@ else if (Config.WORKTYPE == 'public') {
             );
         
             await message.client.sendMessage(
-                message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'❤🗒 ●MS BOT LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );    
         } else {
 
@@ -162,7 +162,7 @@ else if (Config.WORKTYPE == 'public') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'❤🗒 ●AMDIBELL LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
+                message.jid,'❤🗒 ●MS BOT LIST● 🗒❤\n\n' + CMD_HELP, MessageType.text,{quoted: message.data}
             );
         }
     }));
