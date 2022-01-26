@@ -1,4 +1,4 @@
-/* Copyright (C) 2021 AmdA.
+/* Copyright (C) 2022 SL SADU.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
@@ -25,14 +25,14 @@ if (Config.WORKTYPE == 'private') {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 😙```\n\n*Version:* ```v1.5 - Stable```\n\n*Developer:* ```KgAmda```\n\n*WhatsApp Support Group :* https://chat.whatsapp.com/J7EdUBd7E2OIsXOOeAHcuT\n\n*Youtube channel :* https://www.youtube.com/channel/UCQIo_J1z2MdVeKlY7Wh9TUA\n\n```Thank You For Using Amdibell❤```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 😙```\n\n*Version:* ```v1.0 - Stable```\n\n*Developer:* ```SL SADU```\n\n```Thank You For Using MS BOT❤```"})
 
     }
     else {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅*' })
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2022 | SL SADU*' })
      }
     }));
 
@@ -57,14 +57,14 @@ else if (Config.WORKTYPE == 'public') {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 😙```\n\n*Version:* ```v1.5 - Stable```\n\n*Developer:* ```KgAmda```\n\n*WhatsApp Support Group :* https://chat.whatsapp.com/J7EdUBd7E2OIsXOOeAHcuT\n\n*Youtube channel :* https://www.youtube.com/channel/UCQIo_J1z2MdVeKlY7Wh9TUA\n\n```Thank You For Using Amdibell❤```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```👸💎 Hey There! I'm Online now. 😙```\n\n*Version:* ```v1.0 - Stable```\n\n*Developer:* ```SL SADU```\n\n```Thank You For Using MS BOT❤```"})
 
     }
     else {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅*' })
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2022 | SL SADU*' })
      }
     }));
 
