@@ -1,4 +1,4 @@
-/* Copyright (C) 2021 AmdA.
+/* Copyright (C) 2021 SL SADU.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://screenshotapi.net/api/v1/screenshot?url=${match[1]}&output=image&full_page=true`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | SL SADU'})
 
     }));
 }
@@ -49,7 +49,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://screenshotapi.net/api/v1/screenshot?url=${match[1]}&output=image&full_page=true`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2021 | 𝖰𝗎𝖾𝖾𝗇 𝖠𝗆𝖽𝗂𝖻𝖾𝗅𝗅'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Copyright © 2022 | SL SADU'})
 
     }));
 }
