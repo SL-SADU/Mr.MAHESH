@@ -1,5 +1,5 @@
 {
-  "name": "mahesh",
+  "name": "ms-bot-v1",
   "version": "1.0.0",
   "description": "bot project - a Whatsapp userbot helping to improve your Whatsapp experience.",
   "main": "./Mr.MAHESH/bot.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlackVampired/Amdibell.git"
+    "url": "git+https://github.com/SL-SADU/Mr.MAHESH.git"
   },
   "keywords": [
     "whatsapp"
   ],
-  "author": "Dark Amda",
-  "developer": "K.G CRIMINAL LEGION",
+  "author": "Mahesh",
+  "developer": "MsDev",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/BlackVampired/Amdibell/issues"
